@@ -1,0 +1,23 @@
+{
+  "name": "hellisus-cheatsheet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual Hell is Us walkthrough checklist for GitHub Pages",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "check": "biome check .",
+    "format": "biome format --write ."
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.8",
+    "@playwright/test": "1.64.0",
+    "cheerio": "1.1.2"
+  }
+}

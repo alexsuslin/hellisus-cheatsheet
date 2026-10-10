@@ -1,0 +1,96 @@
+# Hell is Us — Walkthrough Checklist
+
+**English** · [Русский](./README.md)
+
+**Website:** [alexsuslin.github.io/hellisus-cheatsheet](https://alexsuslin.github.io/hellisus-cheatsheet/)
+
+An interactive **Hell is Us** field guide, inspired by the [Dark Souls 3 Cheat Sheet](https://zkjellberg.github.io/dark-souls-3-cheat-sheet/). Check off your route, track discoveries and keep important NPC conversations and good deeds in sight.
+
+## Features
+
+- Instant **English/Russian switching**, including walkthrough directions.
+- **Light and dark themes**, initially following your system preference and remembering your choice.
+- A chronological route through all three acts, locations and revisits.
+- NPCs, good deeds, mysteries, research items, drone modules, glyphs, relics, weapons, defensive items, timeloops, vaults and baseball caps.
+- Warnings for permanently missable actions.
+- Search across both languages, act/category filters and hide completed.
+- Overall and location progress, saved in your browser.
+- JSON progress export/import and confirmed reset.
+- Responsive layout, keyboard navigation and reduced-motion support.
+- Static hosting with no backend, account, analytics or external fonts.
+
+> **Spoilers:** this checklist reveals story events, items and puzzle solutions. The game has no NG+ or chapter select. Follow the warnings before advancing the story.
+
+## Run locally
+
+Install [Node.js](https://nodejs.org/) **22 or newer**, with npm.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open `http://127.0.0.1:4173/`. Use the local server instead of double-clicking the HTML file: browsers restrict ES modules and JSON requests under `file://`.
+
+```sh
+npm test             # Filters, persistence, backups and guide data
+npm run check        # Biome formatting and static analysis
+npm run format       # Apply formatting
+npm run build        # Copy the static website to dist/
+npm run test:browser # Check browser interactions after building
+```
+
+Browser tests use the installed Microsoft Edge on Windows. On Linux/macOS, run `npx playwright install chromium` once. The workflow installs Chromium automatically and checks browser interactions before deploying.
+
+To check repository-subpath hosting:
+
+```sh
+node scripts/serve.mjs --dist --subpath
+```
+
+Open `http://127.0.0.1:4173/hellisus-cheatsheet/`. Asset URLs are relative, so the site works at a domain root or below a repository path.
+
+## Deploy to GitHub Pages
+
+1. Create a **public** GitHub repository and push this project to `main`. Suggested name: `hellisus-cheatsheet`.
+2. Under **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
+3. Wait for **Check and deploy to GitHub Pages** under **Actions**. It installs dependencies, checks code and data, builds, then deploys. You can rerun it with **Run workflow**.
+4. Find the live URL under **Settings → Pages** or the **github-pages** environment. For `alexsuslin/hellisus-cheatsheet`, the expected address is `https://alexsuslin.github.io/hellisus-cheatsheet/`.
+
+See [`.github/workflows/pages.yml`](./.github/workflows/pages.yml). Pull requests run checks; only `main` deploys. Later pushes to `main` publish automatically.
+
+If using another account or repository name, change the **GitHub** link in [`index.html`](./index.html). The workflow itself has no hardcoded repository name. Optional GitHub CLI setup:
+
+```sh
+gh auth login
+gh repo create hellisus-cheatsheet --public --source=. --remote=origin --push
+gh api --method POST repos/OWNER/hellisus-cheatsheet/pages -f build_type=workflow
+gh workflow run pages.yml
+```
+
+`--push` requires at least one commit. Replace `OWNER` with your username. Skip the Pages creation command if Pages is already enabled.
+
+## Progress
+
+Checkboxes, language and theme live in the browser's `localStorage` at the current site address. Nothing is sent to a server or automatically synced between devices. Switching language or theme preserves all checkboxes.
+
+Use **Export progress** before clearing browser data. To move progress, open the site on another device and choose **Import progress**. Import replaces checked steps after confirmation; corrupt or unrelated backups are rejected. If the browser blocks persistence, a warning appears and the checklist keeps working within the current tab.
+
+**The counter tracks route steps, not unique collectibles.** A good deed or mystery can require multiple actions in different locations. One action can grant several rewards and appear under several category filters. Check it off only after completing the described action.
+
+## Data and translation
+
+[`data/guide.json`](./data/guide.json) owns the route. Sections and steps have permanent IDs, `ru`/`en` translations, categories and detailed source links. Edit wording without changing the `id` to preserve saved progress. A new action needs a new ID; never reuse an old ID for a different action.
+
+[`assets/i18n.js`](./assets/i18n.js) contains interface translations. Some item names remain in English to help match the original guide; Russian wording is not presented as the game's official localisation.
+
+## Sources and credits
+
+- [PowerPyx: Collectible Walkthrough](https://www.powerpyx.com/hell-is-us-collectible-walkthrough/) — game facts and chronological route: Act 1, all three Act 2 parts, Act 3 and cleanup.
+- [PowerPyx: Missables Guide](https://www.powerpyx.com/hell-is-us-missables-guide/) — time-sensitive actions and their order.
+- [GameShelter's Russian walkthrough](https://gameshelter.space/blog/hell-is-us-letopis-prokhozhdeniya-blagie-dela-kepki-i-razgovory-s-nps) — Russian location names and terminology.
+- [Dark Souls 3 Cheat Sheet](https://zkjellberg.github.io/dark-souls-3-cheat-sheet/) — inspiration for the interactive checklist format.
+
+Directions are concise original summaries. Each step links to the original illustrated guide; third-party articles and screenshots are not redistributed with the site. An independent fan project, unaffiliated with **Rogue Factor**, **Nacon**, PowerPyx or GameShelter.
+
+Source code and original wording are available under [MIT](./LICENSE). Game, item and character names belong to their respective owners.
