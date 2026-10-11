@@ -1,3 +1,5 @@
+import { createAchievementTracker } from "./achievement-view.js";
+import { getRelatedItems } from "./achievements.js";
 import { translate, translations } from "./i18n.js";
 import { filterItems, getProgress, parseBackup } from "./model.js";
 import {
@@ -44,6 +46,9 @@ const state = {
 };
 
 let guide;
+let achievementTracker;
+const achievementsByItem = new Map();
+let activeView = "walkthrough";
 const allItems = [];
 let knownIds = new Set();
 const openSections = new Set();
@@ -98,6 +103,7 @@ function applyPreferences() {
   );
   byId("route-sidebar").setAttribute("aria-label", t("route"));
   byId("act-tabs").setAttribute("aria-label", t("allActs"));
+  byId("view-switch").setAttribute("aria-label", t("trackers"));
   document
     .querySelector(".header-links")
     .setAttribute("aria-label", t("walkthrough"));
@@ -195,6 +201,7 @@ function updateCounters() {
       .closest(".checklist-item")
       .classList.toggle("completed", checkbox.checked);
   }
+  achievementTracker?.render();
 }
 
 function renderItem(item) {
@@ -203,6 +210,7 @@ function renderItem(item) {
     `checklist-item${state.completed.has(item.id) ? " completed" : ""}`,
   );
   row.dataset.itemId = item.id;
+  row.id = item.id;
   const label = element("label", "item-label");
   const checkbox = element("input");
   checkbox.type = "checkbox";
@@ -244,7 +252,39 @@ function renderItem(item) {
     `${t("source")}: ${item.title[state.language]}`,
   );
   row.append(label, source);
+  const related = achievementsByItem.get(item.id);
+  if (related?.length) {
+    const link = element(
+      "button",
+      "text-button item-achievement-link",
+      t("relatedAchievements", { count: related.length }),
+    );
+    link.type = "button";
+    link.dataset.relatedAchievements = item.id;
+    row.append(link);
+  }
   return row;
+}
+
+function selectView(view) {
+  activeView = view;
+  byId("walkthrough-panel").hidden = view !== "walkthrough";
+  byId("achievements").hidden = view !== "achievements";
+  for (const button of document.querySelectorAll("[data-view]"))
+    button.setAttribute("aria-pressed", String(button.dataset.view === view));
+}
+
+function navigateToRouteItem(id) {
+  const section = guide.sections.find((entry) =>
+    entry.items.some((item) => item.id === id),
+  );
+  if (!section) return;
+  selectView("walkthrough");
+  openSections.add(section.id);
+  clearFilters();
+  history.replaceState(null, "", `#${id}`);
+  byId(id).scrollIntoView({ block: "center" });
+  byId(`check-${id}`).focus({ preventScroll: true });
 }
 
 function renderSection(section, items, index) {
@@ -444,6 +484,25 @@ function bindPreferenceEvents() {
 }
 
 function bindEvents() {
+  for (const button of document.querySelectorAll("[data-view]")) {
+    button.addEventListener("click", () => {
+      selectView(button.dataset.view);
+      history.replaceState(
+        null,
+        "",
+        activeView === "achievements" ? "#achievements" : "#checklist",
+      );
+    });
+  }
+  byId("checklist-sections").addEventListener("click", (event) => {
+    const link = event.target.closest("[data-related-achievements]");
+    if (!link) return;
+    achievementTracker.showForItem(link.dataset.relatedAchievements);
+    selectView("achievements");
+    history.replaceState(null, "", "#achievements");
+    byId("view-switch").scrollIntoView();
+    byId("achievement-search").focus({ preventScroll: true });
+  });
   for (const button of document.querySelectorAll("[data-act]")) {
     button.addEventListener("click", () => {
       state.filters.act = button.dataset.act;
@@ -470,6 +529,8 @@ function bindEvents() {
     renderChecklist();
   });
   byId("show-missables").addEventListener("click", () => {
+    selectView("walkthrough");
+    history.replaceState(null, "", "#checklist");
     clearFilters();
     state.filters.missableOnly = true;
     syncFilterControls();
@@ -508,6 +569,7 @@ function bindEvents() {
   byId("location-nav").addEventListener("click", (event) => {
     const link = event.target.closest("a[data-section]");
     if (!link) return;
+    selectView("walkthrough");
     const details = byId(link.dataset.section);
     details.open = true;
     openSections.add(details.id);
@@ -568,9 +630,17 @@ window.addEventListener("storage", (event) => {
 });
 
 try {
-  const response = await fetch(new URL("../data/guide.json", import.meta.url));
-  if (!response.ok) throw new Error(`Guide request failed: ${response.status}`);
-  guide = await response.json();
+  const [guideResponse, achievementsResponse] = await Promise.all([
+    fetch(new URL("../data/guide.json", import.meta.url)),
+    fetch(new URL("../data/achievements.json", import.meta.url)),
+  ]);
+  if (!guideResponse.ok || !achievementsResponse.ok)
+    throw new Error("Checklist data request failed");
+  const [guideData, catalogue] = await Promise.all([
+    guideResponse.json(),
+    achievementsResponse.json(),
+  ]);
+  guide = guideData;
   for (const section of guide.sections) {
     for (const item of section.items) {
       item.searchTerms = [
@@ -580,7 +650,18 @@ try {
       allItems.push(item);
     }
   }
-  knownIds = new Set(allItems.map((item) => item.id));
+  for (const achievement of catalogue.achievements) {
+    achievement.relatedItemIds = getRelatedItems(achievement, allItems).map(
+      (item) => item.id,
+    );
+    for (const id of achievement.relatedItemIds) {
+      if (!achievementsByItem.has(id)) achievementsByItem.set(id, []);
+      achievementsByItem.get(id).push(achievement.id);
+    }
+  }
+  knownIds = new Set(
+    [...allItems, ...catalogue.achievements].map((item) => item.id),
+  );
   state.completed = new Set(
     [...state.completed].filter((id) => knownIds.has(id)),
   );
@@ -588,8 +669,44 @@ try {
     guide.sections.find((section) => section.id === location.hash.slice(1)) ??
     guide.sections[0];
   openSections.add(initialSection.id);
+  achievementTracker = createAchievementTracker({
+    achievements: catalogue.achievements,
+    items: allItems,
+    state,
+    t,
+    onToggle(id, checked) {
+      if (checked) state.completed.add(id);
+      else state.completed.delete(id);
+      persist({ id, checked });
+    },
+    onRoute: navigateToRouteItem,
+  });
   bindEvents();
   renderChecklist();
+  function followHash() {
+    const id = location.hash.slice(1);
+    if (id === "achievements" || id.startsWith("achievement-")) {
+      selectView("achievements");
+      if (id.startsWith("achievement-")) {
+        const platform = byId("achievement-platform");
+        platform.value = "ps5";
+        platform.dispatchEvent(new Event("change"));
+        byId("achievement-clear").click();
+      }
+      byId(id)?.scrollIntoView();
+    } else if (allItems.some((item) => item.id === id)) {
+      navigateToRouteItem(id);
+    } else if (
+      id === "checklist" ||
+      guide.sections.some((section) => section.id === id)
+    ) {
+      selectView("walkthrough");
+      const section = byId(id);
+      if (section?.matches("details")) section.open = true;
+    }
+  }
+  window.addEventListener("hashchange", followHash);
+  followHash();
   if (location.hash && byId(location.hash.slice(1)))
     byId(location.hash.slice(1)).scrollIntoView();
 } catch (error) {

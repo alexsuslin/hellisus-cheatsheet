@@ -42,7 +42,7 @@ test("search, multi-category filters and hide completed preserve overall progres
   await page.locator("#missable-only").check();
   const rows = await page.locator(".checklist-item").count();
   expect(rows).toBeGreaterThan(10);
-  await expect(page.locator(".missable-tag")).toHaveCount(rows);
+  await expect(page.locator(".checklist-item .missable-tag")).toHaveCount(rows);
   await page.locator("#category-filter").selectOption("good-deed");
   expect(await page.locator(".checklist-item").count()).toBeGreaterThan(0);
   await expect(page.locator("#progress-count")).toContainText("1 ");

@@ -20,6 +20,7 @@
       </a>
       <nav class="header-links" aria-label="Navigation">
         <a href="#checklist" data-i18n="walkthrough">Прохождение</a>
+        <a href="#achievements" data-i18n="achievements">Достижения</a>
         <a href="#about" data-i18n="about">О гайде</a>
         <a href="https://github.com/alexsuslin/hellisus-cheatsheet" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </nav>
@@ -47,6 +48,7 @@
           <div class="progress-value"><span id="progress-percent">0</span><span>%</span><span class="progress-decoration" aria-hidden="true">✳</span></div>
           <progress id="overall-progress" max="100" value="0" aria-label="Прогресс прохождения"></progress>
           <p id="progress-count" class="muted">Загрузка маршрута…</p>
+          <a class="hero-achievements" href="#achievements"><span data-i18n="achievements">Достижения</span><span id="hero-achievement-count">0 / 40</span><span aria-hidden="true">↗</span></a>
           <div class="save-indicator"><span class="status-dot"></span><span id="save-label" data-i18n="savedLocally">Сохраняется в этом браузере</span></div>
         </div>
       </section>
@@ -72,7 +74,12 @@
           </div>
         </aside>
 
-        <section class="checklist-panel" aria-labelledby="checklist-title">
+        <div class="tracker-content">
+          <div class="view-switch" role="group" aria-label="Прохождение и достижения" id="view-switch">
+            <button type="button" data-view="walkthrough" aria-pressed="true" aria-controls="walkthrough-panel" data-i18n="walkthrough">Прохождение</button>
+            <button type="button" data-view="achievements" aria-pressed="false" aria-controls="achievements" data-i18n="achievements">Достижения</button>
+          </div>
+        <section class="checklist-panel" id="walkthrough-panel" aria-labelledby="checklist-title">
           <div class="panel-heading"><div><p class="eyebrow" data-i18n="stepByStep">ШАГ ЗА ШАГОМ</p><h2 id="checklist-title" data-i18n="checklist">Чек-лист прохождения</h2></div><span class="route-edition" data-i18n="allActs">ВСЕ 3 АКТА</span></div>
           <div class="filters">
             <div class="filter-row">
@@ -94,6 +101,20 @@
           <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3 data-i18n="noResults">Ничего не найдено</h3><p data-i18n="noResultsHint">Попробуйте другое слово или сбросьте фильтры.</p><button type="button" id="empty-clear" class="button" data-i18n="clearFilters">Сбросить фильтры</button></div>
           <div id="load-error" class="feedback warning" role="alert" hidden></div>
         </section>
+        <section id="achievements" class="achievements-panel" aria-labelledby="achievements-title" hidden>
+          <div class="panel-heading"><div><p class="eyebrow" data-i18n="achievementEyebrow">ПУТЬ К 100%</p><h2 id="achievements-title" data-i18n="achievements">Достижения</h2></div><span class="route-edition">STEAM / XBOX / EPIC / PS5</span></div>
+          <div class="achievement-summary"><div><span class="eyebrow" data-i18n="achievementProgress">ПОЛУЧЕНО В ИГРЕ</span><strong id="achievement-count">0 / 40</strong></div><span id="achievement-percent">0%</span><progress id="achievement-progress" max="100" value="0" aria-label="Прогресс достижений"></progress><p data-i18n="achievementTrackingNote">Отмечайте достижение после получения в игре. Прогресс связанных шагов помогает планировать прохождение.</p></div>
+          <div class="filters achievement-filters">
+            <div class="filter-row search-row"><div class="search-control"><input type="search" id="achievement-search" placeholder="Найти достижение…" aria-label="Поиск достижений" autocomplete="off" /></div><select id="achievement-platform" aria-label="Платформа"><option value="common" data-i18n="platformCommon">Steam / Xbox / Epic · 40</option><option value="ps5" data-i18n="platformPS5">PS5 · 41 с платиной</option></select></div>
+            <div class="filter-row"><select id="achievement-category" aria-label="Тип достижения"></select><label class="switch-label"><input type="checkbox" id="achievement-hide-completed" /><span data-i18n="hideCompleted">Скрыть выполненное</span></label><label class="switch-label"><input type="checkbox" id="achievement-missable" /><span data-i18n="onlyMissables">Только пропускаемое</span></label></div>
+            <div class="filter-row filter-bottom"><button type="button" id="achievement-clear" class="text-button" data-i18n="clearFilters">Сбросить фильтры</button><span id="achievement-results" class="muted" aria-live="polite"></span></div>
+          </div>
+          <div id="achievement-route-context" class="achievement-context" hidden><span id="achievement-route-context-label"></span><button type="button" id="achievement-context-clear" class="text-button" data-i18n="allAchievements">Все достижения</button></div>
+          <div id="achievement-list" class="achievement-grid"></div>
+          <div id="achievement-empty" class="empty-state" hidden><h3 data-i18n="noResults">Ничего не найдено</h3><p data-i18n="noResultsHint">Попробуйте другое слово или сбросьте фильтры.</p><button type="button" id="achievement-empty-clear" class="button" data-i18n="clearFilters">Сбросить фильтры</button></div>
+          <p class="achievement-sources"><span data-i18n="achievementSources">Условия сверены с официальными списками и гайдом:</span> <a href="https://steamcommunity.com/stats/1620730/achievements/" target="_blank" rel="noopener noreferrer">Steam ↗</a> · <a href="https://store.epicgames.com/achievements/hell-is-us-b9c06d?lang=en-US" target="_blank" rel="noopener noreferrer">Epic Games ↗</a> · <a href="https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/" target="_blank" rel="noopener noreferrer">PowerPyx ↗</a></p>
+        </section>
+        </div>
       </div>
 
       <section id="about" class="about-section" aria-labelledby="about-title">

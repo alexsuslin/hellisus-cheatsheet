@@ -1,0 +1,1027 @@
+{
+  "version": 1,
+  "updated": "2026-10-11",
+  "sources": [
+    {
+      "name": "Steam — official achievement list",
+      "url": "https://steamcommunity.com/stats/1620730/achievements/"
+    },
+    {
+      "name": "Epic Games — official achievement conditions",
+      "url": "https://store.epicgames.com/achievements/hell-is-us-b9c06d?lang=en-US"
+    },
+    {
+      "name": "PowerPyx — trophy requirements and missables",
+      "url": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "name": "PowerPyx — research objects by topic",
+      "url": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "achievement-so-it-begins",
+      "title": {
+        "ru": "Всё начинается",
+        "en": "So It Begins"
+      },
+      "category": "story",
+      "tier": "bronze",
+      "description": {
+        "ru": "Завершите первый акт.",
+        "en": "Finish the first act."
+      },
+      "hint": {
+        "ru": "Положите камень Скорби в Лимбическую кузню.",
+        "en": "Place the Keystone of Grief in the Lymbic Forge."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-1-step-151"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-emotional-baggage",
+      "title": {
+        "ru": "Эмоциональный багаж",
+        "en": "Emotional Baggage"
+      },
+      "category": "story",
+      "tier": "bronze",
+      "description": {
+        "ru": "Завершите второй акт.",
+        "en": "Finish the second act."
+      },
+      "hint": {
+        "ru": "Установите оставшиеся три камня в кузне.",
+        "en": "Place the other three Keystones in the forge."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-2-part-3-step-092"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-redemption",
+      "title": {
+        "ru": "Искупление",
+        "en": "Redemption"
+      },
+      "category": "story",
+      "tier": "bronze",
+      "description": {
+        "ru": "Завершите третий акт.",
+        "en": "Finish the third act."
+      },
+      "hint": {
+        "ru": "Дойдите до финального пьедестала с фамильным ожерельем.",
+        "en": "Reach the final pedestal with the Heirloom Necklace."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-012"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-good-samaritan",
+      "title": {
+        "ru": "Добрый самаритянин",
+        "en": "Good Samaritan"
+      },
+      "category": "side",
+      "tier": "bronze",
+      "description": {
+        "ru": "Завершите любое благое дело.",
+        "en": "Finish any good deed."
+      },
+      "hint": {
+        "ru": "Для первого достижения можно вернуть золотые часы Эрнесту.",
+        "en": "Returning Ernest’s golden watch is an early opportunity."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-1-step-021", "act-1-step-025"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-man-of-the-people",
+      "title": {
+        "ru": "Человек народа",
+        "en": "Man of the People"
+      },
+      "category": "side",
+      "tier": "gold",
+      "description": {
+        "ru": "Завершите все 26 благих дел.",
+        "en": "Finish all 26 good deeds."
+      },
+      "hint": {
+        "ru": "Следуйте всем цепочкам помощи жителям.",
+        "en": "Follow every chain of requests from the residents."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Выполняйте помощь жителям до сюжетных переходов: некоторые NPC исчезают.",
+        "en": "Help residents before story transitions; some NPCs disappear."
+      },
+      "route": {
+        "categories": ["good-deed"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-end-the-suffering",
+      "title": {
+        "ru": "Конец страданиям",
+        "en": "End the Suffering"
+      },
+      "category": "side",
+      "tier": "bronze",
+      "description": {
+        "ru": "Закройте одну временную петлю.",
+        "en": "Seal one timeloop."
+      },
+      "hint": {
+        "ru": "Победите её стражей и примените подходящую призму.",
+        "en": "Defeat its guardians and use the matching prism."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["timeloop"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-amateur-detective",
+      "title": {
+        "ru": "Начинающий сыщик",
+        "en": "Amateur Detective"
+      },
+      "category": "side",
+      "tier": "bronze",
+      "description": {
+        "ru": "Решите любую загадку.",
+        "en": "Finish any mystery."
+      },
+      "hint": {
+        "ru": "Начните с сокровища семьи Каддел в лесу Сенедра.",
+        "en": "The Caddel family treasure in Senedra Forest is an early option."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-008",
+          "act-1-step-009",
+          "act-1-step-010",
+          "act-1-step-012"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-super-sleuth",
+      "title": {
+        "ru": "Мастер расследований",
+        "en": "Super-Sleuth"
+      },
+      "category": "side",
+      "tier": "silver",
+      "description": {
+        "ru": "Решите все 46 загадок.",
+        "en": "Finish all 46 mysteries."
+      },
+      "hint": {
+        "ru": "Доведите цепочки загадок до конца; некоторые требуют возвращения.",
+        "en": "Finish each mystery chain, including return visits."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["mystery"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-all-the-rage",
+      "title": {
+        "ru": "Вся ярость",
+        "en": "All the Rage"
+      },
+      "category": "combat",
+      "tier": "bronze",
+      "description": {
+        "ru": "Победите дымку Ярости каждого из трёх уровней.",
+        "en": "Beat Rage Hazes at all three tiers."
+      },
+      "hint": {
+        "ru": "Красные дымки встречаются в бою; финальная область включает все уровни.",
+        "en": "Look for red Hazes; the final area includes all tiers."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-006"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-buzz-killer",
+      "title": {
+        "ru": "Конец экстазу",
+        "en": "Buzz Killer"
+      },
+      "category": "combat",
+      "tier": "bronze",
+      "description": {
+        "ru": "Победите дымку Экстаза каждого из трёх уровней.",
+        "en": "Beat Ecstasy Hazes at all three tiers."
+      },
+      "hint": {
+        "ru": "Проверяйте жёлтые дымки, включая бои у золотой статуи.",
+        "en": "Look for yellow Hazes, including the golden statue encounters."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-009"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-fear-no-evil",
+      "title": {
+        "ru": "Без страха",
+        "en": "Fear No Evil"
+      },
+      "category": "combat",
+      "tier": "bronze",
+      "description": {
+        "ru": "Победите дымку Ужаса каждого из трёх уровней.",
+        "en": "Beat Terror Hazes at all three tiers."
+      },
+      "hint": {
+        "ru": "Проверяйте зелёные дымки, включая бои у изумрудной статуи.",
+        "en": "Look for green Hazes, including the emerald statue encounters."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-008"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-good-grief",
+      "title": {
+        "ru": "Вся скорбь",
+        "en": "Good Grief"
+      },
+      "category": "combat",
+      "tier": "bronze",
+      "description": {
+        "ru": "Победите дымку Скорби каждого из трёх уровней.",
+        "en": "Beat Grief Hazes at all three tiers."
+      },
+      "hint": {
+        "ru": "Проверяйте синие дымки, включая бои у кобальтовой статуи.",
+        "en": "Look for blue Hazes, including the cobalt statue encounters."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-007"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-big-game-hunter",
+      "title": {
+        "ru": "Охотник на крупную дичь",
+        "en": "Big Game Hunter"
+      },
+      "category": "combat",
+      "tier": "bronze",
+      "description": {
+        "ru": "Победите все пять разновидностей полых.",
+        "en": "Beat each of the five Hollow Walker variants."
+      },
+      "hint": {
+        "ru": "Исследуйте Виссайские холмы: там появляется последняя разновидность.",
+        "en": "Explore Vyssa Hills, where the last variant starts appearing."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-1-step-104"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-rise-and-phol",
+      "title": {
+        "ru": "Первый уровень",
+        "en": "Rise and Phol"
+      },
+      "category": "combat",
+      "tier": "silver",
+      "description": {
+        "ru": "Победите 40 дымок первого уровня.",
+        "en": "Beat 40 tier-I Hazes."
+      },
+      "hint": {
+        "ru": "Ищите обычные дымки в боях до зачистки временных петель.",
+        "en": "Fight tier-I Hazes before clearing the timeloops."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["timeloop"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-phol-guy",
+      "title": {
+        "ru": "Второй уровень",
+        "en": "Phol Guy"
+      },
+      "category": "combat",
+      "tier": "silver",
+      "description": {
+        "ru": "Победите 40 дымок второго уровня.",
+        "en": "Beat 40 tier-II Hazes."
+      },
+      "hint": {
+        "ru": "Следите за уровнем дымок; счётчик карты не заменяет счётчик убийств.",
+        "en": "Check each Haze’s tier; map completion does not count kills."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["timeloop"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-the-harder-they-phol",
+      "title": {
+        "ru": "Третий уровень",
+        "en": "The Harder They Phol"
+      },
+      "category": "combat",
+      "tier": "silver",
+      "description": {
+        "ru": "Победите 40 дымок третьего уровня.",
+        "en": "Beat 40 tier-III Hazes."
+      },
+      "hint": {
+        "ru": "Сражайтесь с дымками III уровня в поздних областях.",
+        "en": "Fight tier-III Hazes in later areas."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["timeloop"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-legend-of-the-phol",
+      "title": {
+        "ru": "Легенда о Фоле",
+        "en": "Legend of the Phol"
+      },
+      "category": "side",
+      "tier": "gold",
+      "description": {
+        "ru": "Закройте все 14 петель и уничтожьте оставшихся полых.",
+        "en": "Seal all 14 timeloops and eliminate the remaining Hollows."
+      },
+      "hint": {
+        "ru": "Проверьте «Угрозы: чисто» у каждой области на карте БТР.",
+        "en": "Check every APC map area for “Threats: Clear”."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["timeloop"],
+        "itemIds": ["act-3-cleanup-step-037"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-good-vibrations",
+      "title": {
+        "ru": "Хорошие вибрации",
+        "en": "Good Vibrations"
+      },
+      "category": "equipment",
+      "tier": "bronze",
+      "description": {
+        "ru": "Улучшите по одному оружию каждого из четырёх типов до уровня 5.",
+        "en": "Raise one weapon of each of the four types to grade 5."
+      },
+      "hint": {
+        "ru": "Посетите Виктора с книгами кузнечного дела и запасом осколков.",
+        "en": "Bring forging books and a stock of shards to Victor."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Сохраните осколки для улучшений до закрытия всех петель.",
+        "en": "Reserve upgrade shards before sealing every timeloop."
+      },
+      "route": {
+        "itemIds": ["act-1-step-061", "act-2-part-1-step-005"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-accessorizing",
+      "title": {
+        "ru": "Последний штрих",
+        "en": "Accessorizing"
+      },
+      "category": "equipment",
+      "tier": "bronze",
+      "description": {
+        "ru": "Улучшите один защитный предмет до уровня 4.",
+        "en": "Raise one defensive item to grade 4."
+      },
+      "hint": {
+        "ru": "Передайте Виктору книгу продвинутой ковки.",
+        "en": "Give Victor the Advanced Lymbic Forging book."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Не расходуйте весь запас осколков до улучшения снаряжения.",
+        "en": "Keep enough shards to complete your gear upgrades."
+      },
+      "route": {
+        "itemIds": ["act-1-step-061", "act-2-part-1-step-104"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-to-the-teeth",
+      "title": {
+        "ru": "Вооружён до зубов",
+        "en": "To the Teeth"
+      },
+      "category": "equipment",
+      "tier": "silver",
+      "description": {
+        "ru": "Одновременно экипируйте два оружия уровня 5 и два защитных предмета уровня 4.",
+        "en": "Equip two grade-5 weapons and two grade-4 defensive items together."
+      },
+      "hint": {
+        "ru": "После улучшения установите все четыре предмета в снаряжение.",
+        "en": "After upgrading, equip all four items in your loadout."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Оставьте осколки на два оружия и два защитных предмета.",
+        "en": "Reserve shards for two weapons and two defensive items."
+      },
+      "route": {
+        "itemIds": [
+          "act-1-step-061",
+          "act-2-part-1-step-005",
+          "act-2-part-1-step-104"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-war-correspondent",
+      "title": {
+        "ru": "Военный корреспондент",
+        "en": "War Correspondent"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все девять предметов о гражданской войне.",
+        "en": "Research all nine Civil War objects."
+      },
+      "hint": {
+        "ru": "Отнесите находки Тане в БТР; одного подбора недостаточно.",
+        "en": "Take the objects to Tania in the APC; picking them up is only the first step."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-028",
+          "act-1-step-045",
+          "act-2-part-1-step-014",
+          "act-2-part-1-step-018",
+          "act-2-part-3-step-019",
+          "act-3-cleanup-step-027",
+          "act-2-part-2-step-054",
+          "act-2-part-2-step-030",
+          "act-2-part-2-step-062",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-historian",
+      "title": {
+        "ru": "Историк",
+        "en": "Historian"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все семь предметов о древней Хадее.",
+        "en": "Research all seven Ancient Hadea objects."
+      },
+      "hint": {
+        "ru": "Проверяйте тему находок и передавайте их Тане.",
+        "en": "Check the objects’ topic and give them to Tania."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-031",
+          "act-1-step-046",
+          "act-1-step-006",
+          "act-2-part-2-step-013",
+          "act-2-part-2-step-042",
+          "act-2-part-2-step-089",
+          "act-3-cleanup-step-022",
+          "act-3-cleanup-step-023",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-conspiracy-theorist",
+      "title": {
+        "ru": "Теоретик заговора",
+        "en": "Conspiracy Theorist"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все восемь предметов о заговоре.",
+        "en": "Research all eight Conspiracy objects."
+      },
+      "hint": {
+        "ru": "Завершите исследования соответствующей темы у Тани.",
+        "en": "Finish this topic’s research with Tania."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-011",
+          "act-1-step-119",
+          "act-2-part-1-step-058",
+          "act-2-part-1-step-083",
+          "act-2-part-2-step-021",
+          "act-2-part-2-step-031",
+          "act-2-part-3-step-005",
+          "act-2-part-3-step-044",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-gentleman-scholar",
+      "title": {
+        "ru": "Учёный джентльмен",
+        "en": "Gentleman Scholar"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все восемь предметов об Ордене Ока.",
+        "en": "Research all eight Order of the Eye objects."
+      },
+      "hint": {
+        "ru": "Сдайте Тане предметы об Ордене Ока.",
+        "en": "Bring Order of the Eye objects to Tania."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-071",
+          "act-1-step-133",
+          "act-2-part-1-step-047",
+          "act-1-step-004",
+          "act-2-part-1-step-099",
+          "act-2-part-1-step-069",
+          "act-2-part-3-step-088",
+          "act-2-part-2-step-029",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-demonologist",
+      "title": {
+        "ru": "Демонолог",
+        "en": "Demonologist"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все восемь предметов о лимбических вторжениях.",
+        "en": "Research all eight Lymbic Invasion objects."
+      },
+      "hint": {
+        "ru": "Проверьте исследования этой темы в БТР.",
+        "en": "Check this research topic in the APC."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-2-part-1-step-061",
+          "act-2-part-1-step-107",
+          "act-2-part-1-step-093",
+          "act-2-part-1-step-089",
+          "act-2-part-2-step-092",
+          "act-2-part-2-step-101",
+          "act-2-part-2-step-114",
+          "act-2-part-3-step-074",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-sworn-to-secrecy",
+      "title": {
+        "ru": "Обет молчания",
+        "en": "Sworn to Secrecy"
+      },
+      "category": "research",
+      "tier": "bronze",
+      "description": {
+        "ru": "Исследуйте все пять предметов о Дозоре.",
+        "en": "Research all five Vigil objects."
+      },
+      "hint": {
+        "ru": "Передайте Тане все находки о Дозоре.",
+        "en": "Bring all Vigil objects to Tania."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": [
+          "act-1-step-108",
+          "act-1-step-077",
+          "act-1-step-073",
+          "act-2-part-1-step-019",
+          "act-2-part-3-step-090",
+          "act-3-cleanup-step-032"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-all-research-item-locations/"
+    },
+    {
+      "id": "achievement-well-read",
+      "title": {
+        "ru": "Начитанный",
+        "en": "Well-Read"
+      },
+      "category": "research",
+      "tier": "gold",
+      "description": {
+        "ru": "Завершите исследования всех 45 предметов.",
+        "en": "Finish research on all 45 objects."
+      },
+      "hint": {
+        "ru": "Получите результаты всех шести тем у Тани.",
+        "en": "Complete all six research topics with Tania."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["research"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-vault-raider",
+      "title": {
+        "ru": "Расхититель хранилищ",
+        "en": "Vault Raider"
+      },
+      "category": "collection",
+      "tier": "silver",
+      "description": {
+        "ru": "Откройте любое хранилище запретных знаний.",
+        "en": "Open a Vault of Forbidden Knowledge."
+      },
+      "hint": {
+        "ru": "Исследования Тани дают подсказки к дверям; в маршруте есть решения.",
+        "en": "Tania’s research gives door clues; the route includes solutions."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["vault"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-tech-savvy",
+      "title": {
+        "ru": "Знаток техники",
+        "en": "Tech-Savvy"
+      },
+      "category": "collection",
+      "tier": "bronze",
+      "description": {
+        "ru": "Соберите все восемь типов модулей дрона.",
+        "en": "Collect all eight drone module types."
+      },
+      "hint": {
+        "ru": "Для каждого типа достаточно одной версии модуля.",
+        "en": "One version of each module type is enough."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["drone"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-emotional-damage",
+      "title": {
+        "ru": "Эмоциональный урон",
+        "en": "Emotional Damage"
+      },
+      "category": "collection",
+      "tier": "bronze",
+      "description": {
+        "ru": "Получите по одному глифу каждой из пяти сфер.",
+        "en": "Find a glyph from each of the five spheres."
+      },
+      "hint": {
+        "ru": "Проверьте Ярость, Скорбь, Ужас, Экстаз и нейтральную сферу.",
+        "en": "Check Rage, Grief, Terror, Ecstasy and Neutral."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["glyph"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-emotional-warfare",
+      "title": {
+        "ru": "Эмоциональная война",
+        "en": "Emotional Warfare"
+      },
+      "category": "collection",
+      "tier": "silver",
+      "description": {
+        "ru": "Соберите все 25 типов глифов.",
+        "en": "Collect all 25 glyph types."
+      },
+      "hint": {
+        "ru": "Любая версия типа подходит; все 75 вариантов собирать не требуется.",
+        "en": "Any version counts for a type; all 75 variants are unnecessary."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["glyph"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-curator",
+      "title": {
+        "ru": "Куратор",
+        "en": "Curator"
+      },
+      "category": "collection",
+      "tier": "bronze",
+      "description": {
+        "ru": "Соберите десять реликвий.",
+        "en": "Collect ten relics."
+      },
+      "hint": {
+        "ru": "Проверяйте награды за благие дела и петли.",
+        "en": "Check rewards from good deeds and timeloops."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["relic"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-antiquarian",
+      "title": {
+        "ru": "Антиквар",
+        "en": "Antiquarian"
+      },
+      "category": "collection",
+      "tier": "gold",
+      "description": {
+        "ru": "Соберите все 29 реликвий.",
+        "en": "Collect all 29 relics."
+      },
+      "hint": {
+        "ru": "Получайте награды у Гилдаса и проверяйте хранилища.",
+        "en": "Claim Gildas’s rewards and check the vaults."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Некоторые реликвии выдаются за пропускаемые благие дела.",
+        "en": "Some relics come from missable good deeds."
+      },
+      "route": {
+        "categories": ["relic"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-well-travelled",
+      "title": {
+        "ru": "Бывалый путешественник",
+        "en": "Well-Travelled"
+      },
+      "category": "story",
+      "tier": "bronze",
+      "description": {
+        "ru": "Посетите все игровые локации.",
+        "en": "Visit every game location."
+      },
+      "hint": {
+        "ru": "Последняя сюжетная область — Око Бога.",
+        "en": "The final story area is the Eye of God."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-002", "act-3-cleanup-step-003"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-lend-an-ear",
+      "title": {
+        "ru": "Умение слушать",
+        "en": "Lend an Ear"
+      },
+      "category": "side",
+      "tier": "bronze",
+      "description": {
+        "ru": "Поговорите со всеми 21 NPC с меню диалога.",
+        "en": "Talk to all 21 NPCs with a dialogue menu."
+      },
+      "hint": {
+        "ru": "Обходите собеседников по маршруту до переходов сюжета.",
+        "en": "Follow the route’s conversations before story transitions."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "После сюжетных событий некоторые собеседники исчезают.",
+        "en": "Some dialogue NPCs disappear after story events."
+      },
+      "route": {
+        "categories": ["npc"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-keymaster",
+      "title": {
+        "ru": "Мастер ключей",
+        "en": "Keymaster"
+      },
+      "category": "side",
+      "tier": "bronze",
+      "description": {
+        "ru": "Решите 25 задач, требующих подходящего предмета.",
+        "en": "Solve 25 puzzles using the required objects."
+      },
+      "hint": {
+        "ru": "Подходят двери с ключами и лимбические замки.",
+        "en": "Keyed doors and Lymbic locks are examples."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["mystery", "key"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-long-and-not-so-winding-road",
+      "title": {
+        "ru": "Долгая дорога",
+        "en": "Long and (not so) Winding Road"
+      },
+      "category": "story",
+      "tier": "bronze",
+      "description": {
+        "ru": "Пройдите туннель от кузни к Оку Бога.",
+        "en": "Cross the tunnel from the forge to the Eye of God."
+      },
+      "hint": {
+        "ru": "Продолжите путь после установки четырёх камней.",
+        "en": "Continue after placing all four Keystones."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-3-cleanup-step-002", "act-3-cleanup-step-003"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-its-mine-now",
+      "title": {
+        "ru": "Теперь моё",
+        "en": "It's Mine Now"
+      },
+      "category": "story",
+      "tier": "silver",
+      "description": {
+        "ru": "Получите собственный транспорт.",
+        "en": "Obtain your transport."
+      },
+      "hint": {
+        "ru": "Найдите ключ БТР и вернитесь к машине в лесу Сенедра.",
+        "en": "Find the APC key and return to the vehicle in Senedra Forest."
+      },
+      "missable": false,
+      "route": {
+        "itemIds": ["act-1-step-020", "act-1-step-026"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-ever-after",
+      "title": {
+        "ru": "Долго и счастливо",
+        "en": "Ever After"
+      },
+      "category": "side",
+      "tier": "silver",
+      "description": {
+        "ru": "Соберите всех возможных жителей у озера Сайнон.",
+        "en": "Gather all eligible residents at Lake Cynon."
+      },
+      "hint": {
+        "ru": "Помогите Хали, спасите пса и завершите события аббатства.",
+        "en": "Help Halie, rescue the dog and complete the abbey events."
+      },
+      "missable": true,
+      "warning": {
+        "ru": "Помогите Хали в акте I, а псу — до событий аббатства Патем.",
+        "en": "Help Halie in Act I and rescue the dog before the Pathem Abbey events."
+      },
+      "route": {
+        "itemIds": [
+          "act-1-step-066",
+          "act-2-part-1-step-006",
+          "act-2-part-1-step-007",
+          "act-2-part-2-step-004",
+          "act-2-part-3-step-081"
+        ]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-passion-for-fashion",
+      "title": {
+        "ru": "Страсть к моде",
+        "en": "Passion for Fashion"
+      },
+      "category": "collection",
+      "tier": "silver",
+      "description": {
+        "ru": "Соберите и наденьте все десять кепок.",
+        "en": "Find and wear all ten caps."
+      },
+      "hint": {
+        "ru": "Учитывайте стартовую кепку; включите отображение головного убора.",
+        "en": "Include the starting cap and keep the hat cosmetic visible."
+      },
+      "missable": false,
+      "route": {
+        "categories": ["cap"]
+      },
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    {
+      "id": "achievement-hero-of-hadea",
+      "title": {
+        "ru": "Герой Хадеи",
+        "en": "Hero of Hadea"
+      },
+      "category": "collection",
+      "tier": "platinum",
+      "description": {
+        "ru": "Получите все остальные трофеи PlayStation.",
+        "en": "Earn every other PlayStation trophy."
+      },
+      "hint": {
+        "ru": "Платина доступна только на PS5. Отметьте её после появления в игре.",
+        "en": "Platinum is PS5-only. Mark it after the game awards it."
+      },
+      "missable": false,
+      "platform": "ps5",
+      "route": {},
+      "source": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    }
+  ]
+}

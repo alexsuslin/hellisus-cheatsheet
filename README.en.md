@@ -15,6 +15,8 @@ An interactive **Hell is Us** field guide, inspired by the [Dark Souls 3 Cheat S
 - Warnings for permanently missable actions.
 - Search across both languages, act/category filters and hide completed.
 - Overall and location progress, saved in your browser.
+- An **Achievements** view with all 40 achievements and the PS5 platinum, search, filters and missable warnings.
+- Links between achievements and route steps in both directions, with independent completion totals.
 - JSON progress export/import and confirmed reset.
 - Responsive layout, keyboard navigation and reduced-motion support.
 - Static hosting with no backend, account, analytics or external fonts.
@@ -78,16 +80,21 @@ Use **Export progress** before clearing browser data. To move progress, open the
 
 **The counter tracks route steps, not unique collectibles.** A good deed or mystery can require multiple actions in different locations. One action can grant several rewards and appear under several category filters. Check it off only after completing the described action.
 
+In **Achievements**, select Steam / Xbox / Epic (40) or PS5 (41 including platinum). Check **Unlocked in game** after the actual unlock; the site does not synchronize with gaming accounts. **Related route steps** expands the linked actions and their progress. Selecting an action opens its location and clears obstructing filters. The **Achievements** button on a route step shows its linked trophies. Related-step totals do not count unique collectibles or kills. Both trackers share the same backup, and older route-only backups remain compatible.
+
 ## Data and translation
 
 [`data/guide.json`](./data/guide.json) owns the route. Sections and steps have permanent IDs, `ru`/`en` translations, categories and detailed source links. Edit wording without changing the `id` to preserve saved progress. A new action needs a new ID; never reuse an old ID for a different action.
 
 [`assets/i18n.js`](./assets/i18n.js) contains interface translations. Some item names remain in English to help match the original guide; Russian wording is not presented as the game's official localisation.
 
+[`data/achievements.json`](./data/achievements.json) owns achievement requirements, hints, warnings, trophy tiers and route links. Links use explicit `route.itemIds` or `route.categories`. The six research topics link to their matching objects and the Tania handover step. Achievement IDs begin with `achievement-` and must remain stable when editing wording. Russian achievement titles are convenience translations; original names are also displayed.
+
 ## Sources and credits
 
 - [PowerPyx: Collectible Walkthrough](https://www.powerpyx.com/hell-is-us-collectible-walkthrough/) — game facts and chronological route: Act 1, all three Act 2 parts, Act 3 and cleanup.
 - [PowerPyx: Missables Guide](https://www.powerpyx.com/hell-is-us-missables-guide/) — time-sensitive actions and their order.
+- [Steam achievements](https://steamcommunity.com/stats/1620730/achievements/), [Epic Games achievements](https://store.epicgames.com/achievements/hell-is-us-b9c06d?lang=en-US) and [PowerPyx: Trophy Guide](https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/) — the complete list, requirements and missable warnings.
 - [GameShelter's Russian walkthrough](https://gameshelter.space/blog/hell-is-us-letopis-prokhozhdeniya-blagie-dela-kepki-i-razgovory-s-nps) — Russian location names and terminology.
 - [Dark Souls 3 Cheat Sheet](https://zkjellberg.github.io/dark-souls-3-cheat-sheet/) — inspiration for the interactive checklist format.
 
