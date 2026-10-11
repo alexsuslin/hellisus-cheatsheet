@@ -74,6 +74,8 @@ gh workflow run pages.yml
 
 ## Progress
 
+Each published build automatically versions CSS, JavaScript and JSON URLs. A normal page reload loads the new release on mobile without clearing browser data. The storage key and route/achievement IDs remain unchanged, preserving saved progress.
+
 Checkboxes, language and theme live in the browser's `localStorage` at the current site address. Nothing is sent to a server or automatically synced between devices. Switching language or theme preserves all checkboxes.
 
 Use **Export progress** before clearing browser data. To move progress, open the site on another device and choose **Import progress**. Import replaces checked steps after confirmation; corrupt or unrelated backups are rejected. If the browser blocks persistence, a warning appears and the checklist keeps working within the current tab.

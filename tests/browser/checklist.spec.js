@@ -154,7 +154,7 @@ test("two tabs merge completion and preserve unsaved edits through storage recov
 test("language and theme still work when the guide cannot be loaded", async ({
   page,
 }) => {
-  await page.route("**/data/guide.json", (route) => route.abort());
+  await page.route(/\/data\/guide\.json(?:\?.*)?$/, (route) => route.abort());
   await page.goto("./");
   await expect(page.locator("#load-error")).toBeVisible();
   await page.getByRole("button", { name: "RU", exact: true }).click();
