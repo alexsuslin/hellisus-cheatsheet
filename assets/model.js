@@ -51,6 +51,10 @@ export function parseBackup(text, knownIds) {
 
   return {
     completed: [...new Set(backup.completed)].filter((id) => knownIds.has(id)),
+    ...(typeof backup.currentItemId === "string" &&
+    knownIds.has(backup.currentItemId)
+      ? { currentItemId: backup.currentItemId }
+      : {}),
     ...(backup.language ? { language: backup.language } : {}),
     ...(backup.theme ? { theme: backup.theme } : {}),
   };

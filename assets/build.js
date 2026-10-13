@@ -6,6 +6,19 @@ export function getBuildIds(stages) {
   ]);
 }
 
+export function getAcquisitionEdits(stages, completed, changedId) {
+  // A full route pickup can confirm the build's subset of rewards, never vice versa.
+  // Unchecking a route step does not imply losing an item already obtained.
+  return stages
+    .filter(
+      (stage) =>
+        stage.obtainRouteIds?.includes(changedId) &&
+        stage.obtainRouteIds.every((id) => completed.has(id)) &&
+        !completed.has(`${stage.id}-obtained`),
+    )
+    .map((stage) => ({ id: `${stage.id}-obtained`, checked: true }));
+}
+
 export function getBuildStatus(stage, completed) {
   if (stage.optional && completed.has(`${stage.id}-skipped`)) return "skipped";
   const obtained = completed.has(`${stage.id}-obtained`);

@@ -1809,4 +1809,73 @@ dialog #confirm-description {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .view-switch [data-view="current"] {
+    grid-column: 1 / -1;
+  }
+}
+
+.current-selectors {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+#current {
+  scroll-margin-top: 100px;
+}
+.current-selectors label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  min-width: 0;
+}
+.current-selectors select {
+  width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+.current-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-size: 0.8rem;
+}
+.current-navigation button {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+}
+.current-navigation button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+#current-resume {
+  margin-left: auto;
+}
+.current-card .eyebrow {
+  display: block;
+  margin-bottom: 10px;
+}
+.current-card .item-source {
+  display: inline-block;
+  font-size: 0.78rem;
+  margin-top: 10px;
+}
+#current-route .current-card {
+  border-left: 3px solid var(--accent);
+}
+@media (max-width: 600px) {
+  #current-resume {
+    margin-left: 0;
+    width: 100%;
+  }
+  #current-position {
+    flex: 1;
+    text-align: center;
+  }
 }

@@ -5,7 +5,7 @@ export const buildTranslations = {
     buildEyebrow: "ТОПОРЫ ГНЕВА + ДРЕВКО ГОРЯ",
     buildProgress: "Прогресс плана билда",
     buildNote:
-      "22 этапа по вашей таблице. «Получено» и «Установлено / улучшено» отмечаются отдельно после проверки в игре; это история обновлений, а не текущие слоты персонажа. Галочки маршрута не ставят их автоматически. † — русский вариант пока не подтверждён.",
+      "22 этапа по вашей таблице. «Получено» и «Установлено / улучшено» — история обновлений, а не текущие слоты персонажа. При отметке проверенных шагов со сбором вещей ставится «Получено»; установку подтверждайте отдельно. † — русский вариант пока не подтверждён.",
     buildNext: "Ближайшие обновления",
     buildFindNext: "Получить / проверить",
     buildInstallNext: "Пора установить / улучшить",
@@ -47,7 +47,7 @@ export const buildTranslations = {
     buildEyebrow: "RAGE AXES + GRIEF POLEARM",
     buildProgress: "Build plan progress",
     buildNote:
-      "22 workbook milestones. Mark acquisition and application separately after checking in game. These record upgrade history, not your character’s current slots; route checks do not fill them automatically. † marks an unverified Russian name.",
+      "22 workbook milestones recording upgrade history, not your character’s current slots. Checking audited collection steps confirms acquisition; confirm equipment changes separately. † marks an unverified Russian name.",
     buildNext: "Next upgrades",
     buildFindNext: "Obtain / check",
     buildInstallNext: "Ready to equip / upgrade",

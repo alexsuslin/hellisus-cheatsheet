@@ -159,7 +159,8 @@
         "en": "Add Rage Spike to the axes. Keep Perfect Guard as an alternative for blocking."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-059"]
     },
     {
       "id": "build-mending",
@@ -178,7 +179,8 @@
         "en": "Equip Lymbic Mending and temporarily Lingering Pain on the grief polearm; use Chromatic Shield on the axes if a slot is free. Aim for Grade 3 axes and a Grade 2 polearm."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-059", "act-1-step-064", "act-1-step-067"]
     },
     {
       "id": "build-copse",
@@ -197,7 +199,8 @@
         "en": "Replace Lingering Pain with Overwhelm. Keep Wave of Wrath as a crowd alternative to Rage Spike."
       },
       "source": "vaults",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-3-cleanup-step-019"]
     },
     {
       "id": "build-knoll",
@@ -216,7 +219,8 @@
         "en": "Replace basic Animosity. Build toward Overwhelm + Void + Lymbic Mending on the polearm as slots become available."
       },
       "source": "vaults",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-2-step-096"]
     },
     {
       "id": "build-mark",
@@ -235,7 +239,8 @@
         "en": "Equip it in the passive relic slot if you use parries."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-093"]
     },
     {
       "id": "build-gildas",
@@ -259,7 +264,13 @@
         "en": "The pendant is temporary gear; Waves of Grief is an optional area attack. Keep healing on the polearm."
       },
       "source": "glyphs",
-      "optional": true
+      "optional": true,
+      "obtainRouteIds": [
+        "act-1-step-096",
+        "act-1-step-097",
+        "act-1-step-098",
+        "act-1-step-099"
+      ]
     },
     {
       "id": "build-fury",
@@ -278,7 +289,8 @@
         "en": "Use Fury instead of Rage Spike against linked enemies; keep Rage Spike for single targets."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-114"]
     },
     {
       "id": "build-forge",
@@ -297,7 +309,8 @@
         "en": "Equip the band in the active relic slot. Do not downgrade Enhanced Void to basic."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-148"]
     },
     {
       "id": "build-act-one",
@@ -335,7 +348,8 @@
         "en": "Submit the book: it unlocks Grade 5 weapons and Grade 3 gear. Equipment is not upgraded automatically."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-1-step-148"]
     },
     {
       "id": "build-brooch",
@@ -358,7 +372,8 @@
         "en": "Equip the brooch for health and stamina recovery on kills."
       },
       "source": "gear",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-1-step-008"]
     },
     {
       "id": "build-marastan",
@@ -381,7 +396,12 @@
         "en": "Upgrade the corresponding glyphs on both weapons. For this build, close this loop for its reward and retain a farming reserve elsewhere."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": [
+        "act-2-part-1-step-050",
+        "act-2-part-1-step-062",
+        "act-2-part-1-step-075"
+      ]
     },
     {
       "id": "build-advanced",
@@ -400,7 +420,8 @@
         "en": "Submit the book to Victor, then upgrade your final gear as materials allow. The book only unlocks the upgrade."
       },
       "source": "glyphs",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-1-step-104"]
     },
     {
       "id": "build-acasa",
@@ -419,7 +440,8 @@
         "en": "Use Berserk on the axes if you lack a better version. You may skip this build step, but close the loop later for 100%."
       },
       "source": "loops",
-      "optional": true
+      "optional": true,
+      "obtainRouteIds": ["act-2-part-2-step-015"]
     },
     {
       "id": "build-temple",
@@ -438,7 +460,8 @@
         "en": "Upgrade the polearm’s healing. Keep Elite if you later collect Enhanced."
       },
       "source": "loops",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-2-step-121"]
     },
     {
       "id": "build-family-feud",
@@ -457,7 +480,8 @@
         "en": "Equip only if you do not own Elite yet; otherwise skip this build step."
       },
       "source": "glyphs",
-      "optional": true
+      "optional": true,
+      "obtainRouteIds": ["act-2-part-3-step-020"]
     },
     {
       "id": "build-jeljin",
@@ -476,7 +500,8 @@
         "en": "Upgrade both glyphs and replace temporary gear with the bracers, which return part of damage dealt as health. Pair them with the rage brooch."
       },
       "source": "gear",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-3-step-022", "act-2-part-3-step-024"]
     },
     {
       "id": "build-museum",
@@ -495,7 +520,8 @@
         "en": "Upgrade the axes from Enhanced to Elite Animosity."
       },
       "source": "loops",
-      "optional": false
+      "optional": false,
+      "obtainRouteIds": ["act-2-part-3-step-068"]
     },
     {
       "id": "build-hilltop",
@@ -514,7 +540,8 @@
         "en": "These are alternatives. Keep Elite Overwhelm and healing in the general-purpose polearm setup."
       },
       "source": "loops",
-      "optional": true
+      "optional": true,
+      "obtainRouteIds": ["act-3-cleanup-step-021"]
     },
     {
       "id": "build-beck",
@@ -533,7 +560,8 @@
         "en": "For single targets, replace Fury with Rage Spike. Waves of Grief is an area-damage alternative to Void, not a mandatory replacement."
       },
       "source": "vaults",
-      "optional": true
+      "optional": true,
+      "obtainRouteIds": ["act-3-cleanup-step-040"]
     },
     {
       "id": "build-final",

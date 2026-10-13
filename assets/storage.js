@@ -31,7 +31,7 @@ export function saveState(storage, state) {
   }
 }
 
-export function saveProgress(storage, state, change) {
+export function saveProgress(storage, state, change, deriveEdits) {
   const latest = loadState(storage).state;
   const savedCompletion = Array.isArray(latest.completed)
     ? latest.completed.filter((id) => typeof id === "string")
@@ -42,15 +42,24 @@ export function saveProgress(storage, state, change) {
     edits,
   );
 
+  // Derive related checks from the same merged snapshot that will be persisted.
+  const derivedEdits = deriveEdits?.(new Set(completed)) ?? [];
   // A checkbox edit merges with the latest save; import/reset intentionally replace it.
-  const updated = { ...state, completed };
+  const updated = {
+    ...state,
+    completed: rebaseCompletion(completed, derivedEdits),
+  };
   const available = saveState(storage, updated);
-  if (available) return { state: updated, available };
+  if (available) return { state: updated, available, derivedEdits };
 
   // Failed writes leave the browser's older save behind. Keep all unsaved edits in memory.
   return {
-    state: { ...state, completed: rebaseCompletion(state.completed, edits) },
+    state: {
+      ...state,
+      completed: rebaseCompletion(state.completed, [...edits, ...derivedEdits]),
+    },
     available: false,
+    derivedEdits,
   };
 }
 

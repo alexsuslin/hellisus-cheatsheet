@@ -1,14 +1,16 @@
 import { buildTranslations } from "./build-i18n.js";
+import { currentTranslations } from "./current-i18n.js";
 
 export const translations = {
   ru: {
     ...buildTranslations.ru,
+    ...currentTranslations.ru,
     skip: "К чек-листу",
     fieldGuide: "ПУТЕВОДИТЕЛЬ",
     edition: "01 / ПОЛЕВЫЕ ЗАМЕТКИ",
     walkthrough: "Прохождение",
     achievements: "Достижения",
-    trackers: "Прохождение, достижения, билд и советы",
+    trackers: "Current, прохождение, достижения, билд и советы",
     achievementEyebrow: "ПУТЬ К 100%",
     achievementProgress: "ПОЛУЧЕНО В ИГРЕ",
     achievementTrackingNote:
@@ -141,12 +143,13 @@ export const translations = {
   },
   en: {
     ...buildTranslations.en,
+    ...currentTranslations.en,
     skip: "Skip to checklist",
     fieldGuide: "FIELD GUIDE",
     edition: "01 / FIELD NOTES",
     walkthrough: "Walkthrough",
     achievements: "Achievements",
-    trackers: "Walkthrough, achievements, build and tips",
+    trackers: "Current, walkthrough, achievements, build and tips",
     achievementEyebrow: "THE ROAD TO 100%",
     achievementProgress: "UNLOCKED IN GAME",
     achievementTrackingNote:

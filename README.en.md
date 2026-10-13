@@ -86,7 +86,9 @@ In **Achievements**, select Steam / Xbox / Epic (40) or PS5 (41 including platin
 
 ## Data and translation
 
-The **My build** tab tracks 22 workbook milestones for rage axes and a grief polearm. Acquisition and application are separate, manual checks; they record upgrade history, not current equipment slots. Pending application takes priority in the next-upgrade list. Optional build steps may be skipped without completing their route actions.
+The **My build** tab tracks 22 workbook milestones for rage axes and a grief polearm. Acquisition and application record upgrade history, not current equipment slots. Audited `obtainRouteIds` pickup sets confirm acquisition when checked; equipment changes stay manual. Acquisition never completes a route step with extra pickups, and undoing a route step keeps acquired items. Pending application takes priority in the next-upgrade list. Optional build steps may be skipped without completing their route actions.
+
+**Current** brings a selected route step, its build upgrades, Tips and achievements onto one screen. Select a location and step, use Previous / Next, or return to the first incomplete step. Checking an action keeps the current step in place. All views edit the same completion IDs; loop closure is the route checkbox. Acquired upgrades awaiting application remain visible after moving on. General reminders are under an expandable section. The selected step is saved and included as the optional `currentItemId` field in backups; old backups still work. Automatic acquisition runs when a pickup step is checked, without changing historical saves during loading or import.
 
 **Tips** covers all 14 timeloops, farming reserves, useful rewards and story deadlines. Loop checkboxes share the existing route-step IDs and do not imply that all enemies are dead. Advice accounts for tier III farming and the detector upgrade in game version 1.7.
 

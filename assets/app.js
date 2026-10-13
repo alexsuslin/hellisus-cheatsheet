@@ -1,7 +1,8 @@
 import { createAchievementTracker } from "./achievement-view.js";
 import { getRelatedItems } from "./achievements.js";
-import { getBuildIds } from "./build.js";
+import { getAcquisitionEdits, getBuildIds } from "./build.js";
 import { createBuildTracker } from "./build-view.js";
+import { createCurrentTracker } from "./current-view.js";
 import { translate, translations } from "./i18n.js";
 import { filterItems, getProgress, parseBackup } from "./model.js";
 import {
@@ -24,6 +25,7 @@ const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
   ? "dark"
   : "light";
 const state = {
+  currentItemId: saved.state.currentItemId,
   language: ["ru", "en"].includes(saved.state.language)
     ? saved.state.language
     : navigator.language.toLowerCase().startsWith("ru")
@@ -50,6 +52,8 @@ const state = {
 let guide;
 let achievementTracker;
 let buildTracker;
+let currentTracker;
+let buildStages = [];
 const achievementsByItem = new Map();
 let activeView = "walkthrough";
 const allItems = [];
@@ -160,16 +164,23 @@ function persist(change) {
       theme: state.theme,
       completed: [...state.completed],
       hideCompleted: state.filters.hideCompleted,
+      currentItemId: state.currentItemId,
     },
     {
       replace: pendingReplacement,
       edits: [...pendingEdits].map(([id, checked]) => ({ id, checked })),
     },
+    change?.id && change.checked
+      ? (completed) => getAcquisitionEdits(buildStages, completed, change.id)
+      : undefined,
   );
   state.storageAvailable = result.available;
   if (result.available) {
     pendingEdits.clear();
     pendingReplacement = false;
+  } else {
+    for (const edit of result.derivedEdits)
+      pendingEdits.set(edit.id, edit.checked);
   }
   state.completed = new Set(
     result.state.completed.filter((id) => !guide || knownIds.has(id)),
@@ -206,6 +217,15 @@ function updateCounters() {
   }
   achievementTracker?.render();
   buildTracker?.render();
+  currentTracker?.render();
+}
+
+function toggleSharedProgress(id, checked) {
+  if (checked) state.completed.add(id);
+  else state.completed.delete(id);
+  persist({ id, checked });
+  if (state.filters.hideCompleted && allItems.some((item) => item.id === id))
+    renderChecklist();
 }
 
 function renderItem(item) {
@@ -276,6 +296,7 @@ function selectView(view) {
   byId("achievements").hidden = view !== "achievements";
   byId("build").hidden = view !== "build";
   byId("tips").hidden = view !== "tips";
+  byId("current").hidden = view !== "current";
   for (const button of document.querySelectorAll("[data-view]"))
     button.setAttribute("aria-pressed", String(button.dataset.view === view));
 }
@@ -433,6 +454,7 @@ function exportProgress() {
     language: state.language,
     theme: state.theme,
     completed: [...state.completed],
+    currentItemId: state.currentItemId,
   };
   const url = URL.createObjectURL(
     new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }),
@@ -465,6 +487,7 @@ async function importProgress(event) {
   );
   if (!confirmed) return;
   state.completed = new Set(backup.completed);
+  state.currentItemId = backup.currentItemId;
   if (backup.language) state.language = backup.language;
   if (backup.theme) state.theme = backup.theme;
   persist({ replace: true });
@@ -603,6 +626,7 @@ function bindEvents() {
     )
       return;
     state.completed.clear();
+    state.currentItemId = undefined;
     persist({ replace: true });
     renderChecklist();
     toast(t("resetDone"));
@@ -631,6 +655,7 @@ window.addEventListener("storage", (event) => {
   if (["dark", "light"].includes(latest.state.theme))
     state.theme = latest.state.theme;
   state.filters.hideCompleted = latest.state.hideCompleted === true;
+  state.currentItemId = latest.state.currentItemId;
   applyPreferences();
   renderChecklist();
 });
@@ -649,6 +674,7 @@ try {
     responses.map((response) => response.json()),
   );
   guide = guideData;
+  buildStages = build.stages;
   for (const section of guide.sections) {
     for (const item of section.items) {
       item.searchTerms = [
@@ -685,11 +711,7 @@ try {
     items: allItems,
     state,
     t,
-    onToggle(id, checked) {
-      if (checked) state.completed.add(id);
-      else state.completed.delete(id);
-      persist({ id, checked });
-    },
+    onToggle: toggleSharedProgress,
     onRoute: navigateToRouteItem,
   });
   buildTracker = createBuildTracker({
@@ -699,15 +721,21 @@ try {
     items: allItems,
     state,
     t,
-    onToggle(id, checked) {
-      if (checked) state.completed.add(id);
-      else state.completed.delete(id);
-      persist({ id, checked });
-      if (
-        state.filters.hideCompleted &&
-        allItems.some((item) => item.id === id)
-      )
-        renderChecklist();
+    onToggle: toggleSharedProgress,
+    onRoute: navigateToRouteItem,
+  });
+  currentTracker = createCurrentTracker({
+    guide,
+    build,
+    tips,
+    terminology,
+    achievements: catalogue.achievements,
+    state,
+    t,
+    onToggle: toggleSharedProgress,
+    onSelect(id) {
+      state.currentItemId = id;
+      persist();
     },
     onRoute: navigateToRouteItem,
   });
@@ -715,7 +743,10 @@ try {
   renderChecklist();
   function followHash() {
     const id = location.hash.slice(1);
-    if (
+    if (id === "current") {
+      selectView("current");
+      byId("current").scrollIntoView();
+    } else if (
       id === "build" ||
       id.startsWith("build-") ||
       id === "tips" ||

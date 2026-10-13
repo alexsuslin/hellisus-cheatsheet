@@ -19,6 +19,7 @@
         <span class="brand-name">HELL IS US<span data-i18n="fieldGuide">ПУТЕВОДИТЕЛЬ</span></span>
       </a>
       <nav class="header-links" aria-label="Navigation">
+        <a href="#current" data-i18n="current">Current</a>
         <a href="#checklist" data-i18n="walkthrough">Прохождение</a>
         <a href="#achievements" data-i18n="achievements">Достижения</a>
         <a href="#build" data-i18n="myBuild">Мой билд</a>
@@ -78,11 +79,33 @@
 
         <div class="tracker-content">
           <div class="view-switch" role="group" aria-label="Прохождение и достижения" id="view-switch">
+            <button type="button" data-view="current" aria-pressed="false" aria-controls="current" data-i18n="current">Current</button>
             <button type="button" data-view="walkthrough" aria-pressed="true" aria-controls="walkthrough-panel" data-i18n="walkthrough">Прохождение</button>
             <button type="button" data-view="achievements" aria-pressed="false" aria-controls="achievements" data-i18n="achievements">Достижения</button>
             <button type="button" data-view="build" aria-pressed="false" aria-controls="build" data-i18n="myBuild">Мой билд</button>
             <button type="button" data-view="tips" aria-pressed="false" aria-controls="tips" data-i18n="tips">Tips</button>
           </div>
+          <section id="current" aria-labelledby="current-title" hidden>
+            <div class="panel-heading"><div><p class="eyebrow" data-i18n="currentEyebrow">ВСЁ ДЛЯ ТЕКУЩЕГО ШАГА</p><h2 id="current-title" data-i18n="current">Current</h2></div></div>
+            <p class="tracker-note" data-i18n="currentNote"></p>
+            <div class="current-selectors">
+              <label><span data-i18n="currentLocation">Где я сейчас</span><select id="current-location"></select></label>
+              <label><span data-i18n="currentStep">Шаг маршрута</span><select id="current-step"></select></label>
+            </div>
+            <div class="current-navigation">
+              <button type="button" id="current-previous" data-i18n="currentPrevious">← Назад</button>
+              <span id="current-position" aria-live="polite"></span>
+              <button type="button" id="current-next" data-i18n="currentNext">Дальше →</button>
+              <button type="button" id="current-resume" data-i18n="currentResume">К первому невыполненному</button>
+            </div>
+            <p id="current-all-done" class="tracker-note" data-i18n="currentAllDone" hidden></p>
+            <div id="current-route"></div>
+            <button type="button" id="current-open-route" class="route-step-link" data-i18n="currentRouteLink">Открыть в маршруте ↗</button>
+            <h3 class="tips-check-heading" data-i18n="currentRelated">Связано с этим шагом</h3>
+            <div id="current-related" class="build-list"></div>
+            <p id="current-empty" class="tracker-note" data-i18n="currentNoRelated" hidden></p>
+            <details class="reference-panel"><summary data-i18n="currentGlobal">Общие напоминания</summary><div id="current-global-list" class="build-list"></div></details>
+          </section>
           <section id="build" class="build-panel" aria-labelledby="build-title" hidden>
             <div class="panel-heading"><div><p class="eyebrow" data-i18n="buildEyebrow">ТОПОРЫ ГНЕВА + ДРЕВКО ГОРЯ</p><h2 id="build-title" data-i18n="myBuild">Мой билд</h2></div><strong id="build-count">0 / 22</strong></div>
             <progress id="build-progress" max="100" value="0"></progress>
