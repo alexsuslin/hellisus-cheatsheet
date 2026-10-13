@@ -18,6 +18,7 @@ An interactive **Hell is Us** field guide, inspired by the [Dark Souls 3 Cheat S
 - An **Achievements** view with all 40 achievements and the PS5 platinum, search, filters and missable warnings.
 - Links between achievements and route steps in both directions, with independent completion totals.
 - JSON progress export/import and confirmed reset.
+- Transfer progress using a QR code or link, without a server or account.
 - Responsive layout, keyboard navigation and reduced-motion support.
 - Static hosting with no backend, account, analytics or external fonts.
 
@@ -79,6 +80,12 @@ Each published build automatically versions CSS, JavaScript and JSON URLs. A nor
 Checkboxes, language and theme live in the browser's `localStorage` at the current site address. Nothing is sent to a server or automatically synced between devices. Switching language or theme preserves all checkboxes.
 
 Use **Export progress** before clearing browser data. To move progress, open the site on another device and choose **Import progress**. Import replaces checked steps after confirmation; corrupt or unrelated backups are rejected. If the browser blocks persistence, a warning appears and the checklist keeps working within the current tab.
+
+For a quicker switch between desktop and mobile, choose **Transfer to another device**. Scan the QR code or copy the link; supported devices also offer **Share**. On the receiving device, review the saved check count and current step, then select **Apply progress**. This replaces route, achievement, build and tip checks and restores the selected step, language and theme. Checks are replaced, not merged. If a current step was selected, **Current** opens after import.
+
+Each link is a snapshot: generate a new one after making changes. Progress is encoded after `#`, which is not sent to GitHub when loading the page; QR generation runs locally. Anyone with the link can open the save. The transfer is removed from the address bar after processing so reloading cannot reapply it. Damaged links leave progress untouched. If clipboard access fails, select and copy the link manually. JSON export remains available for backup files.
+
+For maintainers: positions in [`assets/transfer-catalog.js`](./assets/transfer-catalog.js) are the permanent version-1 link contract. **Append new IDs only**; never delete or reorder existing entries. Tests cover all progress IDs and lock the original positions. Retired IDs are filtered on import; unknown new positions require a site update. The QR generator ships locally under the [MIT license](./assets/vendor/LICENSE).
 
 **The counter tracks route steps, not unique collectibles.** A good deed or mystery can require multiple actions in different locations. One action can grant several rewards and appear under several category filters. Check it off only after completing the described action.
 

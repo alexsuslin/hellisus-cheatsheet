@@ -1,10 +1,12 @@
 import { buildTranslations } from "./build-i18n.js";
 import { currentTranslations } from "./current-i18n.js";
+import { transferTranslations } from "./transfer-i18n.js";
 
 export const translations = {
   ru: {
     ...buildTranslations.ru,
     ...currentTranslations.ru,
+    ...transferTranslations.ru,
     skip: "К чек-листу",
     fieldGuide: "ПУТЕВОДИТЕЛЬ",
     edition: "01 / ПОЛЕВЫЕ ЗАМЕТКИ",
@@ -110,7 +112,7 @@ export const translations = {
       "Неофициальный помощник по прохождению. Галочки отмечают шаги маршрута: одна загадка или благое дело могут встречаться несколько раз по мере выполнения.",
     faqSaveQuestion: "Где хранится мой прогресс?",
     faqSaveAnswer:
-      "В localStorage этого браузера на этом адресе сайта. Между устройствами он автоматически не переносится. Экспортируйте JSON и импортируйте его на другом устройстве; очистка браузера удалит сохранение.",
+      "В localStorage этого браузера. Для переноса нажмите «Перенести на устройство» и откройте ссылку или QR-код на другом устройстве. Это разовый снимок, не автосинхронизация. Перед очисткой браузера сохраните JSON-копию.",
     faqRouteQuestion: "Можно ли вернуться после финала?",
     faqRouteAnswer:
       "Да, игра возвращает вас к моменту перед финалом. Можно собрать оставшиеся предметы, но пропущенные разговоры и благие дела уже не восстановить. Соблюдайте предупреждения в маршруте.",
@@ -144,6 +146,7 @@ export const translations = {
   en: {
     ...buildTranslations.en,
     ...currentTranslations.en,
+    ...transferTranslations.en,
     skip: "Skip to checklist",
     fieldGuide: "FIELD GUIDE",
     edition: "01 / FIELD NOTES",
@@ -250,7 +253,7 @@ export const translations = {
       "An unofficial walkthrough companion. Checkboxes track route steps: a mystery or good deed may appear more than once as you work towards completing it.",
     faqSaveQuestion: "Where is my progress saved?",
     faqSaveAnswer:
-      "In this browser’s localStorage at this site address. It does not automatically sync between devices. Export a JSON backup and import it on another device; clearing browser data removes your save.",
+      "In this browser’s localStorage. Use Transfer to another device to open a progress link or QR code elsewhere. Each transfer is a snapshot, not automatic synchronization. Export a JSON backup before clearing browser data.",
     faqRouteQuestion: "Can I return after the ending?",
     faqRouteAnswer:
       "Yes. The game returns you to just before the ending, so you can collect remaining items. Missed conversations and good deeds cannot be recovered. Follow the route’s warnings.",

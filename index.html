@@ -69,6 +69,7 @@
           <nav id="location-nav" aria-label="Локации"></nav>
           <div class="sidebar-tools">
             <p class="eyebrow" data-i18n="saveManagement">ВАШЕ СОХРАНЕНИЕ</p>
+            <button type="button" id="transfer-progress" class="utility-button"><span aria-hidden="true">⇄</span><span data-i18n="transfer">Перенести на устройство</span></button>
             <button type="button" id="export-progress" class="utility-button"><span aria-hidden="true">↓</span><span data-i18n="export">Экспорт прогресса</span></button>
             <button type="button" id="import-progress" class="utility-button"><span aria-hidden="true">↑</span><span data-i18n="import">Импорт прогресса</span></button>
             <input type="file" id="import-file" accept="application/json,.json" hidden />
@@ -171,7 +172,7 @@
       <section id="about" class="about-section" aria-labelledby="about-title">
         <div><p class="eyebrow" data-i18n="guideNotes">ПОЛЕВЫЕ ЗАМЕТКИ</p><h2 id="about-title" data-i18n="aboutTitle">Прежде чем отправиться в путь</h2><p data-i18n="aboutIntro">Неофициальный помощник по прохождению. Галочки отмечают шаги маршрута: одна загадка или благое дело могут встречаться несколько раз по мере выполнения.</p></div>
         <div class="faq">
-          <details><summary data-i18n="faqSaveQuestion">Где хранится мой прогресс?</summary><p data-i18n="faqSaveAnswer">В localStorage этого браузера на этом адресе сайта. Между устройствами он автоматически не переносится. Экспортируйте JSON и импортируйте его на другом устройстве; очистка браузера удалит сохранение.</p></details>
+          <details><summary data-i18n="faqSaveQuestion">Где хранится мой прогресс?</summary><p data-i18n="faqSaveAnswer">В localStorage этого браузера. Для переноса нажмите «Перенести на устройство» и откройте ссылку или QR-код на другом устройстве. Это разовый снимок, не автосинхронизация. Перед очисткой браузера сохраните JSON-копию.</p></details>
           <details><summary data-i18n="faqRouteQuestion">Можно ли вернуться после финала?</summary><p data-i18n="faqRouteAnswer">Да, игра возвращает вас к моменту перед финалом. Можно собрать оставшиеся предметы, но пропущенные разговоры и благие дела уже не восстановить. Соблюдайте предупреждения в маршруте.</p></details>
           <details><summary data-i18n="faqNamesQuestion">Почему у предметов встречаются английские названия?</summary><p data-i18n="faqNamesAnswer">Они помогают сопоставить предмет с PowerPyx и англоязычной версией игры. Русские инструкции и названия локаций переведены; названия предметов не выдаются за официальный перевод игры.</p></details>
           <details><summary data-i18n="faqSourcesQuestion">На чём основан маршрут?</summary><p data-i18n="faqSourcesAnswer">Порядок действий и игровые факты сверены с PowerPyx; русская терминология — с GameShelter. Здесь приведены краткие инструкции своими словами. У каждого шага есть ссылка на подробный источник с иллюстрациями.</p><div class="source-links"><a href="https://www.powerpyx.com/hell-is-us-collectible-walkthrough/" target="_blank" rel="noopener noreferrer">PowerPyx ↗</a><a href="https://gameshelter.space/blog/hell-is-us-letopis-prokhozhdeniya-blagie-dela-kepki-i-razgovory-s-nps" target="_blank" rel="noopener noreferrer">GameShelter ↗</a><a href="https://zkjellberg.github.io/dark-souls-3-cheat-sheet/" target="_blank" rel="noopener noreferrer">Dark Souls 3 Cheat Sheet ↗</a></div></details>
@@ -180,6 +181,22 @@
     </main>
     <footer class="site-footer"><span>HELL IS US <span class="footer-separator">/</span> <span data-i18n="footerGuide">НЕОФИЦИАЛЬНЫЙ ЧЕК-ЛИСТ</span></span><span data-i18n="footerCredit">Игра: Rogue Factor / Nacon · Источники: PowerPyx, GameShelter</span><a href="#top" data-i18n="backTop">Наверх ↑</a></footer>
     <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <dialog id="transfer-dialog" aria-labelledby="transfer-title" aria-describedby="transfer-help">
+      <form method="dialog">
+        <h2 id="transfer-title" data-i18n="transferTitle">Перенос прогресса</h2>
+        <p id="transfer-help" data-i18n="transferHelp">На другом устройстве отсканируйте QR-код или откройте ссылку. Затем подтвердите замену прогресса.</p>
+        <div id="transfer-qr"></div>
+        <label for="transfer-link" data-i18n="transferLink">Ссылка с прогрессом</label>
+        <input type="text" id="transfer-link" readonly spellcheck="false" />
+        <p class="transfer-note" data-i18n="transferSnapshot">Это снимок текущего прогресса. При следующем переносе создайте новую ссылку. Любой, у кого есть ссылка, сможет открыть сохранение.</p>
+        <p id="transfer-status" role="status" aria-live="polite"></p>
+        <div class="dialog-actions">
+          <button type="button" id="transfer-copy" class="button" data-i18n="transferCopy" autofocus>Копировать ссылку</button>
+          <button type="button" id="transfer-share" class="button secondary" data-i18n="transferShare" hidden>Поделиться</button>
+          <button type="submit" class="button secondary" data-i18n="transferClose">Закрыть</button>
+        </div>
+      </form>
+    </dialog>
     <dialog id="confirm-dialog"><form method="dialog"><p class="eyebrow" data-i18n="yourSave">ВАШЕ СОХРАНЕНИЕ</p><h2 id="confirm-title"></h2><p id="confirm-description"></p><div class="dialog-actions"><button type="submit" value="cancel" class="button secondary" data-i18n="cancel">Отмена</button><button type="submit" value="confirm" id="confirm-action" class="button"></button></div></form></dialog>
     <noscript><p class="noscript">Для интерактивного чек-листа включите JavaScript. / Enable JavaScript to use the interactive checklist. <a href="https://www.powerpyx.com/hell-is-us-collectible-walkthrough/">PowerPyx walkthrough</a></p></noscript>
   </body>

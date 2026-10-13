@@ -18,6 +18,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.3.8",
     "@playwright/test": "1.64.0",
-    "cheerio": "1.1.2"
+    "cheerio": "1.1.2",
+    "jsqr": "1.4.0"
   }
 }

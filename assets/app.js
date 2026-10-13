@@ -11,6 +11,7 @@ import {
   STORAGE_KEY,
   saveProgress,
 } from "./storage.js";
+import { createTransferControls } from "./transfer-view.js";
 
 const byId = (id) => document.getElementById(id);
 let browserStorage;
@@ -480,10 +481,20 @@ async function importProgress(event) {
     return;
   }
 
+  await restoreBackup(backup);
+}
+
+async function restoreBackup(backup, transfer = false) {
+  const currentItem = allItems.find((item) => item.id === backup.currentItemId);
   const confirmed = await confirmAction(
-    t("importTitle"),
-    t("importDescription", { count: backup.completed.length }),
-    t("importAction"),
+    t(transfer ? "transferImportTitle" : "importTitle"),
+    transfer
+      ? t("transferImportDescription", {
+          count: backup.completed.length,
+          step: currentItem?.title[state.language] ?? t("transferNoStep"),
+        })
+      : t("importDescription", { count: backup.completed.length }),
+    t(transfer ? "transferApply" : "importAction"),
   );
   if (!confirmed) return;
   state.completed = new Set(backup.completed);
@@ -493,6 +504,11 @@ async function importProgress(event) {
   persist({ replace: true });
   applyPreferences();
   renderChecklist();
+  if (transfer && currentItem) {
+    selectView("current");
+    if (!location.hash.startsWith("#progress="))
+      history.replaceState(null, "", "#current");
+  }
   toast(t("imported"));
 }
 
@@ -741,6 +757,13 @@ try {
   });
   bindEvents();
   renderChecklist();
+  const transferControls = createTransferControls({
+    state,
+    knownIds,
+    t,
+    toast,
+    onImport: (backup) => restoreBackup(backup, true),
+  });
   function followHash() {
     const id = location.hash.slice(1);
     if (id === "current") {
@@ -779,6 +802,7 @@ try {
   followHash();
   if (location.hash && byId(location.hash.slice(1)))
     byId(location.hash.slice(1)).scrollIntoView();
+  await transferControls.consumeHash();
 } catch (error) {
   console.error("Unable to load checklist:", error);
   byId("checklist-sections").replaceChildren();

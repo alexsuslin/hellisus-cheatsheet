@@ -965,6 +965,40 @@ dialog #confirm-description {
   justify-content: end;
   gap: 10px;
 }
+#transfer-dialog {
+  width: 480px;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+}
+#transfer-dialog p {
+  font-size: 0.89rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+#transfer-qr {
+  margin: 16px auto;
+  max-width: 300px;
+  background: white;
+}
+#transfer-qr svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#transfer-link {
+  display: block;
+  width: 100%;
+  margin: 8px 0 16px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8rem;
+}
+#transfer-dialog .dialog-actions {
+  flex-wrap: wrap;
+}
 .noscript {
   padding: 30px;
   background: var(--notice);
