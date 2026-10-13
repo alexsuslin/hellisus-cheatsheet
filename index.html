@@ -21,6 +21,8 @@
       <nav class="header-links" aria-label="Navigation">
         <a href="#checklist" data-i18n="walkthrough">Прохождение</a>
         <a href="#achievements" data-i18n="achievements">Достижения</a>
+        <a href="#build" data-i18n="myBuild">Мой билд</a>
+        <a href="#tips" data-i18n="tips">Tips</a>
         <a href="#about" data-i18n="about">О гайде</a>
         <a href="https://github.com/alexsuslin/hellisus-cheatsheet" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </nav>
@@ -78,7 +80,33 @@
           <div class="view-switch" role="group" aria-label="Прохождение и достижения" id="view-switch">
             <button type="button" data-view="walkthrough" aria-pressed="true" aria-controls="walkthrough-panel" data-i18n="walkthrough">Прохождение</button>
             <button type="button" data-view="achievements" aria-pressed="false" aria-controls="achievements" data-i18n="achievements">Достижения</button>
+            <button type="button" data-view="build" aria-pressed="false" aria-controls="build" data-i18n="myBuild">Мой билд</button>
+            <button type="button" data-view="tips" aria-pressed="false" aria-controls="tips" data-i18n="tips">Tips</button>
           </div>
+          <section id="build" class="build-panel" aria-labelledby="build-title" hidden>
+            <div class="panel-heading"><div><p class="eyebrow" data-i18n="buildEyebrow">ТОПОРЫ ГНЕВА + ДРЕВКО ГОРЯ</p><h2 id="build-title" data-i18n="myBuild">Мой билд</h2></div><strong id="build-count">0 / 22</strong></div>
+            <progress id="build-progress" max="100" value="0"></progress>
+            <p class="tracker-note" data-i18n="buildNote"></p>
+            <aside class="build-next"><h3 data-i18n="buildNext">Ближайшие обновления</h3><div id="build-next"></div></aside>
+            <details id="loadout-reference" class="reference-panel"><summary data-i18n="buildLoadouts">Начальный и финальный наборы</summary><div id="build-loadouts" class="loadout-grid"></div></details>
+            <div class="filters build-filters">
+              <input id="build-search" type="search" />
+              <select id="build-act"><option value="all" data-i18n="allActs">Все акты</option><option value="act1" data-i18n="act1">Акт I</option><option value="act2" data-i18n="act2">Акт II</option><option value="act3" data-i18n="act3">Акт III</option></select>
+              <label class="build-check"><input type="checkbox" id="build-hide-completed" /><span data-i18n="hideCompleted">Скрыть выполненное</span></label>
+            </div>
+            <div id="build-list" class="build-list"></div><p id="build-empty" data-i18n="noResults" hidden>Ничего не найдено</p>
+            <details id="glossary" class="reference-panel"><summary data-i18n="glossaryTitle">Названия RU / EN и проверка перевода</summary><p id="glossary-note" class="tracker-note"></p><div id="glossary-list"></div></details>
+          </section>
+          <section id="tips" class="tips-panel" aria-labelledby="tips-title" hidden>
+            <div class="panel-heading"><div><p class="eyebrow" data-i18n="achievementEyebrow">ПУТЬ К 100%</p><h2 id="tips-title" data-i18n="tipsTitle">Tips · за одно прохождение</h2></div></div>
+            <p class="tracker-note" data-i18n="tipsNote"></p>
+            <h3 data-i18n="loopsTitle">Какие петли закрывать</h3>
+            <p id="tips-policy" class="tracker-note"></p>
+            <div class="loop-toolbar"><strong id="loop-count">0 / 14</strong><select id="loop-filter"><option value="all" data-i18n="all">Все</option><option value="reserve" data-i18n="loop_reserve">Оставить для фарма</option><option value="loot" data-i18n="loop_loot">Закрыть ради билда</option><option value="story" data-i18n="loop_story">Закрыть по сюжету</option><option value="optional" data-i18n="loop_optional">Можно закрыть</option></select></div>
+            <div id="loop-list" class="loadout-grid"></div>
+            <h3 class="tips-check-heading" data-i18n="tipsChecklist">Контрольные точки · не пропустить</h3>
+            <div id="tips-list" class="build-list"></div>
+          </section>
         <section class="checklist-panel" id="walkthrough-panel" aria-labelledby="checklist-title">
           <div class="panel-heading"><div><p class="eyebrow" data-i18n="stepByStep">ШАГ ЗА ШАГОМ</p><h2 id="checklist-title" data-i18n="checklist">Чек-лист прохождения</h2></div><span class="route-edition" data-i18n="allActs">ВСЕ 3 АКТА</span></div>
           <div class="filters">

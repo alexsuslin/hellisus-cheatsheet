@@ -1,11 +1,14 @@
+import { buildTranslations } from "./build-i18n.js";
+
 export const translations = {
   ru: {
+    ...buildTranslations.ru,
     skip: "К чек-листу",
     fieldGuide: "ПУТЕВОДИТЕЛЬ",
     edition: "01 / ПОЛЕВЫЕ ЗАМЕТКИ",
     walkthrough: "Прохождение",
     achievements: "Достижения",
-    trackers: "Прохождение и достижения",
+    trackers: "Прохождение, достижения, билд и советы",
     achievementEyebrow: "ПУТЬ К 100%",
     achievementProgress: "ПОЛУЧЕНО В ИГРЕ",
     achievementTrackingNote:
@@ -88,11 +91,11 @@ export const translations = {
       "Не удалось импортировать файл. Нужна JSON-копия этого чек-листа; текущий прогресс сохранён.",
     importTitle: "Заменить текущий прогресс?",
     importDescription:
-      "Из файла будет восстановлено {count} отметок маршрута и достижений. Экспортируйте текущий прогресс, если он нужен.",
+      "Из файла будет восстановлено {count} отметок маршрута, достижений, билда и советов. Экспортируйте текущий прогресс, если он нужен.",
     importAction: "Восстановить",
     resetTitle: "Сбросить все галочки?",
     resetDescription:
-      "Все отметки маршрута и достижений будут удалены. Язык и тема сохранятся. Это действие нельзя отменить без резервной копии.",
+      "Все отметки маршрута, достижений, билда и советов будут удалены. Язык и тема сохранятся. Это действие нельзя отменить без резервной копии.",
     resetAction: "Сбросить",
     resetDone: "Все галочки сброшены.",
     cancel: "Отмена",
@@ -111,10 +114,10 @@ export const translations = {
       "Да, игра возвращает вас к моменту перед финалом. Можно собрать оставшиеся предметы, но пропущенные разговоры и благие дела уже не восстановить. Соблюдайте предупреждения в маршруте.",
     faqNamesQuestion: "Почему у предметов встречаются английские названия?",
     faqNamesAnswer:
-      "Они помогают сопоставить предмет с PowerPyx и англоязычной версией игры. Русские инструкции и названия локаций переведены; названия предметов не выдаются за официальный перевод игры.",
+      "Оригиналы оставлены для поиска и сопоставления. Названия символов и предметов билда сверены с русскими прохождениями Steam и ShowGamer. Словарь во вкладке «Мой билд» показывает источник; † означает неподтверждённый вариант. Это не проверка по файлам локализации игры.",
     faqSourcesQuestion: "На чём основан маршрут?",
     faqSourcesAnswer:
-      "Порядок действий и игровые факты сверены с PowerPyx; русская терминология — с GameShelter. Здесь приведены краткие инструкции своими словами. У каждого шага есть ссылка на подробный источник с иллюстрациями.",
+      "Маршрут и награды — PowerPyx; русская терминология — Steam, ShowGamer и GameShelter. Изменение детектора сверено с официальными заметками обновления 1.7. Источники и степень проверки названий указаны в словаре билда и Tips.",
     footerGuide: "НЕОФИЦИАЛЬНЫЙ ЧЕК-ЛИСТ",
     footerCredit:
       "Игра: Rogue Factor / Nacon · Источники: PowerPyx, GameShelter",
@@ -126,7 +129,7 @@ export const translations = {
       mystery: "Загадки",
       research: "Исследования",
       drone: "Модули дрона",
-      glyph: "Глифы",
+      glyph: "Символы",
       relic: "Реликвии",
       gear: "Защитные предметы",
       weapon: "Оружие",
@@ -137,12 +140,13 @@ export const translations = {
     },
   },
   en: {
+    ...buildTranslations.en,
     skip: "Skip to checklist",
     fieldGuide: "FIELD GUIDE",
     edition: "01 / FIELD NOTES",
     walkthrough: "Walkthrough",
     achievements: "Achievements",
-    trackers: "Walkthrough and achievements",
+    trackers: "Walkthrough, achievements, build and tips",
     achievementEyebrow: "THE ROAD TO 100%",
     achievementProgress: "UNLOCKED IN GAME",
     achievementTrackingNote:
@@ -226,11 +230,11 @@ export const translations = {
       "Could not import this file. Use a JSON backup from this checklist; your current progress is unchanged.",
     importTitle: "Replace your current progress?",
     importDescription:
-      "This file will restore {count} checked route steps and achievements. Export your current progress first if you want to keep it.",
+      "This file will restore {count} route, achievement, build and tip checks. Export your current progress first if you want to keep it.",
     importAction: "Restore",
     resetTitle: "Reset all checkboxes?",
     resetDescription:
-      "All route and achievement checkboxes will be cleared. Language and theme preferences will stay. You need a backup to undo this.",
+      "All route, achievement, build and tip checks will be cleared. Language and theme preferences will stay. You need a backup to undo this.",
     resetAction: "Reset",
     resetDone: "All checkboxes reset.",
     cancel: "Cancel",
@@ -249,10 +253,10 @@ export const translations = {
       "Yes. The game returns you to just before the ending, so you can collect remaining items. Missed conversations and good deeds cannot be recovered. Follow the route’s warnings.",
     faqNamesQuestion: "Why do some item names stay in English?",
     faqNamesAnswer:
-      "They help match an item to PowerPyx and the English version of the game. Russian directions and locations are translated; item names are not presented as official game translations.",
+      "Original names remain searchable. Glyph and build-item names were checked against Russian Steam and ShowGamer walkthroughs. The My build glossary links evidence; † marks an unverified name. This is not a check against game localization files.",
     faqSourcesQuestion: "What is the route based on?",
     faqSourcesAnswer:
-      "The order and game facts are checked against PowerPyx; Russian terminology is checked against GameShelter. Directions here are concise original summaries. Every step links to the detailed illustrated source.",
+      "Routes and rewards use PowerPyx; Russian terminology uses Steam, ShowGamer and GameShelter. Detector changes use official update 1.7 notes. The build glossary and Tips link sources and distinguish verified community names from uncertain translations.",
     footerGuide: "UNOFFICIAL CHECKLIST",
     footerCredit: "Game: Rogue Factor / Nacon · Sources: PowerPyx, GameShelter",
     backTop: "Back to top ↑",

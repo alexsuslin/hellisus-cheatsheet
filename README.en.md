@@ -86,6 +86,14 @@ In **Achievements**, select Steam / Xbox / Epic (40) or PS5 (41 including platin
 
 ## Data and translation
 
+The **My build** tab tracks 22 workbook milestones for rage axes and a grief polearm. Acquisition and application are separate, manual checks; they record upgrade history, not current equipment slots. Pending application takes priority in the next-upgrade list. Optional build steps may be skipped without completing their route actions.
+
+**Tips** covers all 14 timeloops, farming reserves, useful rewards and story deadlines. Loop checkboxes share the existing route-step IDs and do not imply that all enemies are dead. Advice accounts for tier III farming and the detector upgrade in game version 1.7.
+
+[`data/build.json`](./data/build.json) and [`data/tips.json`](./data/tips.json) own this content. [`data/terminology.json`](./data/terminology.json) records 46 RU/EN mappings and evidence: `community` means a Russian walkthrough match, while `unverified` displays †. No official localization-file verification is claimed. Reviewed October 13, 2026.
+
+All checks use the existing localStorage key and version-1 backup format. Old backups remain supported; importing one replaces all checks, including build and tip progress absent from that backup.
+
 [`data/guide.json`](./data/guide.json) owns the route. Sections and steps have permanent IDs, `ru`/`en` translations, categories and detailed source links. Edit wording without changing the `id` to preserve saved progress. A new action needs a new ID; never reuse an old ID for a different action.
 
 [`assets/i18n.js`](./assets/i18n.js) contains interface translations. Some item names remain in English to help match the original guide; Russian wording is not presented as the game's official localisation.

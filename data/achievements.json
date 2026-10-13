@@ -751,7 +751,7 @@
       "category": "collection",
       "tier": "bronze",
       "description": {
-        "ru": "Получите по одному глифу каждой из пяти сфер.",
+        "ru": "Получите по одному символу каждой из пяти сфер.",
         "en": "Find a glyph from each of the five spheres."
       },
       "hint": {
@@ -773,7 +773,7 @@
       "category": "collection",
       "tier": "silver",
       "description": {
-        "ru": "Соберите все 25 типов глифов.",
+        "ru": "Соберите все 25 типов символов.",
         "en": "Collect all 25 glyph types."
       },
       "hint": {

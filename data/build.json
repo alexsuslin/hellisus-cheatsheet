@@ -1,0 +1,558 @@
+{
+  "version": 1,
+  "updated": "2026-10-13",
+  "sources": {
+    "steam": {
+      "name": "Steam · KennedySPD — прохождение на 100%",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3574530573"
+    },
+    "steamTips": {
+      "name": "Steam · Rain — достижения и прокачка",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603925833"
+    },
+    "show": {
+      "name": "ShowGamer — русские названия и прохождение",
+      "url": "https://showgamer.com/ru/prohozhdeniya-igr/3347-podrobnoe-prohozhdenie-hell-is-us"
+    },
+    "wol": {
+      "name": "WOL — благие дела и награды",
+      "url": "https://wol.su/guides/18013-vse-blagie-dela-v-hell-is-us-kak-nachat-i-kakie-nagrady-mozhno-poluchit.html"
+    },
+    "loops": {
+      "name": "PowerPyx — временные петли",
+      "url": "https://www.powerpyx.com/hell-is-us-all-legend-of-the-phol-timeloops-guide/"
+    },
+    "missables": {
+      "name": "PowerPyx — пропускаемые действия",
+      "url": "https://www.powerpyx.com/hell-is-us-missables-guide/"
+    },
+    "glyphs": {
+      "name": "PowerPyx — символы",
+      "url": "https://www.powerpyx.com/hell-is-us-all-glyph-locations/"
+    },
+    "vaults": {
+      "name": "PowerPyx — залы запретных знаний",
+      "url": "https://www.powerpyx.com/hell-is-us-all-vault-of-forbidden-knowledge-locations/"
+    },
+    "gear": {
+      "name": "PowerPyx — защитное снаряжение",
+      "url": "https://www.powerpyx.com/hell-is-us-all-defensive-item-locations/"
+    },
+    "trophies": {
+      "name": "PowerPyx — условия достижений",
+      "url": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    "patch": {
+      "name": "Rogue Factor · Steam — Update 1.7",
+      "url": "https://steamcommunity.com/app/1620730/allnews/"
+    },
+    "effects": {
+      "name": "Gamer Guides — эффекты снаряжения Гнева",
+      "url": "https://www.gamerguides.com/hell-is-us/database/defensive-gear/rage"
+    }
+  },
+  "loadouts": [
+    {
+      "title": {
+        "ru": "Старт · топоры Гнева",
+        "en": "Starting rage axes"
+      },
+      "items": ["Animosity", "Rage Spike", "Chromatic Shield"],
+      "note": {
+        "ru": "Ставьте по порядку доступных слотов. Это исходная рекомендация из вашей таблицы, а не считанное из игры снаряжение.",
+        "en": "Equip in available slot order. This is the workbook’s starting recommendation, not a live inventory."
+      }
+    },
+    {
+      "title": {
+        "ru": "Старт · древко Горя",
+        "en": "Starting grief polearm"
+      },
+      "items": ["Lymbic Mending", "Lingering Pain", "Overwhelm"],
+      "note": {
+        "ru": "Починка обязательна для этой схемы. Потрясение заменяет Агонию; затем добавьте Пустоту.",
+        "en": "Prioritize healing. Overwhelm replaces Lingering Pain; add Void afterward."
+      }
+    },
+    {
+      "title": {
+        "ru": "Финал · топоры Гнева",
+        "en": "Final rage axes"
+      },
+      "items": ["Animosity – Elite", "Fury – Elite", "Berserk – Elite"],
+      "note": {
+        "ru": "Против одиночной цели можно менять Ярость на Пик гнева (элитный). Пока элитного Берсерка нет, используйте сильный.",
+        "en": "Swap Fury for Rage Spike – Elite against single targets. Use Enhanced Berserk until Elite is available."
+      }
+    },
+    {
+      "title": {
+        "ru": "Финал · древко Горя",
+        "en": "Final grief polearm"
+      },
+      "items": ["Overwhelm – Elite", "Void – Elite", "Lymbic Mending – Elite"],
+      "note": {
+        "ru": "Контроль, зона урона и лечение. Элитное Потрясение доступно уже в Марастане.",
+        "en": "Crowd control, area damage and healing. Elite Overwhelm is available in Marastan."
+      }
+    },
+    {
+      "title": {
+        "ru": "Защита · финальная пара",
+        "en": "Final defensive pair"
+      },
+      "items": [
+        "Bracers of Rage – Bloodlust",
+        "Brooch of Rage – Bathe in Blood"
+      ],
+      "note": {
+        "ru": "Наручи лечат при попаданиях, брошь — после убийства. Оба предмета доведите до класса 4.",
+        "en": "Bracers heal on hits, the brooch on kills. Upgrade both to Grade 4."
+      }
+    },
+    {
+      "title": {
+        "ru": "Реликвии · по стилю игры",
+        "en": "Relics · suit your playstyle"
+      },
+      "items": ["Mark of the Betrayed", "Aster’s Band of Domination"],
+      "note": {
+        "ru": "Метка занимает пассивный слот, кольцо — активный. Польза метки зависит от парирования.",
+        "en": "The mark uses the passive slot, the band the active slot. The mark benefits a parry-focused playstyle."
+      }
+    }
+  ],
+  "stages": [
+    {
+      "id": "build-base",
+      "act": "act1",
+      "title": {
+        "ru": "Основное оружие · Сенедра",
+        "en": "Main weapon · Senedra"
+      },
+      "routeIds": ["act-1-step-018", "act-1-step-024"],
+      "obtain": {
+        "ru": "Проверьте наличие Twin Axes of Rage и Animosity.",
+        "en": "Check that you have Twin Axes of Rage and Animosity."
+      },
+      "apply": {
+        "ru": "Оставьте топоры основными; установите Animosity первым символом.",
+        "en": "Keep the axes as your main weapon; equip Animosity first."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-spike",
+      "act": "act1",
+      "title": {
+        "ru": "Первый набор · Джова",
+        "en": "First setup · Jova"
+      },
+      "routeIds": ["act-1-step-059"],
+      "obtain": {
+        "ru": "Заберите Rage Spike и Perfect Guard из подвала Виталиса.",
+        "en": "Collect Rage Spike and Perfect Guard in Vitalis’ basement."
+      },
+      "apply": {
+        "ru": "Добавьте Rage Spike на топоры. Perfect Guard — запасной вариант для игры через блок.",
+        "en": "Add Rage Spike to the axes. Keep Perfect Guard as an alternative for blocking."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-mending",
+      "act": "act1",
+      "title": {
+        "ru": "Лечение и первые улучшения",
+        "en": "Healing and first upgrades"
+      },
+      "routeIds": ["act-1-step-061", "act-1-step-064", "act-1-step-067"],
+      "obtain": {
+        "ru": "Проверьте Lymbic Mending, Chromatic Shield и Lingering Pain; точные классы оружия отметьте после проверки в игре.",
+        "en": "Check Lymbic Mending, Chromatic Shield and Lingering Pain in your inventory."
+      },
+      "apply": {
+        "ru": "Поставьте Lymbic Mending на Polearm of Grief; Lingering Pain — временно. На топоры — Chromatic Shield при свободном слоте. Цель: топоры класса 3, древко класса 2.",
+        "en": "Equip Lymbic Mending and temporarily Lingering Pain on the grief polearm; use Chromatic Shield on the axes if a slot is free. Aim for Grade 3 axes and a Grade 2 polearm."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-copse",
+      "act": "act1",
+      "title": {
+        "ru": "Раннее отклонение · Зал Поросли",
+        "en": "Early detour · Vault of the Copse"
+      },
+      "routeIds": ["act-3-cleanup-step-019"],
+      "obtain": {
+        "ru": "В пещере за палаткой OMSIF в Сенедре заберите Overwhelm и Wave of Wrath. Можно раньше позиции в маршруте; рисунок кода — в источнике. Код: Страх → 8 → Гнев → круг с шипами.",
+        "en": "Collect Overwhelm and Wave of Wrath in the cave behind the OMSIF tent in Senedra. You can visit before its route position; see the source for the dial symbols. Code: Terror → figure 8 → Rage → circle with spikes."
+      },
+      "apply": {
+        "ru": "Замените Lingering Pain на Overwhelm. Wave of Wrath сохраните как вариант против групп вместо Rage Spike.",
+        "en": "Replace Lingering Pain with Overwhelm. Keep Wave of Wrath as a crowd alternative to Rage Spike."
+      },
+      "source": "vaults",
+      "optional": false
+    },
+    {
+      "id": "build-knoll",
+      "act": "act1",
+      "title": {
+        "ru": "Раннее отклонение · Зал Пригорка",
+        "en": "Early detour · Vault of the Knoll"
+      },
+      "routeIds": ["act-2-part-2-step-096"],
+      "obtain": {
+        "ru": "За водопадом на Виссайских холмах заберите Animosity (сильный) и Void (сильный). Подсказка Тани не обязательна; сверяйте рисунки замка с источником. Код: 8 → круг с четырьмя шипами → Счастье → Гнев.",
+        "en": "Behind the Vyssa Hills waterfall, collect Animosity – Enhanced and Void – Enhanced. Tania’s clue is not required; consult the source for the lock symbols. Code: figure 8 → circle with four spikes → Ecstasy → Rage."
+      },
+      "apply": {
+        "ru": "Замените базовую Animosity. На древке соберите Overwhelm + Void + Lymbic Mending, когда доступны три слота.",
+        "en": "Replace basic Animosity. Build toward Overwhelm + Void + Lymbic Mending on the polearm as slots become available."
+      },
+      "source": "vaults",
+      "optional": false
+    },
+    {
+      "id": "build-mark",
+      "act": "act1",
+      "title": {
+        "ru": "Пассивная реликвия · Гнездо наблюдателя",
+        "en": "Passive relic · Watcher’s Nest"
+      },
+      "routeIds": ["act-1-step-093"],
+      "obtain": {
+        "ru": "Решите загадку цветов и заберите Mark of the Betrayed из саркофага.",
+        "en": "Solve the flower puzzle and collect Mark of the Betrayed from the coffin."
+      },
+      "apply": {
+        "ru": "Установите реликвию в пассивный слот, если используете парирование.",
+        "en": "Equip it in the passive relic slot if you use parries."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-gildas",
+      "act": "act1",
+      "title": {
+        "ru": "Забрать награды Брома",
+        "en": "Claim Brom’s rewards"
+      },
+      "routeIds": [
+        "act-1-step-096",
+        "act-1-step-097",
+        "act-1-step-098",
+        "act-1-step-099"
+      ],
+      "obtain": {
+        "ru": "У Брома заберите награды за выполненные благие дела: Waves of Grief и Pendant of Grief – Acceptance при выполненных условиях.",
+        "en": "Claim completed good-deed rewards from Brom, including Waves of Grief and Pendant of Grief – Acceptance when eligible."
+      },
+      "apply": {
+        "ru": "Кулон — временная защита. Waves of Grief — запасной массовый удар; лечение на древке сохраните.",
+        "en": "The pendant is temporary gear; Waves of Grief is an optional area attack. Keep healing on the polearm."
+      },
+      "source": "glyphs",
+      "optional": true
+    },
+    {
+      "id": "build-fury",
+      "act": "act1",
+      "title": {
+        "ru": "Сердце не на месте · Джова",
+        "en": "Where the Heart Is · Jova"
+      },
+      "routeIds": ["act-1-step-114"],
+      "obtain": {
+        "ru": "Верните фотографию Чжао Ру и получите Fury у Брома.",
+        "en": "Return the photograph to Zao Ru and claim Fury from Brom."
+      },
+      "apply": {
+        "ru": "Меняйте Rage Spike на Fury против связанных врагов; для одиночной цели оставьте прежний вариант.",
+        "en": "Use Fury instead of Rage Spike against linked enemies; keep Rage Spike for single targets."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-forge",
+      "act": "act1",
+      "title": {
+        "ru": "Лимбическая кузня · активная реликвия",
+        "en": "Lymbic Forge · active relic"
+      },
+      "routeIds": ["act-1-step-144", "act-1-step-148"],
+      "obtain": {
+        "ru": "Заберите Aster’s Band of Domination и книгу ковки. Базовая Void пригодится, если сильной версии ещё нет.",
+        "en": "Collect Aster’s Band of Domination and the forging book. Basic Void is useful if you missed Enhanced."
+      },
+      "apply": {
+        "ru": "Установите кольцо в активный слот. Не заменяйте сильную Void базовой.",
+        "en": "Equip the band in the active relic slot. Do not downgrade Enhanced Void to basic."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-act-one",
+      "act": "act1",
+      "title": {
+        "ru": "Перед первым ключ-камнем",
+        "en": "Before the first Keystone"
+      },
+      "routeIds": ["act-1-step-151"],
+      "obtain": {
+        "ru": "Сверьте ранние благие дела и разговор с Ваасом в Tips.",
+        "en": "Review the early good deeds and Vaas conversation in Tips."
+      },
+      "apply": {
+        "ru": "Проверьте слоты и доступные улучшения у Виктора перед переходом во II акт; ключи транспорта пока сохраните.",
+        "en": "Review slots and upgrades at Victor before Act II; keep the vehicle keys for now."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-fundamentals",
+      "act": "act2",
+      "title": {
+        "ru": "Виктор · открыть класс 5",
+        "en": "Victor · unlock Grade 5"
+      },
+      "routeIds": ["act-2-part-1-step-005"],
+      "obtain": {
+        "ru": "Принесите Fundamentals of Lymbic Forging из кузни Виктору.",
+        "en": "Bring Fundamentals of Lymbic Forging from the forge to Victor."
+      },
+      "apply": {
+        "ru": "Передайте книгу через изучение: оружие можно повышать до класса 5, защиту — до класса 3. Это открывает ковку, но не улучшает вещи автоматически.",
+        "en": "Submit the book: it unlocks Grade 5 weapons and Grade 3 gear. Equipment is not upgraded automatically."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-brooch",
+      "act": "act2",
+      "title": {
+        "ru": "Брошь гнева · после спасения собаки",
+        "en": "Rage brooch · after rescuing the dog"
+      },
+      "routeIds": [
+        "act-2-part-1-step-006",
+        "act-2-part-1-step-007",
+        "act-2-part-1-step-008"
+      ],
+      "obtain": {
+        "ru": "После лекарства и возвращения ошейника отдайте ключи Аттику. За «Золотое сердце» получите Brooch of Rage – Bathe in Blood у Брома.",
+        "en": "After the medicine and collar deliveries, give Atticus the keys. Claim Brooch of Rage – Bathe in Blood from Brom for Heart of Gold."
+      },
+      "apply": {
+        "ru": "Установите брошь: убийства восстанавливают здоровье и выносливость.",
+        "en": "Equip the brooch for health and stamina recovery on kills."
+      },
+      "source": "gear",
+      "optional": false
+    },
+    {
+      "id": "build-marastan",
+      "act": "act2",
+      "title": {
+        "ru": "Марастан · три улучшения",
+        "en": "Marastan · three upgrades"
+      },
+      "routeIds": [
+        "act-2-part-1-step-050",
+        "act-2-part-1-step-062",
+        "act-2-part-1-step-075"
+      ],
+      "obtain": {
+        "ru": "Заберите Berserk (сильный), Fury (элитный); закройте местную петлю ради Overwhelm (элитный), затем получите награды у Брома.",
+        "en": "Collect Berserk – Enhanced and Fury – Elite; close the local timeloop and claim Overwhelm – Elite from Brom."
+      },
+      "apply": {
+        "ru": "Улучшите соответствующие символы на топорах и древке. Эта петля полезнее закрытой для выбранного билда; резерв для фарма оставьте в другой области.",
+        "en": "Upgrade the corresponding glyphs on both weapons. For this build, close this loop for its reward and retain a farming reserve elsewhere."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-advanced",
+      "act": "act2",
+      "title": {
+        "ru": "Пик Аркаса · защита класса 4",
+        "en": "Arcas Spire · Grade 4 gear"
+      },
+      "routeIds": ["act-2-part-1-step-104"],
+      "obtain": {
+        "ru": "Подберите Advanced Lymbic Forging.",
+        "en": "Collect Advanced Lymbic Forging."
+      },
+      "apply": {
+        "ru": "Передайте книгу Виктору. Повышайте класс финальной защиты по запасу материалов; сама книга не повышает её класс.",
+        "en": "Submit the book to Victor, then upgrade your final gear as materials allow. The book only unlocks the upgrade."
+      },
+      "source": "glyphs",
+      "optional": false
+    },
+    {
+      "id": "build-acasa",
+      "act": "act2",
+      "title": {
+        "ru": "Болота Акаса · базовый Берсерк",
+        "en": "Acasa Marshes · basic Berserk"
+      },
+      "routeIds": ["act-2-part-2-step-015"],
+      "obtain": {
+        "ru": "Закрытие петли даёт базовый Berserk. Если уже есть сильный, срочной выгоды для билда нет — петлю можно оставить для фарма.",
+        "en": "Closing this loop rewards basic Berserk. If you own Enhanced, there is no urgent build benefit; keep the loop for farming."
+      },
+      "apply": {
+        "ru": "Если лучшей версии нет, используйте Berserk на топорах. Этот этап можно пропустить в плане билда; для 100% петлю всё равно закройте после фарма.",
+        "en": "Use Berserk on the axes if you lack a better version. You may skip this build step, but close the loop later for 100%."
+      },
+      "source": "loops",
+      "optional": true
+    },
+    {
+      "id": "build-temple",
+      "act": "act2",
+      "title": {
+        "ru": "Храм павших · элитное лечение",
+        "en": "Temple of the Fallen · Elite healing"
+      },
+      "routeIds": ["act-2-part-2-step-121"],
+      "obtain": {
+        "ru": "Закройте петлю храма с Rho и заберите Lymbic Mending (элитный) у Брома.",
+        "en": "Close the temple loop with Rho and claim Lymbic Mending – Elite from Brom."
+      },
+      "apply": {
+        "ru": "Замените базовое лечение на древке. Если позже получите сильную версию, элитную оставьте.",
+        "en": "Upgrade the polearm’s healing. Keep Elite if you later collect Enhanced."
+      },
+      "source": "loops",
+      "optional": false
+    },
+    {
+      "id": "build-family-feud",
+      "act": "act2",
+      "title": {
+        "ru": "Семейный раздор · запасное лечение",
+        "en": "Family Feud · backup healing"
+      },
+      "routeIds": ["act-2-part-3-step-020"],
+      "obtain": {
+        "ru": "За Family Feud получите Lymbic Mending (сильный). В маршруте это раньше петли кладбища, но после Храма павших.",
+        "en": "Receive Lymbic Mending – Enhanced for Family Feud. This occurs before the cemetery loop but after the temple in the route."
+      },
+      "apply": {
+        "ru": "Устанавливайте только если элитной версии ещё нет. Иначе отметьте этап как ненужный для билда.",
+        "en": "Equip only if you do not own Elite yet; otherwise skip this build step."
+      },
+      "source": "glyphs",
+      "optional": true
+    },
+    {
+      "id": "build-jeljin",
+      "act": "act2",
+      "title": {
+        "ru": "Кладбище · Пустота, Берсерк и наручи",
+        "en": "Cemetery · Void, Berserk and bracers"
+      },
+      "routeIds": ["act-2-part-3-step-022", "act-2-part-3-step-024"],
+      "obtain": {
+        "ru": "Петля кладбища: Void и Berserk (элитные) у Брома. В комнате Family First лежат Bracers of Rage – Bloodlust.",
+        "en": "Claim Void – Elite and Berserk – Elite from Brom after the cemetery loop. Find Bracers of Rage – Bloodlust in the Family First room."
+      },
+      "apply": {
+        "ru": "Обновите оба символа и замените временную защиту наручами: они возвращают часть урона в здоровье. Пара — наручи + брошь Гнева.",
+        "en": "Upgrade both glyphs and replace temporary gear with the bracers, which return part of damage dealt as health. Pair them with the rage brooch."
+      },
+      "source": "gear",
+      "optional": false
+    },
+    {
+      "id": "build-museum",
+      "act": "act2",
+      "title": {
+        "ru": "Музей Возничего B4 · Неприязнь",
+        "en": "Auriga Museum B4 · Animosity"
+      },
+      "routeIds": ["act-2-part-3-step-067", "act-2-part-3-step-068"],
+      "obtain": {
+        "ru": "Код компьютера 7584: создайте и победите обоих стражей, закройте петлю с Rho. Заберите Animosity (элитный) у Брома.",
+        "en": "Use computer code 7584, spawn and defeat both guardians, then close the loop with Rho. Claim Animosity – Elite from Brom."
+      },
+      "apply": {
+        "ru": "Замените сильную Animosity на топорах элитной.",
+        "en": "Upgrade the axes from Enhanced to Elite Animosity."
+      },
+      "source": "loops",
+      "optional": false
+    },
+    {
+      "id": "build-hilltop",
+      "act": "act3",
+      "title": {
+        "ru": "Сенедра · запасные массовые атаки",
+        "en": "Senedra · alternative area attacks"
+      },
+      "routeIds": ["act-3-cleanup-step-021"],
+      "obtain": {
+        "ru": "После фарма закройте петлю холма: Wave of Wrath и Waves of Grief (сильные).",
+        "en": "After farming, close the hilltop loop for Enhanced Wave of Wrath and Waves of Grief."
+      },
+      "apply": {
+        "ru": "Это запасные варианты. Сохраните элитное Потрясение и лечение на универсальном древке.",
+        "en": "These are alternatives. Keep Elite Overwhelm and healing in the general-purpose polearm setup."
+      },
+      "source": "loops",
+      "optional": true
+    },
+    {
+      "id": "build-beck",
+      "act": "act3",
+      "title": {
+        "ru": "Марастан · финальный вариант для одиночной цели",
+        "en": "Marastan · final single-target option"
+      },
+      "routeIds": ["act-3-cleanup-step-039", "act-3-cleanup-step-040"],
+      "obtain": {
+        "ru": "В Vault of the Beck заберите Rage Spike и Waves of Grief (элитные); сверяйте дверь по рисункам источника. Код: круг с шипами → глаз → 8 → U.",
+        "en": "Collect Rage Spike – Elite and Waves of Grief – Elite in Vault of the Beck; use the source’s lock illustrations. Code: circle with spikes → eye → figure 8 → U."
+      },
+      "apply": {
+        "ru": "Для одиночной цели замените Fury на Rage Spike. Waves of Grief — вариант массового урона вместо Void, а не обязательная замена.",
+        "en": "For single targets, replace Fury with Rage Spike. Waves of Grief is an area-damage alternative to Void, not a mandatory replacement."
+      },
+      "source": "vaults",
+      "optional": true
+    },
+    {
+      "id": "build-final",
+      "act": "act3",
+      "title": {
+        "ru": "Финальная проверка ковки и экипировки",
+        "en": "Final upgrade and equipment check"
+      },
+      "routeIds": ["act-3-cleanup-step-037"],
+      "obtain": {
+        "ru": "Соберите материалы на класс 5 для меча, двуручного меча, топоров и древка и класс 4 для двух защитных предметов. Проверьте это до последней петли.",
+        "en": "Collect materials for Grade 5 sword, greatsword, axes and polearm plus two Grade 4 defensive items before closing the last loop."
+      },
+      "apply": {
+        "ru": "Повысьте класс всех четырёх типов оружия. Для «До зубов» одновременно наденьте два оружия класса 5 и две защиты класса 4; получения материалов недостаточно.",
+        "en": "Upgrade all four weapon types. For To the Teeth, simultaneously equip two Grade 5 weapons and two Grade 4 defensive items."
+      },
+      "source": "trophies",
+      "optional": false
+    }
+  ]
+}

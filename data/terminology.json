@@ -1,0 +1,335 @@
+{
+  "updated": "2026-10-13",
+  "note": {
+    "ru": "Названия сопоставлены по предметам, месту и наградам в русских прохождениях. «По русскому гайду» не означает проверку по файлам локализации; сомнительные варианты отмечены отдельно. Enhanced в русских гайдах — «сильный», Elite — «элитный».",
+    "en": "Names matched by items, locations and rewards in Russian walkthroughs. Community evidence is not verification against localization files. Unverified names are labelled. Enhanced is «сильный» and Elite is «элитный» in these guides."
+  },
+  "sources": {
+    "steam": {
+      "name": "Steam · KennedySPD — прохождение на 100%",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3574530573"
+    },
+    "steamTips": {
+      "name": "Steam · Rain — достижения и прокачка",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603925833"
+    },
+    "show": {
+      "name": "ShowGamer — русские названия и прохождение",
+      "url": "https://showgamer.com/ru/prohozhdeniya-igr/3347-podrobnoe-prohozhdenie-hell-is-us"
+    },
+    "wol": {
+      "name": "WOL — благие дела и награды",
+      "url": "https://wol.su/guides/18013-vse-blagie-dela-v-hell-is-us-kak-nachat-i-kakie-nagrady-mozhno-poluchit.html"
+    },
+    "loops": {
+      "name": "PowerPyx — временные петли",
+      "url": "https://www.powerpyx.com/hell-is-us-all-legend-of-the-phol-timeloops-guide/"
+    },
+    "missables": {
+      "name": "PowerPyx — пропускаемые действия",
+      "url": "https://www.powerpyx.com/hell-is-us-missables-guide/"
+    },
+    "glyphs": {
+      "name": "PowerPyx — символы",
+      "url": "https://www.powerpyx.com/hell-is-us-all-glyph-locations/"
+    },
+    "vaults": {
+      "name": "PowerPyx — залы запретных знаний",
+      "url": "https://www.powerpyx.com/hell-is-us-all-vault-of-forbidden-knowledge-locations/"
+    },
+    "gear": {
+      "name": "PowerPyx — защитное снаряжение",
+      "url": "https://www.powerpyx.com/hell-is-us-all-defensive-item-locations/"
+    },
+    "trophies": {
+      "name": "PowerPyx — условия достижений",
+      "url": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    "patch": {
+      "name": "Rogue Factor · Steam — Update 1.7",
+      "url": "https://steamcommunity.com/app/1620730/allnews/"
+    },
+    "effects": {
+      "name": "Gamer Guides — эффекты снаряжения Гнева",
+      "url": "https://www.gamerguides.com/hell-is-us/database/defensive-gear/rage"
+    }
+  },
+  "entries": [
+    {
+      "en": "Animosity",
+      "ru": "Неприязнь",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Rage Spike",
+      "ru": "Пик гнева",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Chromatic Shield",
+      "ru": "Пёстрый щит",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Perfect Guard",
+      "ru": "Идеал охраны",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Lymbic Mending",
+      "ru": "Лимбическая починка",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Lingering Pain",
+      "ru": "Агония",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Overwhelm",
+      "ru": "Потрясение",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Wave of Wrath",
+      "ru": "Волна ярости",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Waves of Grief",
+      "ru": "Наплыв горя",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Fury",
+      "ru": "Ярость",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Berserk",
+      "ru": "Берсерк",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Void",
+      "ru": "Пустота",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Mark of the Betrayed",
+      "ru": "Метка обманутого",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Aster’s Band of Domination",
+      "ru": "Кольцо верховенства Астера",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Bracers of Rage – Bloodlust",
+      "ru": "Наручи гнева (жажда крови)",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Brooch of Rage – Bathe in Blood",
+      "ru": "Брошь гнева (омовение кровью)",
+      "status": "community",
+      "sources": ["wol"]
+    },
+    {
+      "en": "Pendant of Grief – Acceptance",
+      "ru": "Кулон горя (принятие)",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Gluttony",
+      "ru": "Обжорство",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Feed on Fear",
+      "ru": "Подпитка страхом",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Lymbic Slivers",
+      "ru": "Лимбические иглы",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Rapture",
+      "ru": "Упоение",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Nightfade",
+      "ru": "Ночная мгла",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Shriek of Terror",
+      "ru": "Вопль ужаса",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Eager Embrace",
+      "ru": "Пылкие объятия",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Shared Pain",
+      "ru": "Общая боль",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Masochistic Delight",
+      "ru": "Мазохизм",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Frightful Ambush",
+      "ru": "Жуткая засада",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Delirium",
+      "ru": "Исступление",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Interrupt",
+      "ru": "Прерывание",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Vault of the Copse",
+      "ru": "Зал Поросли",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Vault of the Knoll",
+      "ru": "Зал Пригорка",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Twin Axes of Rage",
+      "ru": "Парные топоры гнева",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Polearm of Grief",
+      "ru": "Древковое оружие горя",
+      "status": "unverified",
+      "sources": []
+    },
+    {
+      "en": "Fundamentals of Lymbic Forging",
+      "ru": "Книга лимбических работ (основы)",
+      "status": "community",
+      "sources": ["show"]
+    },
+    {
+      "en": "Advanced Lymbic Forging",
+      "ru": "Продвинутая лимбическая ковка",
+      "status": "unverified",
+      "sources": []
+    },
+    {
+      "en": "Vault of the Beck",
+      "ru": "Зал Ручья",
+      "status": "unverified",
+      "sources": []
+    },
+    {
+      "en": "Where the Heart Is",
+      "ru": "Сердце не на месте",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Insult to Injury",
+      "ru": "Когда слова ранят",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Family Feud",
+      "ru": "Семейный раздор",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Heart of Gold",
+      "ru": "Золотое сердце",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Land of Milk and Honey",
+      "ru": "Кровь с молоком",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Asunder",
+      "ru": "Терзания",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Performance of a Lifetime",
+      "ru": "По струнке",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Forlorn Fate",
+      "ru": "Одинокая участь",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Waylaid",
+      "ru": "Засада",
+      "status": "community",
+      "sources": ["steam"]
+    },
+    {
+      "en": "Victor’s Vigil",
+      "ru": "Дозор Виктора",
+      "status": "community",
+      "sources": ["steam"]
+    }
+  ]
+}

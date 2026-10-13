@@ -1,5 +1,7 @@
 import { createAchievementTracker } from "./achievement-view.js";
 import { getRelatedItems } from "./achievements.js";
+import { getBuildIds } from "./build.js";
+import { createBuildTracker } from "./build-view.js";
 import { translate, translations } from "./i18n.js";
 import { filterItems, getProgress, parseBackup } from "./model.js";
 import {
@@ -47,6 +49,7 @@ const state = {
 
 let guide;
 let achievementTracker;
+let buildTracker;
 const achievementsByItem = new Map();
 let activeView = "walkthrough";
 const allItems = [];
@@ -202,6 +205,7 @@ function updateCounters() {
       .classList.toggle("completed", checkbox.checked);
   }
   achievementTracker?.render();
+  buildTracker?.render();
 }
 
 function renderItem(item) {
@@ -270,6 +274,8 @@ function selectView(view) {
   activeView = view;
   byId("walkthrough-panel").hidden = view !== "walkthrough";
   byId("achievements").hidden = view !== "achievements";
+  byId("build").hidden = view !== "build";
+  byId("tips").hidden = view !== "tips";
   for (const button of document.querySelectorAll("[data-view]"))
     button.setAttribute("aria-pressed", String(button.dataset.view === view));
 }
@@ -490,7 +496,7 @@ function bindEvents() {
       history.replaceState(
         null,
         "",
-        activeView === "achievements" ? "#achievements" : "#checklist",
+        activeView === "walkthrough" ? "#checklist" : `#${activeView}`,
       );
     });
   }
@@ -630,16 +636,18 @@ window.addEventListener("storage", (event) => {
 });
 
 try {
-  const [guideResponse, achievementsResponse] = await Promise.all([
+  const responses = await Promise.all([
     fetch(new URL("../data/guide.json", import.meta.url)),
     fetch(new URL("../data/achievements.json", import.meta.url)),
+    fetch(new URL("../data/build.json", import.meta.url)),
+    fetch(new URL("../data/tips.json", import.meta.url)),
+    fetch(new URL("../data/terminology.json", import.meta.url)),
   ]);
-  if (!guideResponse.ok || !achievementsResponse.ok)
+  if (responses.some((response) => !response.ok))
     throw new Error("Checklist data request failed");
-  const [guideData, catalogue] = await Promise.all([
-    guideResponse.json(),
-    achievementsResponse.json(),
-  ]);
+  const [guideData, catalogue, build, tips, terminology] = await Promise.all(
+    responses.map((response) => response.json()),
+  );
   guide = guideData;
   for (const section of guide.sections) {
     for (const item of section.items) {
@@ -659,9 +667,12 @@ try {
       achievementsByItem.get(id).push(achievement.id);
     }
   }
-  knownIds = new Set(
-    [...allItems, ...catalogue.achievements].map((item) => item.id),
-  );
+  knownIds = new Set([
+    ...[...allItems, ...catalogue.achievements, ...tips.reminders].map(
+      (item) => item.id,
+    ),
+    ...getBuildIds(build.stages),
+  ]);
   state.completed = new Set(
     [...state.completed].filter((id) => knownIds.has(id)),
   );
@@ -681,11 +692,39 @@ try {
     },
     onRoute: navigateToRouteItem,
   });
+  buildTracker = createBuildTracker({
+    build,
+    tips,
+    terminology,
+    items: allItems,
+    state,
+    t,
+    onToggle(id, checked) {
+      if (checked) state.completed.add(id);
+      else state.completed.delete(id);
+      persist({ id, checked });
+      if (
+        state.filters.hideCompleted &&
+        allItems.some((item) => item.id === id)
+      )
+        renderChecklist();
+    },
+    onRoute: navigateToRouteItem,
+  });
   bindEvents();
   renderChecklist();
   function followHash() {
     const id = location.hash.slice(1);
-    if (id === "achievements" || id.startsWith("achievement-")) {
+    if (
+      id === "build" ||
+      id.startsWith("build-") ||
+      id === "tips" ||
+      id.startsWith("tip-") ||
+      id.startsWith("loop-")
+    ) {
+      selectView(id === "build" || id.startsWith("build-") ? "build" : "tips");
+      byId(id)?.scrollIntoView();
+    } else if (id === "achievements" || id.startsWith("achievement-")) {
       selectView("achievements");
       if (id.startsWith("achievement-")) {
         const platform = byId("achievement-platform");

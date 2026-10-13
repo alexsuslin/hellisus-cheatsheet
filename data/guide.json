@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-10",
+  "updated": "2026-10-13",
   "sources": [
     {
       "name": "PowerPyx — Complete collectible walkthrough",
@@ -41,6 +41,22 @@
     {
       "name": "GameShelter — Russian route and terminology",
       "url": "https://gameshelter.space/blog/hell-is-us-letopis-prokhozhdeniya-blagie-dela-kepki-i-razgovory-s-nps"
+    },
+    {
+      "name": "Steam · KennedySPD — прохождение на 100%",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3574530573"
+    },
+    {
+      "name": "ShowGamer — русские названия и прохождение",
+      "url": "https://showgamer.com/ru/prohozhdeniya-igr/3347-podrobnoe-prohozhdenie-hell-is-us"
+    },
+    {
+      "name": "WOL — благие дела и награды",
+      "url": "https://wol.su/guides/18013-vse-blagie-dela-v-hell-is-us-kak-nachat-i-kakie-nagrady-mozhno-poluchit.html"
+    },
+    {
+      "name": "Rogue Factor · Steam — Update 1.7",
+      "url": "https://steamcommunity.com/app/1620730/allnews/"
     }
   ],
   "sections": [
@@ -397,7 +413,7 @@
           "missable": false,
           "title": {
             "en": "Secrets of the Ram: Glyph 1 — Recoil",
-            "ru": "Секреты барана: глиф 1 — Recoil"
+            "ru": "Секреты барана: символ 1 — Recoil"
           },
           "description": {
             "en": "Return through the trenches and insert both ram medallions facing each other. Defeat the ambusher, then open the cabinet for Recoil and Queen’s Decree.",
@@ -413,7 +429,7 @@
           "missable": false,
           "title": {
             "en": "Glyph 2 — Animosity",
-            "ru": "Глиф: Glyph 2 — Animosity"
+            "ru": "символ: Glyph 2 — Неприязнь (Animosity)"
           },
           "description": {
             "en": "Follow the trench path left past the stone structure and defeat the four-legged guardian. At The Tower, search the passage beneath the stairs.",
@@ -493,7 +509,7 @@
           },
           "description": {
             "en": "Follow the road toward Jova and search the body before the unfamiliar enemy. Pick up Forward Charge before entering the village.",
-            "ru": "Идите по дороге к Йове и обыщите тело перед новым видом врагов. Подберите Forward Charge перед входом в деревню."
+            "ru": "Идите по дороге к Джове и обыщите тело перед новым видом врагов. Подберите Forward Charge перед входом в деревню."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Drone%20Module%20%232%20%E2%80%93%20Forward%20Charge%20%E2%80%93%20Continue%20forward%20toward%20the%20village%20and%20you%20can%20find%20th",
           "searchTerms": []
@@ -509,7 +525,7 @@
           },
           "description": {
             "en": "Speak with Vaas on the platform at Jova’s entrance. Exhaust every investigation topic before the end of Act 1, when his dialogue disappears.",
-            "ru": "Поговорите с Ваасом на платформе у входа в Йову. Обсудите все темы расследования до завершения акта 1, после которого разговор станет недоступен."
+            "ru": "Поговорите с Ваасом на платформе у входа в Джову. Обсудите все темы расследования до завершения акта 1, после которого разговор станет недоступен."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=NPC%20%233%3A%20Captain%20Vaas%20%E2%80%93%20Follow%20the%20path%20into%20the%20village%20and%20speak%20with%20the%20man%20standing%20on",
           "warning": {
@@ -550,7 +566,7 @@
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=NPC%20%234%3A%20Abbot%20Jaffer%20%E2%80%93%20From%20where%20Vaas%20is%20located%20go%20down%20the%20first%20road%20on%20the%20right%20arou",
           "warning": {
             "en": "Jaffer relocates from Jova to Lake Cynon after the Pathem Abbey events. This route collects his later lake item before Act 3.",
-            "ru": "После событий аббатства Патем Джаффер переезжает из Йовы к Озеру Сайнон. Этот маршрут забирает его поздний предмет у озера до акта 3."
+            "ru": "После событий аббатства Патем Джаффер переезжает из Джовы к Озеру Сайнон. Этот маршрут забирает его поздний предмет у озера до акта 3."
           },
           "searchTerms": ["NPC #4"]
         },
@@ -705,7 +721,7 @@
           },
           "description": {
             "en": "Take the empty bottles to Ernest in Senedra Forest. Bring Baby Bottles – Filled back to the mother underground in Jova before Act 1 ends.",
-            "ru": "Отнесите пустые бутылочки Эрнесту в Лесу Сенедра. Верните Baby Bottles – Filled матери в подземелье Йовы до завершения акта 1."
+            "ru": "Отнесите пустые бутылочки Эрнесту в Лесу Сенедра. Верните Baby Bottles – Filled матери в подземелье Джовы до завершения акта 1."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Use%20the%20save%20point%20outside%20to%20return%20to%20the%20APC%2C%20then%20travel%20back%20to%20Senedra%20Forest.%20Go%20ba",
           "warning": {
@@ -741,7 +757,7 @@
           },
           "description": {
             "en": "Cross the bridge east of Jova to locate the dome. Mark its position; you will need a prism and all local guardians defeated before closing it.",
-            "ru": "Перейдите мост восточнее Йовы и найдите купол. Запомните место: для закрытия позднее потребуется призма и победа над всеми местными хранителями."
+            "ru": "Перейдите мост восточнее Джовы и найдите купол. Запомните место: для закрытия позднее потребуется призма и победа над всеми местными хранителями."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Timeloop%3A%20Acasa%20Marshes%20%E2%80%93%20Follow%20the%20road%20leading%20east%20from%20the%20entrance%20of%20town%20across%20th",
           "searchTerms": []
@@ -885,7 +901,7 @@
           },
           "description": {
             "en": "Clear the tunnel and speak with Victor in the right-hand room. Receive Key – Vitalis’ Home, then return to Jova’s blacksmith district.",
-            "ru": "Зачистите тоннель и поговорите с Виктором в правой комнате. Получите Key – Vitalis’ Home и возвращайтесь к кузнице в Йове."
+            "ru": "Зачистите тоннель и поговорите с Виктором в правой комнате. Получите Key – Vitalis’ Home и возвращайтесь к кузнице в Джове."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=NPC%20%236%3A%20Victor%20Gaz%20%E2%80%93%20Defeat%20all%20the%20enemies%20in%20the%20tunnel%2C%20then%20enter%20the%20room%20on%20the%20righ",
           "searchTerms": ["NPC #6"]
@@ -901,7 +917,7 @@
           },
           "description": {
             "en": "Go north through Jova past Jaffer to the house opposite the forge. Unlock its front door with Key – Vitalis’ Home.",
-            "ru": "Пройдите на север через Йову мимо Джаффера к дому напротив кузницы. Откройте входную дверь ключом Key – Vitalis’ Home."
+            "ru": "Пройдите на север через Джову мимо Джаффера к дому напротив кузницы. Откройте входную дверь ключом Key – Vitalis’ Home."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Head%20back%20to%20town%20and%20go%20toward%20the%20north%20side%20where%20you%20can%20find%20the%20blacksmith%E2%80%99s%20shop%20pa",
           "searchTerms": []
@@ -993,11 +1009,11 @@
           "missable": false,
           "title": {
             "en": "Glyphs 3–7, Lymbic Greatsword, and Grief W rod",
-            "ru": "Глиф: Glyphs 3–7, Lymbic Greatsword, and Grief W rod"
+            "ru": "символ: Glyphs 3–7, Lymbic Greatsword, and Grief W rod"
           },
           "description": {
             "en": "Search every pickup in the unlocked room: Lymbic Greatsword; Perfect Guard, Lingering Pain, Rage Spike, Frightful Ambush, Delirium; Grief W rod; Vigil and Lymbic Locks notes.",
-            "ru": "Заберите всё в открытой комнате: Lymbic Greatsword; Perfect Guard, Lingering Pain, Rage Spike, Frightful Ambush, Delirium; стержень Grief W и записки Vigil/Lymbic Locks."
+            "ru": "Заберите всё в открытой комнате: Lymbic Greatsword; Идеал охраны (Perfect Guard), Агония (Lingering Pain), Пик гнева (Rage Spike), Жуткая засада (Frightful Ambush), Исступление (Delirium); стержень Grief W и записки Vigil/Lymbic Locks."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Enter%20the%20room%20and%20there%20are%205%20things%20to%20pick%20up.%20From%20left%20to%20right%20the%20Letter%20%E2%80%93%20Warning%2C",
           "searchTerms": [
@@ -1048,11 +1064,11 @@
           "missable": false,
           "title": {
             "en": "Mystery 13 — Vitalis’ chest: Glyph 8 — Lymbic Mending",
-            "ru": "Тайна 13 — сундук Виталиса: глиф 8"
+            "ru": "Тайна 13 — сундук Виталиса: символ 8"
           },
           "description": {
             "en": "Return to the basement chest. Insert Grief W in the upper slot and Grief Y in the middle slot to obtain Lymbic Mending.",
-            "ru": "Вернитесь к сундуку в подвале. Установите Grief W в верхнее гнездо и Grief Y в среднее, затем заберите Lymbic Mending."
+            "ru": "Вернитесь к сундуку в подвале. Установите Grief W в верхнее гнездо и Grief Y в среднее, затем заберите Лимбическая починка (Lymbic Mending)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Mystery%20%2313%3A%20Lymbic%20Chest%20%E2%80%93%20Acasa%2C%20Vitalis%E2%80%99%20Basement%20%E2%80%93%20Now%20that%20you%20have%20both%20Grief%20Lymbic",
           "searchTerms": ["Mystery #13", "Glyph #8"]
@@ -1100,11 +1116,11 @@
           "missable": false,
           "title": {
             "en": "Victor’s Vigil: submerged car and Glyph 9",
-            "ru": "Дозор Виктора: машина в воде и глиф 9"
+            "ru": "Дозор Виктора: машина в воде и символ 9"
           },
           "description": {
             "en": "North of the hanging tree, unlock the car in the flooded ruins. Collect Necklace, Chromatic Shielding, Lymbic Twin Axes, Lymbic Imbuing, and Vitalis’ Departure recording.",
-            "ru": "Севернее дерева с повешенными откройте машину в затопленных руинах. Заберите Necklace, Chromatic Shielding, Lymbic Twin Axes, Lymbic Imbuing и запись Vitalis’ Departure."
+            "ru": "Севернее дерева с повешенными откройте машину в затопленных руинах. Заберите Necklace, Пёстрый щит (в источнике Chromatic Shielding), Lymbic Twin Axes, Lymbic Imbuing и запись Vitalis’ Departure."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Good%20Deed%20%238%3A%20Victor%E2%80%99s%20Vigil%20%E2%80%93%20Go%20back%20out%20the%20east%20side%20of%20town%20toward%20the%20tree%20with%20the%20",
           "searchTerms": ["Good Deed #8", "Glyph #9"]
@@ -1136,7 +1152,7 @@
           },
           "description": {
             "en": "Leave Jova southward for the southwestern stone tower. Descend to the neutral Lymbic Door and insert Neutral X and Neutral Z to open it.",
-            "ru": "Выйдите из Йовы на юг к юго-западной каменной башне. Спуститесь к нейтральной лимбической двери и установите Neutral X и Neutral Z."
+            "ru": "Выйдите из Джовы на юг к юго-западной каменной башне. Спуститесь к нейтральной лимбической двери и установите Neutral X и Neutral Z."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Mystery%20%2314%3A%20Lymbic%20Door%20%E2%80%93%20Acasa%2C%20Western%20Monument%20%E2%80%93%20Go%20out%20the%20south%20side%20of%20town%20and%20go%20",
           "searchTerms": ["Mystery #14"]
@@ -1504,11 +1520,11 @@
           "missable": false,
           "title": {
             "en": "Relic 1 — Mark of the Betrayed",
-            "ru": "Реликвия: Relic 1 — Mark of the Betrayed"
+            "ru": "Реликвия 1 — Метка обманутого (Mark of the Betrayed)"
           },
           "description": {
             "en": "After all four flowers trigger rumbling, return to the coffin room and pull its lever. Collect Mark of the Betrayed and Blue Flower Scroll.",
-            "ru": "После установки четырёх цветов и грохота вернитесь к гробу и потяните рычаг. Заберите Mark of the Betrayed и Blue Flower Scroll."
+            "ru": "После установки четырёх цветов и грохота вернитесь к гробу и потяните рычаг. Заберите Метка обманутого (Mark of the Betrayed) и Blue Flower Scroll."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=If%20all%20were%20placed%20correctly%20you%20will%20hear%20rumbling.%20Go%20back%20to%20the%20room%20with%20the%20coffin%20a",
           "searchTerms": ["Relic #1"]
@@ -1540,11 +1556,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 10 — Waves of Grief",
-            "ru": "Глиф: Glyph 10 — Waves of Grief"
+            "ru": "символ: Glyph 10 — Наплыв горя (Waves of Grief)"
           },
           "description": {
             "en": "Ask Gildas for completed good-deed rewards at the Watcher’s Nest. Collect Waves of Grief and revisit him after further deeds for additional rewards.",
-            "ru": "В Гнезде наблюдателя попросите Гилдаса выдать награды за выполненные благие дела. Заберите Waves of Grief; после новых дел возвращайтесь за следующими наградами."
+            "ru": "В Гнезде наблюдателя попросите Гилдаса выдать награды за выполненные благие дела. Заберите Наплыв горя (Waves of Grief); после новых дел возвращайтесь за следующими наградами."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Glyph%20%2310%3A%20Waves%20of%20Grief",
           "searchTerms": ["Glyph #10"]
@@ -1556,7 +1572,7 @@
           "missable": false,
           "title": {
             "en": "Relic 2 — Call of the Griffon",
-            "ru": "Реликвия: Relic 2 — Call of the Griffon"
+            "ru": "Реликвия 2 — Call of the Griffon"
           },
           "description": {
             "en": "Continue claiming your completed good-deed rewards from Gildas. Collect Call of the Griffon before moving on from the Watcher’s Nest.",
@@ -1572,11 +1588,11 @@
           "missable": false,
           "title": {
             "en": "Pendant of Grief — Acceptance",
-            "ru": "Снаряжение: Pendant of Grief — Acceptance"
+            "ru": "Снаряжение: Кулон горя (принятие) (Pendant of Grief — Acceptance)"
           },
           "description": {
             "en": "Claim the Pendant of Grief – Acceptance from Gildas as part of the first set of good-deed rewards. Check its effect in your equipment menu.",
-            "ru": "Получите у Гилдаса Pendant of Grief — Acceptance среди первых наград за благие дела. Ознакомьтесь с его эффектом в меню снаряжения."
+            "ru": "Получите у Гилдаса Кулон горя (принятие) (Pendant of Grief — Acceptance) среди первых наград за благие дела. Ознакомьтесь с его эффектом в меню снаряжения."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Defensive%20Gear%3A%20Pendant%20of%20Grief%20%E2%80%93%20Acceptance",
           "searchTerms": []
@@ -1588,11 +1604,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 11 — Shared Pain",
-            "ru": "Глиф: Glyph 11 — Shared Pain"
+            "ru": "символ: Glyph 11 — Общая боль (Shared Pain)"
           },
           "description": {
             "en": "Claim Shared Pain from Gildas when collecting the first batch of completed good-deed rewards. Equip new glyphs to suitable weapons when useful.",
-            "ru": "Заберите Shared Pain у Гилдаса вместе с первыми наградами за благие дела. При необходимости установите новые глифы на подходящее оружие."
+            "ru": "Заберите Общая боль (Shared Pain) у Гилдаса вместе с первыми наградами за благие дела. При необходимости установите новые символы на подходящее оружие."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Glyph%20%2311%3A%20Shared%20Pain",
           "searchTerms": ["Glyph #11"]
@@ -1620,11 +1636,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 12 — Masochistic Delight",
-            "ru": "Глиф: Glyph 12 — Masochistic Delight"
+            "ru": "символ: Glyph 12 — Мазохизм (Masochistic Delight)"
           },
           "description": {
             "en": "Finish collecting the first reward set from Gildas by taking Masochistic Delight. Keep returning after completed deeds, as later rewards include essential relics.",
-            "ru": "Завершите получение первых наград у Гилдаса, забрав Masochistic Delight. Возвращайтесь после благих дел: среди дальнейших наград есть необходимые реликвии."
+            "ru": "Завершите получение первых наград у Гилдаса, забрав Мазохизм (Masochistic Delight). Возвращайтесь после благих дел: среди дальнейших наград есть необходимые реликвии."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Glyph%20%2312%3A%20Masochistic%20Delight",
           "searchTerms": ["Glyph #12"]
@@ -1636,14 +1652,18 @@
           "missable": false,
           "title": {
             "en": "Vyssa Hills timeloop: Glyph 13 and Relic 3",
-            "ru": "Петля Виссайских холмов: глиф 13 и реликвия 3"
+            "ru": "Петля Виссайских холмов: символ 13 и реликвия 3"
           },
           "description": {
             "en": "Use Guardian Detector to find every local guardian. Close the dome with Sigma, then claim Interrupt, The Blood Queen’s Phalange, and three Weak tuning stones from Gildas.",
-            "ru": "Найдите всех местных хранителей детектором. Закройте купол призмой Sigma и получите у Гилдаса Interrupt, The Blood Queen’s Phalange и три Weak tuning stones."
+            "ru": "Найдите всех местных хранителей детектором. Закройте купол призмой Sigma и получите у Гилдаса Прерывание (Interrupt), The Blood Queen’s Phalange и три Weak tuning stones."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Timeloop%20%E2%80%93%20Vyssa%20Hills%20%E2%80%93%20Warp%20back%20to%20the%20APC%20from%20the%20save%20point%2C%20make%20sure%20to%20equip%20the%20",
-          "searchTerms": ["Glyph #13", "Relic #3"]
+          "searchTerms": ["Glyph #13", "Relic #3"],
+          "warning": {
+            "ru": "Петлю можно закрыть сейчас. Ключи транспорта сохраните до лекарства и возвращения ошейника; не передавайте их Аттику раньше.",
+            "en": "You may close this loop now. Keep the vehicle keys until the medicine and collar deliveries; do not give them to Atticus early."
+          }
         },
         {
           "id": "act-1-step-105",
@@ -1784,7 +1804,7 @@
           },
           "description": {
             "en": "In Jova’s ON Outpost, give Photograph – Girl to Zao Ru at the table. Claim Glyph 14 – Fury from Gildas afterward.",
-            "ru": "В посту ON в Йове отдайте Photograph – Girl Зао Ру, сидящей за столом. После этого получите у Гилдаса глиф 14 — Fury."
+            "ru": "В посту ON в Джове отдайте Photograph – Girl Зао Ру, сидящей за столом. После этого получите у Гилдаса символ 14 — Ярость (Fury)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Return%20to%20Jova%20and%20go%20to%20the%20ON%20Outpost%20where%20Zao%20Ru%20is%20now%20sitting%20at%20the%20table.%20Trade%20he",
           "searchTerms": ["Glyph #14"]
@@ -1800,7 +1820,7 @@
           },
           "description": {
             "en": "Give Sheet Music – Losilus Dreaming to Jova’s violinist to finish Good Deed 6. Gildas rewards Pendant of Terror – Lymbic Attunement.",
-            "ru": "Отдайте Sheet Music – Losilus Dreaming скрипачу Йовы и завершите благое дело 6. Награда Гилдаса — Pendant of Terror — Lymbic Attunement."
+            "ru": "Отдайте Sheet Music – Losilus Dreaming скрипачу Джовы и завершите благое дело 6. Награда Гилдаса — Pendant of Terror — Lymbic Attunement."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Good%20Deed%20%232%3A%20Performance%20of%20a%20Lifetime%20%E2%80%93%20Go%20back%20to%20the%20man%20playing%20violin%20in%20the%20middle%20",
           "warning": {
@@ -2148,11 +2168,11 @@
           "missable": false,
           "title": {
             "en": "Mystery 24 — Forge hall chest: Glyph 15 — Nightfade",
-            "ru": "Тайна 24 — сундук зала кузни: глиф 15"
+            "ru": "Тайна 24 — сундук зала кузни: символ 15"
           },
           "description": {
             "en": "Return through the Owl door near the torch puzzle. Insert Rage W into the chest in the enemy room and collect Nightfade.",
-            "ru": "Вернитесь через дверь Owl возле загадки с факелами. Установите Rage W в сундук в комнате с врагом и заберите Nightfade."
+            "ru": "Вернитесь через дверь Owl возле загадки с факелами. Установите Rage W в сундук в комнате с врагом и заберите Ночная мгла (Nightfade)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Mystery%20%2324%3A%20Lymbic%20Chest%20%E2%80%93%20Lymbic%20Forge%2C%20Hall%20%E2%80%93%20Go%20back%20to%20the%20room%20where%20you%20rotated%20the",
           "searchTerms": ["Mystery #24", "Glyph #15"]
@@ -2164,11 +2184,11 @@
           "missable": false,
           "title": {
             "en": "Mystery 25 — Dormitory chest: Glyph 16 — Void",
-            "ru": "Тайна 25 — сундук спальни: глиф 16"
+            "ru": "Тайна 25 — сундук спальни: символ 16"
           },
           "description": {
             "en": "From the sigil-door room, take the northern doorway and climb both staircases. Insert Neutral V into the chest among the left-hand beds for Void.",
-            "ru": "Из комнаты двери с печатями идите на север и поднимитесь по обеим лестницам. Установите Neutral V в сундук среди кроватей слева и заберите Void."
+            "ru": "Из комнаты двери с печатями идите на север и поднимитесь по обеим лестницам. Установите Neutral V в сундук среди кроватей слева и заберите Пустота (Void)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Mystery%20%2325%3A%20Lymbic%20Chest%20%E2%80%93%20Lymbic%20Forge%2C%20Dormitory.%20%E2%80%93%20Backtrack%20to%20the%20room%20where%20you%20pla",
           "searchTerms": ["Mystery #25", "Glyph #16"]
@@ -2212,11 +2232,11 @@
           "missable": false,
           "title": {
             "en": "Mystery 23 — Forge door: Glyphs 17–18",
-            "ru": "Тайна 23 — дверь кузни: глифы 17–18"
+            "ru": "Тайна 23 — дверь кузни: символы 17–18"
           },
           "description": {
             "en": "Clear the lower room and its green Haze guardian. Insert Terror W, X, and Y into the northern door; collect Shriek of Terror and Gluttony – Enhanced.",
-            "ru": "Зачистите нижнюю комнату и хранителя с зелёной дымкой. Установите Terror W, X и Y в северную дверь; заберите Shriek of Terror и Gluttony — Enhanced."
+            "ru": "Зачистите нижнюю комнату и хранителя с зелёной дымкой. Установите Terror W, X и Y в северную дверь; заберите Вопль ужаса (Shriek of Terror) и Обжорство — сильный (Gluttony — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Mystery%20%2323%3A%20Lymbic%20Door%20%E2%80%93%20Lymbic%20Forge%20%E2%80%93%20Drop%20down%20to%20the%20lower%20area%20and%20defeat%20the%20enemi",
           "searchTerms": ["Mystery #23", "Glyph #17", "Glyph #18"]
@@ -2228,11 +2248,11 @@
           "missable": false,
           "title": {
             "en": "Relic 4 — Aster’s Band of Domination and Hammer of Modus",
-            "ru": "Реликвия: Relic 4 — Aster’s Band of Domination and Hammer of Modus"
+            "ru": "Реликвия 4 — Кольцо верховенства Астера (Aster’s Band of Domination) and Hammer of Modus"
           },
           "description": {
             "en": "Ride the eastern elevator down and defeat every split Haze. Collect Sigma near the coffin; open it for Aster’s relic, Hammer of Modus, and Fundamentals of Lymbic Forging.",
-            "ru": "Спуститесь восточным лифтом и победите все разделяющиеся дымки. Заберите Sigma у гроба; откройте его и получите реликвию Астера, Hammer of Modus и Fundamentals of Lymbic Forging."
+            "ru": "Спуститесь восточным лифтом и победите все разделяющиеся дымки. Заберите Sigma у гроба; откройте его и получите реликвию Астера, Hammer of Modus и Книга лимбических работ (основы) (Fundamentals of Lymbic Forging)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Continue%20to%20the%20east%20and%20use%20the%20elevator%20to%20go%20down.%20In%20the%20next%20room%20you%E2%80%99ll%20encounter%20a%20",
           "searchTerms": ["Relic #4"]
@@ -2285,7 +2305,7 @@
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-1/#:~:text=Go%20to%20the%20back%20of%20the%20room%20and%20interact%20with%20the%20spot%20under%20the%20blue%20face%20and%20place%20the%20Ke",
           "warning": {
             "en": "This ends Act 1. Finish Vaas’ dialogue and the early Jova good deeds; keep ON Vehicle keys until the dog rescue in Act 2.",
-            "ru": "Это завершает акт 1. Закончите разговоры Вааса и ранние дела Йовы; сохраните ключи ON Vehicle до спасения собаки в акте 2."
+            "ru": "Это завершает акт 1. Закончите разговоры Вааса и ранние дела Джовы; сохраните ключи ON Vehicle до спасения собаки в акте 2."
           },
           "searchTerms": []
         }
@@ -2328,7 +2348,7 @@
           },
           "description": {
             "en": "Before Talju, bring Fundamentals of Lymbic Forging to Victor in Jova. This enables Grade 3 gear, Grade 5 weapons, and intermediate Lymbic consumables.",
-            "ru": "Перед Талджу отдайте Виктору в Йове Fundamentals of Lymbic Forging. Станут доступны снаряжение третьего ранга, оружие пятого ранга и промежуточные лимбические расходники."
+            "ru": "Перед Талджу отдайте Виктору в Джове Книга лимбических работ (основы) (Fundamentals of Lymbic Forging). Станут доступны снаряжение третьего ранга, оружие пятого ранга и промежуточные лимбические расходники."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Before%20heading%20there%2C%20there%20are%20some%20Good%20Deeds%20to%20clean%20up%20now%20that%20you%20have%20completed%20Ac",
           "searchTerms": []
@@ -2356,7 +2376,7 @@
           },
           "description": {
             "en": "Immediately after Act 1, find the dog northwest of Rebecca’s house in Jova. Free it and collect Dog Collar before progressing Pathem Abbey.",
-            "ru": "Сразу после акта 1 найдите собаку северо-западнее дома Ребекки в Йове. Освободите её и заберите Dog Collar до событий аббатства Патем."
+            "ru": "Сразу после акта 1 найдите собаку северо-западнее дома Ребекки в Джове. Освободите её и заберите Dog Collar до событий аббатства Патем."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Good%20Deed%20%2312%3A%20Man%E2%80%99s%20Best%20Friend%20%E2%80%93%20Some%20of%20the%20soldiers%20have%20left%20Jova%2C%20so%20you%20can%20now%20dea",
           "warning": {
@@ -2388,7 +2408,7 @@
           },
           "description": {
             "en": "Visit the northern refugee camp without giving Atticus any keys. Give Dog Collar to the man on the right; collect Glyph 19 – Eager Embrace.",
-            "ru": "Посетите северный лагерь беженцев, пока не отдавая ключи Аттикусу. Передайте Dog Collar мужчине справа и получите глиф 19 — Eager Embrace."
+            "ru": "Посетите северный лагерь беженцев, пока не отдавая ключи Аттикусу. Передайте Dog Collar мужчине справа и получите символ 19 — Пылкие объятия (Eager Embrace)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Travel%20to%20Vyssa%20Hills%2C%20and%20DO%20NOT%20SPEAK%20WITH%20ATTICUS%20YET.%20You%20must%20complete%20Good%20Deed%20%2312%20",
           "warning": {
@@ -2408,7 +2428,7 @@
           },
           "description": {
             "en": "Only after Good Deeds 11 and 12 are finished, give Atticus Keys – ON Vehicle. Collect Brooch of Rage – Bathe in Blood.",
-            "ru": "Только после завершения благих дел 11 и 12 отдайте Аттикусу Keys – ON Vehicle. Получите Brooch of Rage — Bathe in Blood."
+            "ru": "Только после завершения благих дел 11 и 12 отдайте Аттикусу Keys – ON Vehicle. Получите Брошь гнева (омовение кровью) (Brooch of Rage — Bathe in Blood)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Good%20Deed%20%2310%3A%20Heart%20of%20Gold%20%E2%80%93%20Go%20back%20to%20the%20APC%20and%20this%20time%20climb%20up%20the%20ladder%20to%20the",
           "warning": {
@@ -2805,11 +2825,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 20 — Interrupt – Enhanced",
-            "ru": "Глиф: Glyph 20 — Interrupt – Enhanced"
+            "ru": "символ: Glyph 20 — Прерывание — сильный (Interrupt – Enhanced)"
           },
           "description": {
             "en": "Claim the reward for completing all four A Light in the Dark deeds. Collect Interrupt – Enhanced before moving on to Marastan.",
-            "ru": "Получите награду за выполнение всех четырёх дел Свет во тьме. Заберите Interrupt — Enhanced перед дальнейшим путешествием в Марастан."
+            "ru": "Получите награду за выполнение всех четырёх дел Свет во тьме. Заберите Прерывание — сильный (Interrupt — Enhanced) перед дальнейшим путешествием в Марастан."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Glyph%20%2320%3A%20Interrupt%20%E2%80%93%20Enhanced",
           "searchTerms": ["Glyph #20"]
@@ -2869,7 +2889,7 @@
           "missable": false,
           "title": {
             "en": "Relic 5 — Knell of Ebbing Ecstasy",
-            "ru": "Реликвия: Relic 5 — Knell of Ebbing Ecstasy"
+            "ru": "Реликвия 5 — Knell of Ebbing Ecstasy"
           },
           "description": {
             "en": "Claim Knell of Ebbing Ecstasy from the completed Talju survivor deeds. Missing a flare prevents the full reward set and this collectible route.",
@@ -2894,7 +2914,7 @@
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Good%20Deed%20%237%3A%20Waylaid%20%E2%80%93%20Now%20that%20the%20truck%20is%20moved%20from%20the%20parking%20lot%2C%20you%20can%20access%20t",
           "warning": {
             "en": "Keep Metformin for Waylaid and complete the two-soldier exchange before the later Keystone milestones.",
-            "ru": "Сохраните Metformin для Waylaid и завершите обмен с двумя солдатами до последующих сюжетных этапов ключ-камней."
+            "ru": "Сохраните Metformin для Засада (Waylaid) и завершите обмен с двумя солдатами до последующих сюжетных этапов ключ-камней."
           },
           "searchTerms": ["Good Deed #7"]
         },
@@ -3073,7 +3093,7 @@
           "missable": false,
           "title": {
             "en": "Samo’s Keys: Glyph 21 — Berserk – Enhanced",
-            "ru": "Ключи Само: глиф 21 — Berserk – Enhanced"
+            "ru": "Ключи Само: символ 21 — Берсерк — сильный (Berserk – Enhanced)"
           },
           "description": {
             "en": "Follow the lower western road to Grisibel’s Auto Repair. Climb its rear ladder and give Samo’s Spare keys to the man on the roof.",
@@ -3217,11 +3237,11 @@
           "missable": false,
           "title": {
             "en": "Power to the People: final fuse and Glyph 22",
-            "ru": "Электричество людям: последний предохранитель и глиф 22"
+            "ru": "Электричество людям: последний предохранитель и символ 22"
           },
           "description": {
             "en": "Enter the open house at the western road’s end, drop into its basement, and install the final Fuse behind it. Listen to the radio; collect Chromatic Shield – Enhanced.",
-            "ru": "Войдите в открытый дом в конце западной дороги, спуститесь в подвал и установите последний Fuse сзади. Послушайте радио; получите Chromatic Shield — Enhanced."
+            "ru": "Войдите в открытый дом в конце западной дороги, спуститесь в подвал и установите последний Fuse сзади. Послушайте радио; получите Пёстрый щит — сильный (Chromatic Shield — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Good%20Deed%20%2319%3A%20Power%20to%20the%20People%20%E2%80%93%20Go%20west%20down%20the%20road%20to%20the%20house%20at%20the%20end%20with%20an",
           "searchTerms": ["Good Deed #19", "Glyph #22"]
@@ -3269,7 +3289,7 @@
           },
           "description": {
             "en": "Drop from the ledge and take the right path outside above the radio tower. Unlock its box with Key – Antenna and switch it off for Fury – Elite.",
-            "ru": "Спрыгните с уступа и по правому пути выйдите выше радиобашни. Откройте коробку Key — Antenna и отключите её; награда — Fury — Elite."
+            "ru": "Спрыгните с уступа и по правому пути выйдите выше радиобашни. Откройте коробку Key — Antenna и отключите её; награда — Ярость — элитный (Fury — Elite)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Good%20Deed%20%2317%3A%20Insult%20to%20Injury%20%E2%80%93%20Drop%20off%20the%20ledge%20and%20go%20right%20(you%20can%20go%20left%20first%20a",
           "searchTerms": ["Good Deed #17", "Glyph #23"]
@@ -3473,11 +3493,11 @@
           "missable": false,
           "title": {
             "en": "Marastan Woods: Glyphs 24–25 and Relic 7",
-            "ru": "Петля леса Марастана: глифы 24–25 и реликвия 7"
+            "ru": "Петля леса Марастана: символы 24–25 и реликвия 7"
           },
           "description": {
             "en": "Defeat all guardians and enter the dome north of the ruins. Use Theta; collect Recoil – Elite, Overwhelm – Elite, and The Eternal Sands.",
-            "ru": "Победите всех хранителей и войдите в купол севернее руин. Примените Theta; получите Recoil — Elite, Overwhelm — Elite и The Eternal Sands."
+            "ru": "Победите всех хранителей и войдите в купол севернее руин. Примените Theta; получите Recoil — Elite, Потрясение — элитный (Overwhelm — Elite) и The Eternal Sands."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Timeloop%3A%20Marastan%20Woods%20%E2%80%93%20With%20the%20Theta%20prisms%20you%20can%20close%20the%20Timeloops%20in%20this%20area.",
           "searchTerms": ["Glyph #24", "Glyph #25", "Relic #7"]
@@ -3574,7 +3594,7 @@
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Go%20inside%20and%20you%20can%20find%20two%20people.%20Trade%20the%20woman%20Map%20%E2%80%93%20Senedra%20Mountains%20to%20complete",
           "warning": {
             "en": "Complete Forlorn Fate before advancing the later Keystone sequence.",
-            "ru": "Завершите Forlorn Fate до продолжения поздней последовательности ключ-камней."
+            "ru": "Завершите Одинокая участь (Forlorn Fate) до продолжения поздней последовательности ключ-камней."
           },
           "searchTerms": []
         },
@@ -3617,11 +3637,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 26 — Rage Spike – Enhanced and Sword of Ecstasy",
-            "ru": "Глиф: Glyph 26 — Rage Spike – Enhanced and Sword of Ecstasy"
+            "ru": "символ: Glyph 26 — Пик гнева — сильный (Rage Spike – Enhanced) and Sword of Ecstasy"
           },
           "description": {
             "en": "Enter the room behind the Rage door. Search the pickups for Rage Spike – Enhanced and Sword of Ecstasy before heading toward Arcas Spire.",
-            "ru": "Войдите в комнату за дверью гнева. Заберите Rage Spike — Enhanced и Sword of Ecstasy перед отправлением к шпилю Аркас."
+            "ru": "Войдите в комнату за дверью гнева. Заберите Пик гнева — сильный (Rage Spike — Enhanced) и Sword of Ecstasy перед отправлением к шпилю Аркас."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Glyph%20%2326%3A%20Rage%20Spike%20%E2%80%93%20Enhanced%20%E2%80%93%20Inside%20the%20room%20you%20can%20pick%20up%20this%20Glyph%2C%20along%20with%20",
           "searchTerms": ["Glyph #26"]
@@ -3665,11 +3685,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 27 — Eager Embrace – Enhanced",
-            "ru": "Глиф: Glyph 27 — Eager Embrace – Enhanced"
+            "ru": "символ: Glyph 27 — Пылкие объятия — сильный (Eager Embrace – Enhanced)"
           },
           "description": {
             "en": "Continue down from the third save point. At the first platform beneath a ranged enemy, circle right to the next ranged enemy and collect the glyph.",
-            "ru": "Спускайтесь от третьей точки сохранения. На первой платформе под дальнобойным врагом обойдите справа к следующему стрелку и заберите глиф."
+            "ru": "Спускайтесь от третьей точки сохранения. На первой платформе под дальнобойным врагом обойдите справа к следующему стрелку и заберите символ."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Glyph%20%2327%3A%20Eager%20Embrace%20%E2%80%93%20Enhanced%20%E2%80%93%20Go%20back%20to%20the%20third%20save%20point%20and%20keep%20following%20t",
           "searchTerms": ["Glyph #27"]
@@ -3841,11 +3861,11 @@
           "missable": false,
           "title": {
             "en": "Cage puzzle C4 → Eye: Glyph 28 — Nightfade – Enhanced",
-            "ru": "Глиф: Cage puzzle C4 → Eye: Glyph 28 — Nightfade – Enhanced"
+            "ru": "символ: Cage puzzle C4 → Eye: Glyph 28 — Ночная мгла — сильный (Nightfade – Enhanced)"
           },
           "description": {
             "en": "Reach section C through the left cells near D4. Step on C4, drop through the floor shortcut if needed, and pull Eye to open the glyph room.",
-            "ru": "Через левые камеры возле D4 дойдите до секции C. Нажмите C4, при необходимости спрыгните через пол и потяните Глаз для открытия комнаты глифа."
+            "ru": "Через левые камеры возле D4 дойдите до секции C. Нажмите C4, при необходимости спрыгните через пол и потяните Глаз для открытия комнаты символа."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Glyph%20%2328%3A%20Nightfade%20%E2%80%93%20Enhanced%20%E2%80%93%20Go%20back%20up%20to%20the%20same%20level%20where%20D4%20was%2C%20then%20go%20throu",
           "searchTerms": ["Glyph #28"]
@@ -3905,11 +3925,11 @@
           "missable": false,
           "title": {
             "en": "Advanced Lymbic Forging, Theta, and Rho",
-            "ru": "Ключевой предмет: Advanced Lymbic Forging, Theta, and Rho"
+            "ru": "Ключевой предмет: Продвинутая лимбическая ковка † (Advanced Lymbic Forging), Theta, and Rho"
           },
           "description": {
             "en": "Past the exit, collect Advanced Lymbic Forging at the top of the stairs, both Theta and Rho prisms, and General Aarlon’s Note; the book unlocks Grade 4 gear.",
-            "ru": "За выходом заберите наверху Advanced Lymbic Forging, призмы Theta и Rho и General Aarlon’s Note. Книга позволит Виктору улучшать снаряжение до четвёртого ранга."
+            "ru": "За выходом заберите наверху Продвинутая лимбическая ковка † (Advanced Lymbic Forging), призмы Theta и Rho и General Aarlon’s Note. Книга позволит Виктору улучшать снаряжение до четвёртого ранга."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Now%20go%20back%20around%20to%20the%20other%20side%20of%20the%20top%20level%20and%20progress%20through%20the%20large%20door.",
           "searchTerms": []
@@ -3921,11 +3941,11 @@
           "missable": false,
           "title": {
             "en": "Arcas Spire: Glyphs 29–30 and Relic 8",
-            "ru": "Петля шпиля Аркас: глифы 29–30 и реликвия 8"
+            "ru": "Петля шпиля Аркас: символы 29–30 и реликвия 8"
           },
           "description": {
             "en": "Defeat all three guardians outside and close the story-blocking dome with Theta. Collect Shriek of Terror – Elite, Interrupt – Elite, and The Dream Aculeus.",
-            "ru": "Победите трёх хранителей снаружи и закройте мешающий сюжету купол призмой Theta. Получите Shriek of Terror — Elite, Interrupt — Elite и The Dream Aculeus."
+            "ru": "Победите трёх хранителей снаружи и закройте мешающий сюжету купол призмой Theta. Получите Вопль ужаса — элитный (Shriek of Terror — Elite), Прерывание — элитный (Interrupt — Elite) и The Dream Aculeus."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-1/#:~:text=Timeloop%3A%20Arcas%20Spire%20%E2%80%93%20Outside%20you%20see%20a%20Timeloop%20in%20front%20of%20you%2C%20which%20you%20need%20to%20clos",
           "searchTerms": ["Glyph #29", "Glyph #30", "Relic #8"]
@@ -4049,7 +4069,7 @@
           },
           "description": {
             "en": "Check Frygen’s new photo wall. Starting east clockwise, face two spikes, four spikes, circle, one spike inward; collect Feed on Fear – Enhanced, Perfect Guard – Enhanced, Aarlon’s Last Stand.",
-            "ru": "Посмотрите новые фотографии Фригена. От восточного столба по часовой стрелке поверните внутрь: два шипа, четыре шипа, круг, один шип. Заберите два глифа и Aarlon’s Last Stand."
+            "ru": "Посмотрите новые фотографии Фригена. От восточного столба по часовой стрелке поверните внутрь: два шипа, четыре шипа, круг, один шип. Заберите два символа и Aarlon’s Last Stand."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Mystery%20%237%3A%20The%20Hermit%20%E2%80%93%20Head%20back%20to%20the%20east%20side%20of%20the%20area%20to%20the%20Hermit%E2%80%99s%20hut%20and%20yo",
           "searchTerms": ["Mystery #7", "Glyph #31", "Glyph #32", "Relic #9"]
@@ -4141,11 +4161,11 @@
           "missable": false,
           "title": {
             "en": "Pathem Abbey: Glyphs 33–34 and Relic 10",
-            "ru": "Петля аббатства Патем: глифы 33–34 и реликвия 10"
+            "ru": "Петля аббатства Патем: символы 33–34 и реликвия 10"
           },
           "description": {
             "en": "Close the abbey timeloop with Theta after its guardians are cleared. Collect Lingering Pain – Elite, Eager Embrace – Elite, and The Heart of Aria.",
-            "ru": "После победы над хранителями закройте петлю аббатства призмой Theta. Получите Lingering Pain — Elite, Eager Embrace — Elite и The Heart of Aria."
+            "ru": "После победы над хранителями закройте петлю аббатства призмой Theta. Получите Агония — элитный (Lingering Pain — Elite), Пылкие объятия — элитный (Eager Embrace — Elite) и The Heart of Aria."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Timeloop%3A%20Patham%20Abbey%20%E2%80%93%20Enter%20the%20Timeloop%20and%20interact%20with%20the%20drone%2C%20using%20an%20Amine%20Pr",
           "searchTerms": ["Glyph #33", "Relic #10", "Glyph #34", "Glyph #34"]
@@ -4173,14 +4193,18 @@
           "missable": false,
           "title": {
             "en": "Acasa Marshes: Glyphs 35–36",
-            "ru": "Петля Болот Акаса: глифы 35–36"
+            "ru": "Петля Болот Акаса: символы 35–36"
           },
           "description": {
             "en": "Clear any remaining marsh guardians and return to the dome east of Jova. Use Sigma; collect Lymbic Slivers, Berserk, and three Weak tuning stones.",
-            "ru": "Убейте оставшихся хранителей болот и вернитесь к куполу восточнее Йовы. Примените Sigma; получите Lymbic Slivers, Berserk и три Weak tuning stones."
+            "ru": "Убейте оставшихся хранителей болот и вернитесь к куполу восточнее Джовы. Примените Sigma; получите Лимбические иглы (Lymbic Slivers), Берсерк (Berserk) и три Weak tuning stones."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Timeloop%3A%20Acasa%20Marshes%20%E2%80%93%20If%20you%20didn%E2%80%99t%20already%2C%20use%20the%20Guardian%20Detector%20to%20find%20the%20Tim",
-          "searchTerms": ["Glyph #35", "Glyph #36", "Glyph #36"]
+          "searchTerms": ["Glyph #35", "Glyph #36", "Glyph #36"],
+          "warning": {
+            "ru": "Резерв для фарма: если нужны осколки или убийства дымок этой области, отложите закрытие. Базовый Берсерк не заменяет сильную версию. Подробности — в Tips.",
+            "en": "Farming reserve: defer closure if you need this area’s shards or Haze kills. Basic Berserk does not replace Enhanced. See Tips."
+          }
         },
         {
           "id": "act-2-part-2-step-016",
@@ -4189,11 +4213,11 @@
           "missable": false,
           "title": {
             "en": "Eastern Ruins chest: Glyph 37 — Lingering Pain – Enhanced",
-            "ru": "Сундук восточных руин: глиф 37"
+            "ru": "Сундук восточных руин: символ 37"
           },
           "description": {
             "en": "Go north of the tall pillars beyond the armory spike puzzle. Insert Terror Z into the green chest at the map’s edge for Lingering Pain – Enhanced.",
-            "ru": "Идите на север от высоких столбов за загадку шипов оружейной. Установите Terror Z в зелёный сундук у края карты и заберите Lingering Pain — Enhanced."
+            "ru": "Идите на север от высоких столбов за загадку шипов оружейной. Установите Terror Z в зелёный сундук у края карты и заберите Агония — сильный (Lingering Pain — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Mystery%20%2324%3A%20Lymbic%20Chest%20%E2%80%93%20Acasa%2C%20Eastern%20Ruins%20%E2%80%93%20Go%20north%20of%20the%20tall%20stone%20pillars%20to%20t",
           "searchTerms": ["Mystery #24", "Glyph #37"]
@@ -4209,7 +4233,7 @@
           },
           "description": {
             "en": "Return toward Jova and follow the northeastern path to the locked OMSIF camp. Enter 151991 on the gate’s left-hand keypad to get inside.",
-            "ru": "Вернитесь к Йове и по северо-восточной тропе дойдите до лагеря OMSIF. Введите 151991 на клавиатуре слева от ворот."
+            "ru": "Вернитесь к Джове и по северо-восточной тропе дойдите до лагеря OMSIF. Введите 151991 на клавиатуре слева от ворот."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Mystery%20%239%3A%20Observation%20Outpost%2008%20%E2%80%93%20Head%20back%20toward%20Jova%2C%20then%20northeast%20toward%20the%20lock",
           "searchTerms": ["Mystery #9"]
@@ -4301,7 +4325,7 @@
           "missable": false,
           "title": {
             "en": "Enlightenment: Jova catacomb torch",
-            "ru": "Просветление: факел катакомб Йовы"
+            "ru": "Просветление: факел катакомб Джовы"
           },
           "description": {
             "en": "Drop through Jova’s well near Rebecca’s house and descend the second ladder. In the candle-filled chamber, light only the left torch; correct settings cause rumbling.",
@@ -4337,7 +4361,7 @@
           },
           "description": {
             "en": "Reach Jova’s western cemetery past the fences. Place Golden Clover on the northwestern pillar, then collect Scroll – Eulogy and The Bloodseeker from its base.",
-            "ru": "Дойдите до западного кладбища Йовы за заборами. Установите Golden Clover в северо-западный столб и заберите Scroll — Eulogy и The Bloodseeker у основания."
+            "ru": "Дойдите до западного кладбища Джовы за заборами. Установите Golden Clover в северо-западный столб и заберите Scroll — Eulogy и The Bloodseeker у основания."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Mystery%20%2311%3A%20The%20Protector%20%E2%80%93%20Go%20back%20into%20Jova%20and%20make%20your%20way%20to%20the%20west%20corner%20of%20the",
           "searchTerms": ["Mystery #11", "Relic #12"]
@@ -4489,11 +4513,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 38 — Shriek of Terror – Enhanced",
-            "ru": "Глиф: Glyph 38 — Shriek of Terror – Enhanced"
+            "ru": "символ: Glyph 38 — Вопль ужаса — сильный (Shriek of Terror – Enhanced)"
           },
           "description": {
             "en": "At the reception desk, inspect the glass firearms cabinet on the right. Collect Shriek of Terror – Enhanced before searching the surrounding bookshelves.",
-            "ru": "У стойки приёмной осмотрите стеклянный шкаф с оружием справа. Заберите Shriek of Terror — Enhanced перед поиском книг на соседних полках."
+            "ru": "У стойки приёмной осмотрите стеклянный шкаф с оружием справа. Заберите Вопль ужаса — сильный (Shriek of Terror — Enhanced) перед поиском книг на соседних полках."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Glyph%20%2338%3A%20Shriek%20of%20Terror%20%E2%80%93%20Enhanced%20%E2%80%93%20To%20the%20right%20of%20the%20reception%20desk%2C%20you%20can%20pick%20",
           "searchTerms": ["Glyph #38"]
@@ -5050,7 +5074,7 @@
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Good%20Deed%20%237%3A%20Waylaid%20%E2%80%93%20Return%20to%20Acasa%20Marshes%20and%20to%20the%20southwest%20side%20of%20the%20area%20outs",
           "warning": {
             "en": "Finish Waylaid before placing all remaining Keystones at the end of Act 2.",
-            "ru": "Завершите Waylaid до установки всех оставшихся ключ-камней в конце акта 2."
+            "ru": "Завершите Засада (Waylaid) до установки всех оставшихся ключ-камней в конце акта 2."
           },
           "searchTerms": ["Good Deed #7", "Relic #13"]
         }
@@ -5329,11 +5353,11 @@
           "missable": false,
           "title": {
             "en": "Francis’ Church: Glyphs 39–40 and Relic 14",
-            "ru": "Петля церкви Франциска: глифы 39–40 и реликвия 14"
+            "ru": "Петля церкви Франциска: символы 39–40 и реликвия 14"
           },
           "description": {
             "en": "Open the left gate and defeat the ranged guardian below. Close the dome with Theta for Masochistic Delight – Enhanced, Frightful Ambush – Enhanced, and Knell of Waning Grief.",
-            "ru": "Откройте левые ворота и победите дальнобойного хранителя внизу. Закройте купол Theta; получите два улучшенных глифа и Knell of Waning Grief."
+            "ru": "Откройте левые ворота и победите дальнобойного хранителя внизу. Закройте купол Theta; получите два улучшенных символа и Knell of Waning Grief."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Timeloop%3A%20Francis%E2%80%99%20Church%20%E2%80%93%20Open%20the%20gate%20to%20the%20left%20with%20the%20lever%2C%20then%20you%E2%80%99ll%20end%20up%20o",
           "searchTerms": ["Mystery #16", "Glyph #39", "Glyph #40", "Relic #14"]
@@ -5409,11 +5433,11 @@
           "missable": false,
           "title": {
             "en": "Knoll rewards: Glyphs 41–43 and Relic 15",
-            "ru": "Награды Хранилища холма: глифы 41–43 и реликвия 15"
+            "ru": "Награды Хранилища холма: символы 41–43 и реликвия 15"
           },
           "description": {
-            "en": "Search both sides: Void, Animosity, Rapture – Enhanced; The Unbound Delusion; Pendant of Ecstasy – Battle Bliss; Lady Marguerith painting; A Spy’s Insight and Anticipation texts.",
-            "ru": "Осмотрите обе стороны: Void, Animosity, Rapture — Enhanced; The Unbound Delusion; Pendant of Ecstasy — Battle Bliss; картина Lady Marguerith; тексты A Spy’s Insight и Anticipation."
+            "en": "Collect Void – Enhanced, Animosity – Enhanced and Rapture – Enhanced; The Unbound Delusion; Pendant of Ecstasy – Battle Bliss; the painting and both texts.",
+            "ru": "Заберите Пустота — сильный (Void — Enhanced), Неприязнь — сильный (Animosity — Enhanced) и Упоение — сильный (Rapture — Enhanced); The Unbound Delusion; Pendant of Ecstasy — Battle Bliss; картину и оба текста."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Enter%20the%20vault%20and%20there%20are%20a%20bunch%20of%20items%20to%20pick%20up.%20On%20the%20left%20is%20Painting%20%E2%80%93%20Lady%20",
           "searchTerms": ["Glyph #41", "Glyph #42", "Relic #15", "Glyph #43"]
@@ -5441,7 +5465,7 @@
           },
           "description": {
             "en": "Upgrade weapons and glyphs before entering the plains. Use Guardian Detector as you advance; the temple timeloop requires all local guardians defeated.",
-            "ru": "Перед входом в равнины улучшите оружие и глифы. Продвигайтесь с детектором: для петли храма нужно победить всех местных хранителей."
+            "ru": "Перед входом в равнины улучшите оружие и символы. Продвигайтесь с детектором: для петли храма нужно победить всех местных хранителей."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Be%20wary%20all%20enemies%20here%20are%20now%20Tier%20III%2C%20so%20make%20sure%20you%E2%80%99re%20using%20upgraded%20weapons%20and%20",
           "searchTerms": []
@@ -5549,11 +5573,11 @@
           "missable": false,
           "title": {
             "en": "Glyph 44 — Rapture – Elite",
-            "ru": "Глиф: Glyph 44 — Rapture – Elite"
+            "ru": "символ: Glyph 44 — Упоение — элитный (Rapture – Elite)"
           },
           "description": {
             "en": "Clear the guardian on the central dome platform and follow the left path to the next save point. Take the east branch, then the left fork to the glyph.",
-            "ru": "Убейте хранителя центральной площадки купола и идите влево к следующему сохранению. Выберите восточную ветку, затем левую развилку к глифу."
+            "ru": "Убейте хранителя центральной площадки купола и идите влево к следующему сохранению. Выберите восточную ветку, затем левую развилку к символу."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Glyph%20%2344%3A%20Rapture%20%E2%80%93%20Elite%20%E2%80%93%20Follow%20the%20path%20down%20to%20the%20platform%20where%20you%20find%20the%20Timel",
           "searchTerms": ["Glyph #44"]
@@ -5773,14 +5797,18 @@
           "missable": false,
           "title": {
             "en": "Temple of the Fallen: Glyphs 45–46 and Relic 16",
-            "ru": "Петля храма павших: глифы 45–46 и реликвия 16"
+            "ru": "Петля храма павших: символы 45–46 и реликвия 16"
           },
           "description": {
             "en": "Return down to the dome and close it with Rho. Collect Gluttony – Elite, Lymbic Mending – Elite, Wisdom of the Griffon, and Francis’ Journal – Sacrifice afterward.",
-            "ru": "Спуститесь к куполу и закройте его призмой Rho. Получите Gluttony — Elite, Lymbic Mending — Elite, Wisdom of the Griffon и дневник Francis’ Journal — Sacrifice."
+            "ru": "Спуститесь к куполу и закройте его призмой Rho. Получите Обжорство — элитный (Gluttony — Elite), Лимбическая починка — элитный (Lymbic Mending — Elite), Wisdom of the Griffon и дневник Francis’ Journal — Sacrifice."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-2/#:~:text=Timeloop%3A%20Temple%20of%20the%20Fallen%20%E2%80%93%20Follow%20the%20stairs%20down%20to%20drop%20back%20to%20the%20platform%20with%20",
-          "searchTerms": ["Glyph #45", "Glyph #46", "Relic #16"]
+          "searchTerms": ["Glyph #45", "Glyph #46", "Relic #16"],
+          "warning": {
+            "ru": "Перед закрытием проверьте крупные осколки и 40 дымок III уровня. Дофармите здесь либо сохраните другую область с врагами III уровня; затем заберите элитную Починку у Брома.",
+            "en": "Before closing, check large shards and 40 tier III Haze kills. Farm here or retain another tier III area, then claim Elite Mending from Brom."
+          }
         }
       ]
     },
@@ -5885,7 +5913,7 @@
           },
           "description": {
             "en": "Collect Chalice of Everflowing Turmoil; Greatswords of Ecstasy and Rage, Twin Axes of Terror, Polearm of Grief; Lymbic Aesthetics Part 2, The Silent Safeguard, and Vanished texts.",
-            "ru": "Заберите Chalice of Everflowing Turmoil; Greatswords of Ecstasy/Rage, Twin Axes of Terror, Polearm of Grief; тексты Lymbic Aesthetics Part 2, The Silent Safeguard и Vanished."
+            "ru": "Заберите Chalice of Everflowing Turmoil; Greatswords of Ecstasy/Rage, Twin Axes of Terror, Древковое оружие горя † (Polearm of Grief); тексты Lymbic Aesthetics Part 2, The Silent Safeguard и Vanished."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Enter%20the%20vault%20and%20there%20are%20a%20bunch%20of%20items%20to%20pick%20up.%20On%20the%20left%20is%20Tome%20%E2%80%93%20The%20Ascen",
           "searchTerms": ["Relic #17"]
@@ -6013,7 +6041,7 @@
           },
           "description": {
             "en": "Kill the upper enemy, open the gate, and circle back to raise the crane. Return through the gate and kill the ranged enemy for Overwhelm – Enhanced.",
-            "ru": "Убейте верхнего врага, откройте ворота и вернитесь поднять кран. Пройдите через ворота и победите дальнобойного врага; награда — Overwhelm — Enhanced."
+            "ru": "Убейте верхнего врага, откройте ворота и вернитесь поднять кран. Пройдите через ворота и победите дальнобойного врага; награда — Потрясение — сильный (Overwhelm — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Good%20Deed%20%2324%3A%20Separated%20%E2%80%93%20Kill%20the%20enemy%20up%20top%20and%20then%20open%20the%20gate.%20Walk%20back%20around%20",
           "searchTerms": ["Good Deed #24", "Glyph #47"]
@@ -6061,7 +6089,7 @@
           },
           "description": {
             "en": "Near the excavation entrance’s broken fence, unlock the small columbarium with its key. Place Urn inside for Greatsword of Grief and Lymbic Mending – Enhanced.",
-            "ru": "У сломанного забора входа в раскопки откройте маленький колумбарий его ключом. Установите Urn; награда — Greatsword of Grief и Lymbic Mending — Enhanced."
+            "ru": "У сломанного забора входа в раскопки откройте маленький колумбарий его ключом. Установите Urn; награда — Greatsword of Grief и Лимбическая починка — сильный (Lymbic Mending — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Good%20Deed%20%2326%3A%20Family%20Feud%20%E2%80%93%20Go%20back%20toward%20the%20main%20area%20in%20front%20of%20the%20church%2C%20then%20ove",
           "searchTerms": ["Good Deed #26", "Glyph #48"]
@@ -6077,7 +6105,7 @@
           },
           "description": {
             "en": "In the smaller excavation tent, unlock the locker with Key – Archeology Camp. Take Shoes – Red and Letter – Daughter’s Hope for the later Jova return.",
-            "ru": "В маленькой палатке раскопок откройте шкаф Key — Archeology Camp. Заберите Shoes — Red и Letter — Daughter’s Hope для возвращения в Йову."
+            "ru": "В маленькой палатке раскопок откройте шкаф Key — Archeology Camp. Заберите Shoes — Red и Letter — Daughter’s Hope для возвращения в Джову."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Good%20Deed%20%2325%3A%20Never%20Worn%20%E2%80%93%20Go%20into%20the%20dig%20site%20and%20in%20the%20smaller%20tent%20you%20can%20find%20a%20lo",
           "searchTerms": ["Good Deed #25"]
@@ -6089,11 +6117,11 @@
           "missable": false,
           "title": {
             "en": "Jeljin Cemetery: Glyphs 49–50 and Relic 18",
-            "ru": "Петля кладбища Джелцзина: глифы 49–50 и реликвия 18"
+            "ru": "Петля кладбища Джелцзина: символы 49–50 и реликвия 18"
           },
           "description": {
             "en": "Clear all cemetery guardians, return underground, and close the dome with Rho. Collect Void – Elite, Berserk – Elite, Knell of Receding Rage, and Aster Doorway 3.",
-            "ru": "Убейте всех хранителей кладбища, вернитесь под землю и закройте купол Rho. Получите Void — Elite, Berserk — Elite, Knell of Receding Rage и Aster Doorway 3."
+            "ru": "Убейте всех хранителей кладбища, вернитесь под землю и закройте купол Rho. Получите Пустота — элитный (Void — Elite), Берсерк — элитный (Berserk — Elite), Knell of Receding Rage и Aster Doorway 3."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Timeloop%3A%20Jeljin%20Cemetery%20%E2%80%93%20You%20can%20now%20have%20defeated%20all%20the%20Timeloop%20Guardians%20in%20the%20ar",
           "searchTerms": ["Glyph #49", "Glyph #50", "Relic #18"]
@@ -6121,11 +6149,11 @@
           "missable": false,
           "title": {
             "en": "Relic 19 — Visage of the Defier and Bracers of Rage",
-            "ru": "Реликвия: Relic 19 — Visage of the Defier and Bracers of Rage"
+            "ru": "Реликвия 19 — Visage of the Defier and Bracers of Rage"
           },
           "description": {
             "en": "Search the opened Family First room for Visage of the Defier and Bracers of Rage – Bloodlust, along with the available consumables.",
-            "ru": "Обыщите открытую комнату тайны Семья прежде всего. Заберите Visage of the Defier, Bracers of Rage — Bloodlust и доступные расходные предметы."
+            "ru": "Обыщите открытую комнату тайны Семья прежде всего. Заберите Visage of the Defier, Наручи гнева (жажда крови) (Bracers of Rage — Bloodlust) и доступные расходные предметы."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Enter%20the%20room%20and%20you%20can%20pick%20up%20a%20couple%20of%20consumables%20along%20with%20Defensive%20Gear%3A%20Brac",
           "searchTerms": ["Relic #19"]
@@ -6217,7 +6245,7 @@
           },
           "description": {
             "en": "Return to the graffiti house near Rebecca’s old home in Jova. Upstairs, interact with the elephant plush and place Shoes – Red for Shared Pain – Enhanced.",
-            "ru": "Вернитесь в дом с граффити возле прежнего дома Ребекки в Йове. Наверху у игрушечного слона установите Shoes — Red; награда — Shared Pain — Enhanced."
+            "ru": "Вернитесь в дом с граффити возле прежнего дома Ребекки в Джове. Наверху у игрушечного слона установите Shoes — Red; награда — Общая боль — сильный (Shared Pain — Enhanced)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Good%20Deed%20%2325%3A%20Never%20Worn%20%E2%80%93%20Go%20to%20Acasa%20Marshes%20and%20in%20Jova%20go%20to%20the%20house%20near%20where%20Reb",
           "searchTerms": ["Good Deed #25", "Glyph #51"]
@@ -6681,11 +6709,11 @@
           "missable": false,
           "title": {
             "en": "Auriga B1: Glyphs 52–53 and Relic 20",
-            "ru": "Петля Музея Возничего B1: глифы 52–53 и реликвия 20"
+            "ru": "Петля Музея Возничего B1: символы 52–53 и реликвия 20"
           },
           "description": {
             "en": "Return to B1’s dome after all guardians are dead. Close it with Rho for Delirium – Elite, Shared Pain – Elite, and Cyrene’s Requiem.",
-            "ru": "Вернитесь к куполу B1 после победы над всеми хранителями. Закройте его Rho и получите Delirium — Elite, Shared Pain — Elite и Cyrene’s Requiem."
+            "ru": "Вернитесь к куполу B1 после победы над всеми хранителями. Закройте его Rho и получите Исступление — элитный (Delirium — Elite), Общая боль — элитный (Shared Pain — Elite) и Cyrene’s Requiem."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Timeloop%3A%20Auriga%20Museum%20B1%20%E2%80%93%20Go%20back%20in%20the%20room%20where%20the%20Timeloop%20is%20located%20and%20you%20sho",
           "searchTerms": ["Glyph #52", "Glyph #53", "Relic #20"]
@@ -6797,11 +6825,11 @@
           "missable": false,
           "title": {
             "en": "Auriga B4: Glyphs 54–55 and Relic 21",
-            "ru": "Петля Музея Возничего B4: глифы 54–55 и реликвия 21"
+            "ru": "Петля Музея Возничего B4: символы 54–55 и реликвия 21"
           },
           "description": {
             "en": "Defeat both generated guardians, enter the dome, and use Rho. Collect Animosity – Elite, Feed on Fear – Elite, and Blessed Hand of Sethyris.",
-            "ru": "Убейте обоих созданных хранителей, войдите в купол и примените Rho. Получите Animosity — Elite, Feed on Fear — Elite и Blessed Hand of Sethyris."
+            "ru": "Убейте обоих созданных хранителей, войдите в купол и примените Rho. Получите Неприязнь — элитный (Animosity — Elite), Подпитка страхом — элитный (Feed on Fear — Elite) и Blessed Hand of Sethyris."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Once%20both%20are%20dealt%20with%20you%20can%20enter%20the%20Timeloop%2C%20interacting%20with%20the%20drone%20and%20select",
           "searchTerms": ["Glyph #54", "Glyph #55", "Relic #21"]
@@ -7013,11 +7041,11 @@
           "missable": false,
           "title": {
             "en": "Mere rewards: Glyphs 56–57 and Relic 23",
-            "ru": "Награды Хранилища озера: глифы 56–57 и реликвия 23"
+            "ru": "Награды Хранилища озера: символы 56–57 и реликвия 23"
           },
           "description": {
             "en": "Collect Memoria of the Phol, Perfect Guard – Elite, Lymbic Slivers – Elite, Theta, five Steady stones, A Dire Cost, Scion Namir Adam painting, and Lymbic Aesthetics Part 1.",
-            "ru": "Заберите Memoria of the Phol, Perfect Guard — Elite, Lymbic Slivers — Elite, Theta, пять Steady stones, A Dire Cost, картину Scion Namir Adam и Lymbic Aesthetics Part 1."
+            "ru": "Заберите Memoria of the Phol, Идеал охраны — элитный (Perfect Guard — Elite), Лимбические иглы — элитный (Lymbic Slivers — Elite), Theta, пять Steady stones, A Dire Cost, картину Scion Namir Adam и Lymbic Aesthetics Part 1."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Inside%20the%20vault%20you%20can%20pick%20up%20a%20bunch%20of%20items.%20On%20the%20left%3A%20Parchment%20%E2%80%93%20A%20Dire%20Cost%2C%20P",
           "searchTerms": ["Relic #23", "Glyph #56", "Glyph #57"]
@@ -7033,7 +7061,7 @@
           },
           "description": {
             "en": "Visit the building where Jaffer now stays. Take Bottle of Mead – Full from his right; keep it for the drunk soldier back in Jova.",
-            "ru": "Посетите здание, где теперь находится Джаффер. Заберите Bottle of Mead — Full справа от него для пьяного солдата в Йове."
+            "ru": "Посетите здание, где теперь находится Джаффер. Заберите Bottle of Mead — Full справа от него для пьяного солдата в Джове."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Mystery%20%238%3A%20The%20Captain%E2%80%99s%20Office%20%E2%80%93%20Head%20toward%20the%20building%20where%20you%20can%20find%20Abbott%20Jaff",
           "warning": {
@@ -7069,11 +7097,11 @@
           "missable": false,
           "title": {
             "en": "Mystery 20 — Reservoir chest: Glyph 58 — Wave of Wrath – Elite",
-            "ru": "Тайна 20 — сундук водоёма: глиф 58"
+            "ru": "Тайна 20 — сундук водоёма: символ 58"
           },
           "description": {
             "en": "Descend into the reservoir and turn back toward its entrance to find the white chest. Insert Neutral W and Y to collect Wave of Wrath – Elite.",
-            "ru": "Спуститесь в водоём и развернитесь ко входу, где стоит белый сундук. Установите Neutral W и Y и заберите Wave of Wrath — Elite."
+            "ru": "Спуститесь в водоём и развернитесь ко входу, где стоит белый сундук. Установите Neutral W и Y и заберите Волна ярости — элитный (Wave of Wrath — Elite)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Mystery%20%2320%3A%20Lymbic%20Chest%20%E2%80%93%20Lake%20Cynon%2C%20Reservoir%20%E2%80%93%20Go%20down%20into%20the%20reservoir%20and%20turn%20ar",
           "searchTerms": ["Mystery #20", "Glyph #58"]
@@ -7101,11 +7129,11 @@
           "missable": false,
           "title": {
             "en": "Bowl of Ash, Glyph 59 — Recoil – Enhanced, Twin Axes of Rage",
-            "ru": "Исследование: Bowl of Ash, Glyph 59 — Recoil – Enhanced, Twin Axes of Rage"
+            "ru": "Исследование: Bowl of Ash, Glyph 59 — Recoil – Enhanced, Парные топоры гнева (Twin Axes of Rage)"
           },
           "description": {
             "en": "Clear the guardian behind the yellow door. Search all three pickups for Bowl of Ash, Recoil – Enhanced, and Twin Axes of Rage.",
-            "ru": "Убейте хранителя за жёлтой дверью. Осмотрите три точки и заберите Bowl of Ash, Recoil — Enhanced и Twin Axes of Rage."
+            "ru": "Убейте хранителя за жёлтой дверью. Осмотрите три точки и заберите Bowl of Ash, Recoil — Enhanced и Парные топоры гнева (Twin Axes of Rage)."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Research%20Item%3A%20Bowl%20of%20Ash%20%E2%80%93%20Enter%20the%20room%20and%20defeat%20the%20enemy%20to%20clear%20a%20Timeloop%20Guard",
           "searchTerms": ["Glyph #59"]
@@ -7117,11 +7145,11 @@
           "missable": false,
           "title": {
             "en": "Lymbic Forge: Glyphs 60–61 and Relic 24",
-            "ru": "Петля лимбической кузни: глифы 60–61 и реликвия 24"
+            "ru": "Петля лимбической кузни: символы 60–61 и реликвия 24"
           },
           "description": {
             "en": "Confirm all forge guardians are dead, descend by the waterwheel elevator, and enter behind the altar. Close with Theta for Rapture, Fury – Enhanced, and Kolig’s Providence.",
-            "ru": "Проверьте смерть всех хранителей кузни, спуститесь лифтом водяного колеса и войдите за алтарём. Закройте Theta; получите Rapture, Fury — Enhanced и Kolig’s Providence."
+            "ru": "Проверьте смерть всех хранителей кузни, спуститесь лифтом водяного колеса и войдите за алтарём. Закройте Theta; получите Упоение (Rapture), Ярость — сильный (Fury — Enhanced) и Kolig’s Providence."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Timeloop%3A%20Lymbic%20Forge%20%E2%80%93%20Check%20you%E2%80%99ve%20defeated%20all%20Timeloop%20Guardians%20in%20the%20area%20now%2C%20the",
           "searchTerms": ["Glyph #60", "Glyph #61", "Relic #24"]
@@ -7149,11 +7177,11 @@
           "missable": false,
           "title": {
             "en": "Forge waterfall chest: Glyph 62 — Delirium – Enhanced",
-            "ru": "Сундук водопада кузни: глиф 62"
+            "ru": "Сундук водопада кузни: символ 62"
           },
           "description": {
             "en": "In the forge’s northern wall between the waterwheels, pass behind the waterfall. Insert Grief X into the blue chest for Delirium – Enhanced and three Medium capacitors.",
-            "ru": "У северной стены кузни между колёсами пройдите за водопад. Вставьте Grief X в синий сундук; внутри Delirium — Enhanced и три Medium capacitors."
+            "ru": "У северной стены кузни между колёсами пройдите за водопад. Вставьте Grief X в синий сундук; внутри Исступление — сильный (Delirium — Enhanced) и три Medium capacitors."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-2-part-3/#:~:text=Mystery%20%2341%3A%20Lymbic%20Chest%3A%20Lymbic%20Forge%2C%20Waterfall%20%E2%80%93%20Go%20back%20up%20and%20into%20the%20Lymbic%20Forge.",
           "searchTerms": ["Mystery #41", "Glyph #62"]
@@ -7429,11 +7457,11 @@
           "missable": false,
           "title": {
             "en": "Copse rewards: Glyphs 63–66",
-            "ru": "Награды Хранилища рощи: глифы 63–66"
+            "ru": "Награды Хранилища рощи: символы 63–66"
           },
           "description": {
             "en": "Search both sides for Gluttony, Overwhelm, Feed on Fear, Wave of Wrath; Sigma; A Bitter Triumph, To Rosetta, and Preparations texts.",
-            "ru": "Осмотрите обе стороны и заберите Gluttony, Overwhelm, Feed on Fear, Wave of Wrath; Sigma; тексты A Bitter Triumph, To Rosetta и Preparations."
+            "ru": "Осмотрите обе стороны и заберите Обжорство (Gluttony), Потрясение (Overwhelm), Подпитка страхом (Feed on Fear), Волна ярости (Wave of Wrath); Sigma; тексты A Bitter Triumph, To Rosetta и Preparations."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Inside%20the%20vault%20you%20can%20pick%20up%20a%20bunch%20of%20items.%20On%20the%20left%3A%20Tome%20%E2%80%93%20A%20Bitter%20Triumph%2C%20A",
           "searchTerms": ["Glyph #63", "Glyph #64", "Glyph #65", "Glyph #66"]
@@ -7461,14 +7489,18 @@
           "missable": false,
           "title": {
             "en": "Senedra Hilltop: Glyphs 67–68 and Relic 25",
-            "ru": "Петля холма Сенедры: глифы 67–68 и реликвия 25"
+            "ru": "Петля холма Сенедры: символы 67–68 и реликвия 25"
           },
           "description": {
             "en": "Kill the guardian behind the blue door and all remaining forest guardians. Close the dome with Sigma for Waves of Grief – Enhanced, Waves of Wrath – Enhanced, and The Omen of Oblivion.",
-            "ru": "Убейте хранителя за синей дверью и остальных хранителей леса. Закройте Sigma; получите Waves of Grief — Enhanced, Waves of Wrath — Enhanced и The Omen of Oblivion."
+            "ru": "Убейте хранителя за синей дверью и остальных хранителей леса. Закройте Sigma; получите Наплыв горя — сильный (Waves of Grief — Enhanced), Waves of Wrath — Enhanced и The Omen of Oblivion."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Timeloop%3A%20Senedra%20%E2%80%93%20Hilltop%20%E2%80%93%20Enter%20the%20room%20to%20find%20the%20Senedra%20Forest%20Timeloop%2C%20with%20the",
-          "searchTerms": ["Glyph #67", "Glyph #68", "Relic #25"]
+          "searchTerms": ["Glyph #67", "Glyph #68", "Relic #25"],
+          "warning": {
+            "ru": "Если оставляли Сенедру для фарма, проверьте материалы и убийства до закрытия. Ранние враги не заменяют фарм III уровня.",
+            "en": "If you reserved Senedra for farming, check materials and kills before closing. Early enemies do not replace tier III farming."
+          }
         },
         {
           "id": "act-3-cleanup-step-022",
@@ -7525,7 +7557,7 @@
           },
           "description": {
             "en": "Visit Jova’s drunk soldier and give him Bottle of Mead – Full from Jaffer’s lakeside building. Receive Key – Jova Office for the rooftop-access office.",
-            "ru": "Навестите пьяного солдата Йовы и отдайте Bottle of Mead — Full из здания Джаффера у озера. Получите Key — Jova Office для кабинета через крышу."
+            "ru": "Навестите пьяного солдата Джовы и отдайте Bottle of Mead — Full из здания Джаффера у озера. Получите Key — Jova Office для кабинета через крышу."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Mystery%20%238%3A%20The%20Captain%E2%80%99s%20Office%20%E2%80%93%20In%20Jova%20go%20back%20to%20the%20drunk%20soldier%20in%20the%20center%20of%20t",
           "searchTerms": ["Mystery #8"]
@@ -7541,7 +7573,7 @@
           },
           "description": {
             "en": "Climb onto the building near Jova’s entrance and cross its roof. Unlock the office door on the far side with Key – Jova Office to finish the mystery.",
-            "ru": "Поднимитесь на здание у входа в Йову и перейдите через крышу. Откройте дверь с другой стороны ключом Jova Office и завершите тайну."
+            "ru": "Поднимитесь на здание у входа в Джову и перейдите через крышу. Откройте дверь с другой стороны ключом Jova Office и завершите тайну."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Go%20up%20to%20the%20roof%20of%20the%20building%20near%20the%20entrance%20of%20town%20and%20you%20can%20walk%20through%20to%20th",
           "searchTerms": []
@@ -7589,7 +7621,7 @@
           },
           "description": {
             "en": "Return northeast of Jova to the OMSIF camp and its rear cave. Set the vault dials in order: Rage, Ecstasy, Terror, Grief.",
-            "ru": "Вернитесь северо-восточнее Йовы в лагерь OMSIF и его заднюю пещеру. Выставьте диски хранилища по порядку: гнев, счастье, страх, горе."
+            "ru": "Вернитесь северо-восточнее Джовы в лагерь OMSIF и его заднюю пещеру. Выставьте диски хранилища по порядку: гнев, счастье, страх, горе."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Vault%20of%20the%20Mire%20%E2%80%93%20Go%20northeast%20of%20town%20back%20to%20the%20OMSIF%20camp%2C%20then%20around%20the%20back%20to%20t",
           "searchTerms": []
@@ -7661,11 +7693,11 @@
           "missable": false,
           "title": {
             "en": "Pilgrimage: Glyph 69 — Lymbic Slivers – Enhanced",
-            "ru": "Паломничество: глиф 69 — Lymbic Slivers – Enhanced"
+            "ru": "Паломничество: символ 69 — Лимбические иглы — сильный (Lymbic Slivers – Enhanced)"
           },
           "description": {
             "en": "Return northwest through the stone tunnels to the upper Hollow-statue ruins. Open the chest with Key – Barrel for Lymbic Slivers – Enhanced and two Steady stones.",
-            "ru": "Вернитесь на северо-запад через каменные тоннели в верхние руины со статуями Пустых. Откройте сундук Key — Barrel: внутри Lymbic Slivers — Enhanced и два Steady stones."
+            "ru": "Вернитесь на северо-запад через каменные тоннели в верхние руины со статуями Пустых. Откройте сундук Key — Barrel: внутри Лимбические иглы — сильный (Lymbic Slivers — Enhanced) и два Steady stones."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Mystery%20%2319%3A%20Pilgrimage%20%E2%80%93%20Make%20your%20way%20northwest%20back%20through%20the%20stone%20tunnels%20until%20you",
           "searchTerms": ["Mystery #19", "Glyph #69"]
@@ -7689,14 +7721,18 @@
           "missable": false,
           "title": {
             "en": "Talju: Glyphs 70–71 and Relic 28",
-            "ru": "Петля Талджу: глифы 70–71 и реликвия 28"
+            "ru": "Петля Талджу: символы 70–71 и реликвия 28"
           },
           "description": {
             "en": "Go beyond the barn in Talju’s northwest corner and clear any remaining guardians. Close the dome with Theta for Nightfade – Elite, Chromatic Shield – Elite, and Entropic Enigma.",
-            "ru": "За амбаром северо-западной окраины Талджу убейте оставшихся хранителей. Закройте купол Theta; получите Nightfade — Elite, Chromatic Shield — Elite и Entropic Enigma."
+            "ru": "За амбаром северо-западной окраины Талджу убейте оставшихся хранителей. Закройте купол Theta; получите Ночная мгла — элитный (Nightfade — Elite), Пёстрый щит — элитный (Chromatic Shield — Elite) и Entropic Enigma."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Timeloop%3A%20Talju%20%E2%80%93%20Go%20to%20the%20northwest%20corner%20of%20town%20past%20the%20barn%20where%20you%20can%20find%20the%20",
-          "searchTerms": ["Glyph #70", "Glyph #71", "Relic #28"]
+          "searchTerms": ["Glyph #70", "Glyph #71", "Relic #28"],
+          "warning": {
+            "ru": "Перед закрытием резервной петли проверьте класс всех четырёх типов оружия, двух защитных предметов и недостающие убийства дымок.",
+            "en": "Before closing this reserve loop, check the four weapon types, two defensive items and missing Haze kills."
+          }
         },
         {
           "id": "act-3-cleanup-step-037",
@@ -7708,8 +7744,8 @@
             "ru": "Legend of the Phol: уничтожить всех оставшихся Пустых"
           },
           "description": {
-            "en": "After all timeloops are closed, revisit every combat area and kill all remaining Hollows. Confirm Threats: Clear on each APC map entry; Guardian Detector cannot track ordinary enemies.",
-            "ru": "Закрыв все петли, вернитесь во все боевые области и уничтожьте оставшихся Пустых. Проверьте Threats: Clear на карте БТР; детектор не ищет обычных врагов."
+            "en": "Close all 14 timeloops and clear the remaining enemies in every combat area. Check Threats: Clear on the APC map. Since update 1.7, Guardian Detector also finds remaining Lymbic Entities after a local timeloop closes.",
+            "ru": "Закройте все 14 петель и уничтожьте оставшихся врагов во всех боевых областях. Проверьте «Угрозы: устранены» (Threats: Clear) на карте БТР. Начиная с обновления 1.7 детектор также ищет оставшихся лимбических созданий после закрытия местной петли."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=At%20this%20point%20you%20will%20have%20cleared%20all%20Timeloops%2C%20but%20to%20earn%20Legend%20of%20the%20Phol%20you%20also",
           "searchTerms": []
@@ -7749,11 +7785,11 @@
           "missable": false,
           "title": {
             "en": "Beck rewards: Glyphs 72–75 and Relic 29",
-            "ru": "Награды Хранилища ручья: глифы 72–75 и реликвия 29"
+            "ru": "Награды Хранилища ручья: символы 72–75 и реликвия 29"
           },
           "description": {
-            "en": "Collect Rage Spike, Frightful Ambush, Waves of Grief, Masochistic Delight – Elite; Orison of Valour; Rho; Queen Raveta painting; Lymbic Aesthetics Part 3 and Regret.",
-            "ru": "Заберите Rage Spike, Frightful Ambush, Waves of Grief, Masochistic Delight — Elite; Orison of Valour; Rho; картину Queen Raveta; Lymbic Aesthetics Part 3 и Regret."
+            "en": "Collect Rage Spike – Elite, Frightful Ambush – Elite, Waves of Grief – Elite and Masochistic Delight – Elite; Orison of Valour; Rho; Queen Raveta painting; Lymbic Aesthetics Part 3 and Regret.",
+            "ru": "Заберите Пик гнева — элитный (Rage Spike — Elite), Жуткая засада — элитный (Frightful Ambush — Elite), Наплыв горя — элитный (Waves of Grief — Elite) и Мазохизм — элитный (Masochistic Delight — Elite); Orison of Valour; Rho; картину Queen Raveta; Lymbic Aesthetics Part 3 и Regret."
           },
           "source": "https://www.powerpyx.com/hell-is-us-collectible-walkthrough-act-3-cleanup/#:~:text=Inside%20the%20vault%20you%20can%20pick%20up%20the%20following%20items%2C%20on%20the%20left%3A%20Tome%20%E2%80%93%20The%20Ascendance%20o",
           "searchTerms": [

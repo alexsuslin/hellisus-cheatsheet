@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "updated": "2026-10-13",
+  "sources": {
+    "steam": {
+      "name": "Steam · KennedySPD — прохождение на 100%",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3574530573"
+    },
+    "steamTips": {
+      "name": "Steam · Rain — достижения и прокачка",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603925833"
+    },
+    "show": {
+      "name": "ShowGamer — русские названия и прохождение",
+      "url": "https://showgamer.com/ru/prohozhdeniya-igr/3347-podrobnoe-prohozhdenie-hell-is-us"
+    },
+    "wol": {
+      "name": "WOL — благие дела и награды",
+      "url": "https://wol.su/guides/18013-vse-blagie-dela-v-hell-is-us-kak-nachat-i-kakie-nagrady-mozhno-poluchit.html"
+    },
+    "loops": {
+      "name": "PowerPyx — временные петли",
+      "url": "https://www.powerpyx.com/hell-is-us-all-legend-of-the-phol-timeloops-guide/"
+    },
+    "missables": {
+      "name": "PowerPyx — пропускаемые действия",
+      "url": "https://www.powerpyx.com/hell-is-us-missables-guide/"
+    },
+    "glyphs": {
+      "name": "PowerPyx — символы",
+      "url": "https://www.powerpyx.com/hell-is-us-all-glyph-locations/"
+    },
+    "vaults": {
+      "name": "PowerPyx — залы запретных знаний",
+      "url": "https://www.powerpyx.com/hell-is-us-all-vault-of-forbidden-knowledge-locations/"
+    },
+    "gear": {
+      "name": "PowerPyx — защитное снаряжение",
+      "url": "https://www.powerpyx.com/hell-is-us-all-defensive-item-locations/"
+    },
+    "trophies": {
+      "name": "PowerPyx — условия достижений",
+      "url": "https://www.powerpyx.com/hell-is-us-trophy-guide-roadmap/"
+    },
+    "patch": {
+      "name": "Rogue Factor · Steam — Update 1.7",
+      "url": "https://steamcommunity.com/app/1620730/allnews/"
+    },
+    "effects": {
+      "name": "Gamer Guides — эффекты снаряжения Гнева",
+      "url": "https://www.gamerguides.com/hell-is-us/database/defensive-gear/rage"
+    }
+  },
+  "reminders": [
+    {
+      "id": "tip-farm",
+      "act": "all",
+      "title": {
+        "ru": "До закрытия последней петли",
+        "en": "Before closing the last loop"
+      },
+      "description": {
+        "ru": "Проверьте класс 5 у всех четырёх типов оружия, класс 4 у двух защитных предметов и 40 побеждённых дымок каждого уровня I / II / III. Сначала закончите нужный фарм, затем закрывайте резервные петли. Галочка здесь — ваша проверка в игре.",
+        "en": "Check Grade 5 for all four weapon types, two Grade 4 defensive items, and 40 defeated Hazes of each tier I / II / III. Finish any needed farming before closing your reserved loops. This checkbox records your in-game check."
+      },
+      "routeIds": ["act-3-cleanup-step-037"],
+      "source": "steamTips"
+    },
+    {
+      "id": "tip-act1",
+      "act": "act1",
+      "title": {
+        "ru": "До установки первого ключ-камня",
+        "en": "Before placing the first Keystone"
+      },
+      "description": {
+        "ru": "Завершите ранние дела Джовы: молоко, фотография соседке, письмо жены, обе партитуры скрипачу. Поговорите с Ваасом и отдайте лекарство женщине на Виссайских холмах. Ссылки ведут к конкретным проверкам.",
+        "en": "Finish Jova’s milk, neighbor’s picture, wife’s letter and both music deliveries. Speak to Vaas and deliver the medicine in Vyssa Hills."
+      },
+      "routeIds": [
+        "act-1-step-030",
+        "act-1-step-037",
+        "act-1-step-040",
+        "act-1-step-066",
+        "act-1-step-082",
+        "act-1-step-115",
+        "act-1-step-151"
+      ],
+      "source": "missables"
+    },
+    {
+      "id": "tip-keys",
+      "act": "act1",
+      "title": {
+        "ru": "Ключи Аттику — после лекарства и ошейника",
+        "en": "Atticus’ keys — after medicine and collar"
+      },
+      "description": {
+        "ru": "Петлю Виссайских холмов можно закрыть и ключи забрать. Опасен момент передачи ключей: придержите их до выполнения «На пороге смерти» и «Лучший друг человека». Это также путь к броши Гнева.",
+        "en": "You may close the Vyssa Hills loop and collect the keys. Delay handing them over until On Death’s Door and Man’s Best Friend are complete; this also unlocks the rage brooch."
+      },
+      "routeIds": [
+        "act-1-step-105",
+        "act-2-part-1-step-007",
+        "act-2-part-1-step-008"
+      ],
+      "source": "missables"
+    },
+    {
+      "id": "tip-dog",
+      "act": "act2",
+      "title": {
+        "ru": "Собака — первое дело во II акте",
+        "en": "Rescue the dog first in Act II"
+      },
+      "description": {
+        "ru": "Освободите собаку в Джове и верните ошейник хозяину до сюжетных событий монастыря Патем, после которых Ребекка и настоятель переезжают к озеру. Иначе собака может не попасть к озеру для Ever After.",
+        "en": "Free Jova’s dog and return its collar before the Pathem Abbey events that move Rebecca and the abbot to the lake. Otherwise the dog may not join them for Ever After."
+      },
+      "routeIds": ["act-2-part-1-step-006", "act-2-part-1-step-007"],
+      "source": "missables"
+    },
+    {
+      "id": "tip-flares",
+      "act": "act2",
+      "title": {
+        "ru": "Талджу — раздать все четыре ракеты",
+        "en": "Talju — deliver all four flares"
+      },
+      "description": {
+        "ru": "До передачи рации Лухану раздайте четыре сигнальные ракеты, включая Боро. Не убивайте сюжетного врага на парковке мэрии раньше этого.",
+        "en": "Deliver all four flares, including Boro’s, before giving Lukhan the radio. Do not kill the Town Hall parking-lot story enemy first."
+      },
+      "routeIds": [
+        "act-2-part-1-step-021",
+        "act-2-part-1-step-022",
+        "act-2-part-1-step-026",
+        "act-2-part-1-step-028"
+      ],
+      "source": "missables"
+    },
+    {
+      "id": "tip-ministry",
+      "act": "act2",
+      "title": {
+        "ru": "Министерство — закончить за один визит",
+        "en": "Ministry — finish in one visit"
+      },
+      "description": {
+        "ru": "Поговорите с Мейв до убийства стрелка в коридоре. Завершите Incognito, передав одежду солдату, прежде чем уехать из области.",
+        "en": "Speak to Maeve before killing the hallway ranged enemy. Deliver the clothing to the soldier for Incognito before leaving the area."
+      },
+      "routeIds": ["act-2-part-2-step-058", "act-2-part-2-step-059"],
+      "source": "missables"
+    },
+    {
+      "id": "tip-lamech",
+      "act": "act2",
+      "title": {
+        "ru": "Музей B1 — враги до жёлтых дверей",
+        "en": "Museum B1 — enemies before yellow doors"
+      },
+      "description": {
+        "ru": "Прежде чем включать YELLOW, уничтожьте врагов в комнате напротив петли. Затем поговорите с Ламехом. На B4 отдельно поговорите с Мабденом по интеркому до испытания.",
+        "en": "Kill the enemies opposite the loop before selecting YELLOW, then speak to Lamech. On B4, speak to Mabden through the intercom before the trial."
+      },
+      "routeIds": [
+        "act-2-part-3-step-059",
+        "act-2-part-3-step-062",
+        "act-2-part-3-step-064"
+      ],
+      "source": "missables"
+    },
+    {
+      "id": "tip-act2",
+      "act": "act2",
+      "title": {
+        "ru": "До трёх оставшихся ключ-камней",
+        "en": "Before the three remaining Keystones"
+      },
+      "description": {
+        "ru": "Закройте незавершённые благие дела, включая Forlorn Fate и Waylaid. Заберите награды Брома и вещи переселенцев у озера; проверьте разговоры в музее.",
+        "en": "Complete outstanding good deeds including Forlorn Fate and Waylaid. Claim Brom’s rewards and the lake settlers’ items; check museum conversations."
+      },
+      "routeIds": [
+        "act-2-part-1-step-082",
+        "act-2-part-2-step-073",
+        "act-2-part-3-step-092"
+      ],
+      "source": "missables"
+    },
+    {
+      "id": "tip-resources",
+      "act": "all",
+      "title": {
+        "ru": "Класс ≠ уровень; не тратьте запас на расходники",
+        "en": "Grade is not level; reserve shards"
+      },
+      "description": {
+        "ru": "Класс повышает Виктор после нужных книг; уровень оружия растёт от использования и камней настройки. Для трофеев нужен именно класс. Сохраняйте осколки для четырёх типов оружия и двух защит; фарм может вообще не понадобиться при экономном расходовании.",
+        "en": "Victor raises Grade after receiving the books; use and tuning stones raise weapon level. The trophies require Grade. Reserve shards for four weapon types and two defensive items; careful spending may avoid extra farming."
+      },
+      "routeIds": ["act-2-part-1-step-005", "act-2-part-1-step-104"],
+      "source": "trophies"
+    },
+    {
+      "id": "tip-rewards",
+      "act": "all",
+      "title": {
+        "ru": "Закрыли петлю — вернитесь к Брому",
+        "en": "After closing a loop, return to Brom"
+      },
+      "description": {
+        "ru": "Проверьте награды за петли и благие дела у Брома. Само исчезновение купола не означает, что символ уже лежит в инвентаре. Затем откройте «Мой билд» и обновите экипировку.",
+        "en": "Check Brom’s loop and good-deed rewards. A vanished dome does not mean its glyph is already in your inventory. Then open My build and update equipment."
+      },
+      "routeIds": ["act-1-step-096"],
+      "source": "loops"
+    },
+    {
+      "id": "tip-cleanup",
+      "act": "act3",
+      "title": {
+        "ru": "Зачистка и детектор: учитывайте версию игры",
+        "en": "Cleanup and detector: check your game version"
+      },
+      "description": {
+        "ru": "Для Legend of the Phol нужны все 14 петель и все оставшиеся враги. В версии 1.7+ детектор показывает оставшихся лимбических созданий после закрытия петли. Проверяйте «Угрозы: устранены» / Threats: Clear в БТР. Ранний совет «детектор не ищет обычных врагов» устарел.",
+        "en": "Legend of the Phol requires all 14 loops and all remaining enemies. In version 1.7+, the detector finds remaining Lymbic Entities after a loop closes. Check Threats: Clear in the APC; old advice that it cannot find ordinary enemies is outdated."
+      },
+      "routeIds": ["act-3-cleanup-step-037"],
+      "source": "patch"
+    },
+    {
+      "id": "tip-collections",
+      "act": "act3",
+      "title": {
+        "ru": "Проверка коллекций и экипировки",
+        "en": "Collection and equipment check"
+      },
+      "description": {
+        "ru": "Исследуйте 45 предметов у Тани, примерьте все 10 кепок и соберите по одной версии каждого из 25 символов и 8 модулей дрона. Для «До зубов» наденьте комплект 5 / 5 / 4 / 4 одновременно. Все версии каждого символа не требуются.",
+        "en": "Research 45 items with Tania, wear all 10 caps, and collect one version of each of the 25 glyphs and 8 drone modules. For To the Teeth, equip Grades 5 / 5 / 4 / 4 simultaneously; every glyph upgrade variant is not required."
+      },
+      "routeIds": [],
+      "source": "trophies"
+    },
+    {
+      "id": "tip-after-ending",
+      "act": "act3",
+      "title": {
+        "ru": "Финал не исправляет пропущенные дела",
+        "en": "The ending cannot restore missed deeds"
+      },
+      "description": {
+        "ru": "После финала можно продолжить сбор и зачистку. Пропущенные сюжетные сроки благих дел и разговоров так не восстановить — проверяйте Tips перед переходами.",
+        "en": "After the ending, you can continue collecting and clearing areas. Missed story deadlines for deeds and conversations are not restored; check Tips before transitions."
+      },
+      "routeIds": [],
+      "source": "missables"
+    }
+  ],
+  "loops": [
+    {
+      "id": "loop-senedra",
+      "title": {
+        "ru": "Сенедра · вершина холма",
+        "en": "Senedra · Hilltop"
+      },
+      "prism": "Sigma",
+      "decision": "reserve",
+      "routeIds": ["act-3-cleanup-step-021"],
+      "note": {
+        "ru": "Резерв для ранних врагов; награды сильного качества не срочны после элитных замен. Закрыть после нужных материалов и убийств.",
+        "en": "An early-enemy reserve. Enhanced rewards are less urgent once you have Elite replacements; close after needed materials and kills."
+      },
+      "rewards": "Wave of Wrath – Enhanced; Waves of Grief – Enhanced",
+      "source": "loops"
+    },
+    {
+      "id": "loop-arcas",
+      "title": {
+        "ru": "Пик Аркаса",
+        "en": "Arcas Spire"
+      },
+      "prism": "Theta",
+      "decision": "story",
+      "routeIds": ["act-2-part-1-step-105"],
+      "note": {
+        "ru": "Закрывается ради сюжетного ключ-камня Страха. Не оставляйте как единственный резерв.",
+        "en": "Close to reach the story’s Terror Keystone. Do not rely on it as your only farming reserve."
+      },
+      "rewards": "Interrupt – Elite; Shriek of Terror – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-acasa",
+      "title": {
+        "ru": "Болота Акаса",
+        "en": "Acasa Marshes"
+      },
+      "prism": "Sigma",
+      "decision": "reserve",
+      "routeIds": ["act-2-part-2-step-015"],
+      "note": {
+        "ru": "Можно оставить вместо Сенедры для раннего фарма. Базовый Берсерк не повод спешить, если уже есть сильный.",
+        "en": "An alternative early farming reserve to Senedra. Basic Berserk is not urgent if you already own Enhanced."
+      },
+      "rewards": "Berserk; Lymbic Slivers",
+      "source": "loops"
+    },
+    {
+      "id": "loop-pathem",
+      "title": {
+        "ru": "Монастырь Патем",
+        "en": "Pathem Abbey"
+      },
+      "prism": "Theta",
+      "decision": "optional",
+      "routeIds": ["act-2-part-2-step-012"],
+      "note": {
+        "ru": "Закрыть после спасения собаки и нужного фарма; открывает доступ к предметам за куполом.",
+        "en": "Close after rescuing the dog and any needed farming; access items behind the dome."
+      },
+      "rewards": "Lingering Pain – Elite; Eager Embrace – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-vyssa",
+      "title": {
+        "ru": "Виссайские холмы",
+        "en": "Vyssa Hills"
+      },
+      "prism": "Sigma",
+      "decision": "loot",
+      "routeIds": ["act-1-step-104"],
+      "note": {
+        "ru": "Закрывайте ради ключей транспорта и будущей броши. Ключи Аттику пока не отдавайте: сначала лекарство и ошейник.",
+        "en": "Close for the vehicle keys and eventual brooch. Delay giving Atticus the keys until medicine and collar are delivered."
+      },
+      "rewards": "Interrupt; The Blood Queen’s Phalange",
+      "source": "loops"
+    },
+    {
+      "id": "loop-francis",
+      "title": {
+        "ru": "Церковь Френсиса",
+        "en": "Francis’ Church"
+      },
+      "prism": "Theta",
+      "decision": "optional",
+      "routeIds": ["act-2-part-2-step-091"],
+      "note": {
+        "ru": "Можно закрывать, если здесь больше не нужны осколки; награды не входят в основной набор.",
+        "en": "Close when you no longer need shards here; rewards are not part of the main loadout."
+      },
+      "rewards": "Masochistic Delight – Enhanced; Frightful Ambush – Enhanced",
+      "source": "loops"
+    },
+    {
+      "id": "loop-forge",
+      "title": {
+        "ru": "Лимбическая кузня",
+        "en": "Lymbic Forge"
+      },
+      "prism": "Theta",
+      "decision": "optional",
+      "routeIds": ["act-2-part-3-step-089"],
+      "note": {
+        "ru": "Нужна для полной зачистки и доступа к Бронзовому кубку. Сильная Ярость не заменяет элитную.",
+        "en": "Close for full cleanup and access to Bronze Cup. Enhanced Fury does not replace Elite."
+      },
+      "rewards": "Fury – Enhanced; Rapture",
+      "source": "loops"
+    },
+    {
+      "id": "loop-sphere",
+      "title": {
+        "ru": "Помещение перед Сферой",
+        "en": "Sphere Antechamber"
+      },
+      "prism": "Rho",
+      "decision": "story",
+      "routeIds": ["act-3-cleanup-step-010"],
+      "note": {
+        "ru": "Закрывается по сюжету III акта. Отдельной награды Брома нет; сохраните резерв в другой области.",
+        "en": "Act III story closure. No separate Brom reward; keep a reserve in another area."
+      },
+      "rewards": "—",
+      "source": "loops"
+    },
+    {
+      "id": "loop-talju",
+      "title": {
+        "ru": "Талджу",
+        "en": "Talju"
+      },
+      "prism": "Theta",
+      "decision": "reserve",
+      "routeIds": ["act-3-cleanup-step-036"],
+      "note": {
+        "ru": "Дополнительный резерв до проверки материалов и убийств. Сначала спасите всех четырёх жителей; петля не отменяет их сюжетный срок.",
+        "en": "An additional reserve until material and kill checks are done. Save all four residents first; keeping the loop does not extend their story deadline."
+      },
+      "rewards": "Chromatic Shield – Elite; Nightfade – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-marastan",
+      "title": {
+        "ru": "Леса Марастана",
+        "en": "Marastan Woods"
+      },
+      "prism": "Theta",
+      "decision": "loot",
+      "routeIds": ["act-2-part-1-step-075"],
+      "note": {
+        "ru": "Приоритет для древка: элитное Потрясение доступно уже во II акте. Оставьте фарм в другой области.",
+        "en": "Polearm priority: Elite Overwhelm is available in Act II. Retain farming elsewhere."
+      },
+      "rewards": "Overwhelm – Elite; Recoil – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-temple",
+      "title": {
+        "ru": "Храм павших",
+        "en": "Temple of the Fallen"
+      },
+      "prism": "Rho",
+      "decision": "loot",
+      "routeIds": ["act-2-part-2-step-121"],
+      "note": {
+        "ru": "Нужна элитная Починка. Здесь враги III уровня: если не хватает крупных осколков или убийств III, дофармите перед закрытием либо сохраните другую область с III.",
+        "en": "Close for Elite Mending. Enemies here are tier III: farm missing large shards or tier III kills first, or keep another tier III area open."
+      },
+      "rewards": "Lymbic Mending – Elite; Gluttony – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-jeljin",
+      "title": {
+        "ru": "Кладбище Джелцзина",
+        "en": "Jeljin Cemetery"
+      },
+      "prism": "Rho",
+      "decision": "loot",
+      "routeIds": ["act-2-part-3-step-022"],
+      "note": {
+        "ru": "Двойной приоритет для билда: элитные Пустота и Берсерк. Перед закрытием проверьте оставшийся резерв фарма.",
+        "en": "A double build upgrade: Elite Void and Berserk. Check your remaining farming reserve first."
+      },
+      "rewards": "Void – Elite; Berserk – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-museum-b1",
+      "title": {
+        "ru": "Музей Возничего B1",
+        "en": "Auriga Museum B1"
+      },
+      "prism": "Rho",
+      "decision": "optional",
+      "routeIds": ["act-2-part-3-step-061"],
+      "note": {
+        "ru": "Можно закрыть после проверки фарма. Безопасность Ламеха зависит от зачистки комнаты ДО жёлтых дверей.",
+        "en": "Close after checking farming needs. Lamech’s safety requires clearing his room BEFORE yellow doors."
+      },
+      "rewards": "Delirium – Elite; Shared Pain – Elite",
+      "source": "loops"
+    },
+    {
+      "id": "loop-museum-b4",
+      "title": {
+        "ru": "Музей Возничего B4",
+        "en": "Auriga Museum B4"
+      },
+      "prism": "Rho",
+      "decision": "loot",
+      "routeIds": ["act-2-part-3-step-068"],
+      "note": {
+        "ru": "Приоритет для топоров: элитная Неприязнь. На компьютере 7584 создайте обоих стражей и победите их.",
+        "en": "Axes priority: Elite Animosity. Use computer code 7584 to spawn and defeat both guardians."
+      },
+      "rewards": "Animosity – Elite; Feed on Fear – Elite",
+      "source": "loops"
+    }
+  ],
+  "policy": {
+    "ru": "Рекомендация для этой пары оружия: держите резерв в Сенедре или Акаса, при необходимости — в Талджу. Перед закрытием Храма павших проверьте фарм III уровня. Одна ранняя петля не гарантирует все размеры и цвета осколков: сверяйте недостающие материалы у Виктора и угрозы на карте. «Можно закрыть» всегда означает «если фарм этой области больше не нужен». В итоге для 100% закрыть нужно все 14. Это порядок приоритетов билда, а не запрет игры.",
+    "en": "For this weapon pair, reserve Senedra or Acasa, and optionally Talju. Check tier III farming before closing the Temple of the Fallen. One early loop does not guarantee every shard size and color: check missing materials at Victor and threat tiers on the map. “Can close” always means farming in that area is no longer needed. Eventually close all 14 for 100%. These are build priorities, not game restrictions."
+  }
+}
