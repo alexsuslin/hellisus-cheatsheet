@@ -11,7 +11,7 @@ import {
   STORAGE_KEY,
   saveProgress,
 } from "./storage.js";
-import { createTransferControls } from "./transfer-view.js";
+import { bindTransferExport, bindTransferImport } from "./transfer-view.js";
 
 const byId = (id) => document.getElementById(id);
 let browserStorage;
@@ -651,6 +651,7 @@ function bindEvents() {
 
 applyPreferences();
 bindPreferenceEvents();
+bindTransferExport({ state, t, toast });
 
 window.addEventListener("storage", (event) => {
   if (event.key !== null && event.key !== STORAGE_KEY) return;
@@ -757,8 +758,7 @@ try {
   });
   bindEvents();
   renderChecklist();
-  const transferControls = createTransferControls({
-    state,
+  const transferControls = bindTransferImport({
     knownIds,
     t,
     toast,

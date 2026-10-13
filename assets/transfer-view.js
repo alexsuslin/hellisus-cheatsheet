@@ -3,17 +3,10 @@ import qrcode from "./vendor/qrcode.js";
 
 const byId = (id) => document.getElementById(id);
 
-export function createTransferControls({
-  state,
-  knownIds,
-  t,
-  toast,
-  onImport,
-}) {
+export function bindTransferExport({ state, t, toast }) {
   const dialog = byId("transfer-dialog");
   const link = byId("transfer-link");
   const status = byId("transfer-status");
-  let importing = false;
 
   byId("transfer-progress").addEventListener("click", () => {
     try {
@@ -61,6 +54,15 @@ export function createTransferControls({
         status.textContent = t("transferShareError");
     }
   });
+
+  byId("transfer-progress").disabled = false;
+}
+
+// Receiving needs the loaded guide to validate IDs and render restored progress.
+// Sending uses only the local save and must remain usable while data loads.
+export function bindTransferImport({ knownIds, t, toast, onImport }) {
+  const dialog = byId("transfer-dialog");
+  let importing = false;
 
   async function consumeHash() {
     if (

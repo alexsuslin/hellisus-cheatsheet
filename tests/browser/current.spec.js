@@ -1,5 +1,38 @@
 import { expect, test } from "@playwright/test";
 
+for (const language of ["ru", "en"]) {
+  test(`a saved loop step loads its rewards and keeps transfer usable in ${language}`, async ({
+    page,
+  }) => {
+    const errors = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    await page.addInitScript(
+      (language) =>
+        localStorage.setItem(
+          "hellisus-checklist-v1",
+          JSON.stringify({
+            language,
+            completed: ["act-1-starting-worn-cap"],
+            currentItemId: "act-1-step-104",
+          }),
+        ),
+      language,
+    );
+    await page.goto("./#current");
+    await expect(page.locator("#current-loop-vyssa")).toContainText(
+      "The Blood Queen’s Phalange",
+    );
+    await expect(page.locator("#current-loop-vyssa")).not.toContainText(
+      "undefined",
+    );
+    await expect(page.locator("#load-error")).toBeHidden();
+    await expect(page.locator("#current-step")).toHaveValue("act-1-step-104");
+    await page.locator("#transfer-progress").click();
+    await expect(page.locator("#transfer-dialog")).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+}
+
 test("Current shares route, loop and build checks without conflating actions", async ({
   page,
 }) => {

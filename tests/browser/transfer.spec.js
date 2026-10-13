@@ -1,5 +1,47 @@
 import { expect, test } from "@playwright/test";
 import { createTransferUrl } from "../../assets/transfer.js";
+
+test("saved progress can be transferred while route data is still loading", async ({
+  page,
+}) => {
+  await page.addInitScript(() =>
+    localStorage.setItem(
+      "hellisus-checklist-v1",
+      JSON.stringify({
+        completed: ["act-1-starting-worn-cap"],
+        currentItemId: "act-1-step-003",
+        language: "ru",
+        theme: "dark",
+      }),
+    ),
+  );
+  let releaseData;
+  const dataGate = new Promise((resolve) => {
+    releaseData = resolve;
+  });
+  await page.route(/\/data\/.*\.json(?:\?.*)?$/, async (route) => {
+    await dataGate;
+    await route.continue();
+  });
+  try {
+    await page.goto("./", { waitUntil: "domcontentloaded" });
+    await page.locator("#transfer-progress").click();
+    await expect(page.locator("#transfer-dialog")).toBeVisible();
+    const link = await page.locator("#transfer-link").inputValue();
+    expect(link).toBe(
+      createTransferUrl(page.url(), {
+        completed: ["act-1-starting-worn-cap"],
+        currentItemId: "act-1-step-003",
+        language: "ru",
+        theme: "dark",
+      }),
+    );
+  } finally {
+    releaseData();
+    await page.unrouteAll({ behavior: "wait" });
+  }
+});
+
 import { transferIds } from "../../assets/transfer-catalog.js";
 
 test("transfer link previews before replacement, survives reload and can be cancelled", async ({

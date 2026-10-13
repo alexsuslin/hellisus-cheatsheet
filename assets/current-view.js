@@ -25,7 +25,11 @@ export function createCurrentTracker({
 }) {
   const items = guide.sections.flatMap((section) => section.items);
   const localize = createTerminology(terminology.entries);
-  const text = (value) => localize(value[state.language], state.language);
+  const text = (value) =>
+    localize(
+      typeof value === "string" ? value : value[state.language],
+      state.language,
+    );
   const firstIncomplete = (candidates) =>
     candidates.find((item) => !state.completed.has(item.id)) ?? candidates[0];
 
