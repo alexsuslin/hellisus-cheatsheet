@@ -85,7 +85,9 @@ For a quicker switch between desktop and mobile, choose **Transfer to another de
 
 Each link is a snapshot: generate a new one after making changes. Progress is encoded after `#`, which is not sent to GitHub when loading the page; QR generation runs locally. Anyone with the link can open the save. The transfer is removed from the address bar after processing so reloading cannot reapply it. Damaged links leave progress untouched. If clipboard access fails, select and copy the link manually. JSON export remains available for backup files.
 
-For maintainers: positions in [`assets/transfer-catalog.js`](./assets/transfer-catalog.js) are the permanent version-1 link contract. **Append new IDs only**; never delete or reorder existing entries. Tests cover all progress IDs and lock the original positions. Retired IDs are filtered on import; unknown new positions require a site update. The QR generator ships locally under the [MIT license](./assets/vendor/LICENSE).
+Version-2 links use hexadecimal encoding without Telegram formatting characters. Version-1 links are no longer supported: reload the site on both devices and generate a new link. Saved progress and JSON backups are unchanged.
+
+For maintainers: positions in [`assets/transfer-catalog.js`](./assets/transfer-catalog.js) are the permanent version-2 link contract. **Append new IDs only**; never delete or reorder existing entries. Tests cover all progress IDs and lock the original positions. Retired IDs are filtered on import; unknown new positions require a site update. The QR generator ships locally under the [MIT license](./assets/vendor/LICENSE).
 
 **The counter tracks route steps, not unique collectibles.** A good deed or mystery can require multiple actions in different locations. One action can grant several rewards and appear under several category filters. Check it off only after completing the described action.
 

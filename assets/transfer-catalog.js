@@ -1,4 +1,4 @@
-// Permanent wire positions for transfer version 1. Append only; never remove or reorder.
+// Permanent wire positions for progress transfers. Append only; never remove or reorder.
 export const transferIds = [
   "achievement-accessorizing",
   "achievement-all-the-rage",

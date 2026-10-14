@@ -48,15 +48,28 @@ test("a transfer preserves route, trophy, build, tips and current step under the
   assert.equal(restored.theme, "dark");
 });
 
-test("a previously issued version-1 link keeps its original meaning", () => {
+test("old version-1 links are rejected", () => {
   const hash =
     "#progress=1.AgArAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.f7aeead9";
-  assert.deepEqual(parseTransferHash(hash, knownIds), {
-    completed: ["act-1-starting-worn-cap"],
-    currentItemId: "act-1-step-003",
-    language: "ru",
-    theme: "dark",
-  });
+  assert.throws(() => parseTransferHash(hash, knownIds));
+});
+
+test("the recovered 28% mobile save exports without Telegram formatting characters", () => {
+  const hash =
+    "#progress=2.0000a91414224020feffffffffffffffffffffffffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000083016c00cf0000.2f102ae7";
+  const saved = parseTransferHash(hash, knownIds);
+  const routeIds = new Set(
+    guide.sections.flatMap((section) => section.items.map((item) => item.id)),
+  );
+  assert.equal(saved.completed.filter((id) => routeIds.has(id)).length, 127);
+  assert.equal(saved.currentItemId, "act-1-step-146");
+
+  const url = new URL(
+    createTransferUrl("https://alexsuslin.com/hellisus-cheatsheet/", saved),
+  );
+  assert.match(url.hash, /^#progress=2\.[a-f0-9]+\.2f102ae7$/);
+  assert.equal(url.hash, hash);
+  assert.deepEqual(parseTransferHash(url.hash, knownIds), saved);
 });
 
 test("full and empty saves fit a short QR link and round trip without adding checks", () => {
@@ -72,6 +85,7 @@ test("full and empty saves fit a short QR link and round trip without adding che
       url.href.length < 250,
       `QR link is ${url.href.length} characters`,
     );
+    assert.match(url.hash, /^#progress=2\.[a-f0-9]+\.[a-f0-9]{8}$/);
     const result = parseTransferHash(url.hash, knownIds);
     assert.deepEqual(new Set(result.completed), new Set(completed));
     assert.equal(result.currentItemId, undefined);
@@ -91,7 +105,7 @@ test("corrupted, truncated, oversized and future links cannot replace a save", (
   for (const invalid of [
     "#progress=",
     hash.slice(0, -1),
-    hash.replace("progress=1.", "progress=2."),
+    hash.replace(/progress=\d+\./, "progress=99."),
     `${hash}A`,
     `#progress=${"a".repeat(10000)}`,
     hash.replace(/.$/, hash.endsWith("0") ? "1" : "0"),
@@ -99,6 +113,21 @@ test("corrupted, truncated, oversized and future links cannot replace a save", (
     assert.throws(() => parseTransferHash(invalid, knownIds));
   }
   assert.equal(parseTransferHash("#current", knownIds), null);
+});
+
+test("version-2 payloads reject incomplete bytes and non-hex characters", () => {
+  // A zeroed three-byte header has a valid checksum, but malformed encodings
+  // must not be silently truncated or coerced into that valid save.
+  assert.deepEqual(parseTransferHash("#progress=2.000000.ff41d912", knownIds), {
+    completed: [],
+    language: "ru",
+    theme: "light",
+  });
+  for (const payload of ["0000000", "00000g", "00000_", "00000-"]) {
+    assert.throws(() =>
+      parseTransferHash(`#progress=2.${payload}.ff41d912`, knownIds),
+    );
+  }
 });
 
 test("removed IDs are ignored, but unmapped outgoing progress is never silently lost", () => {

@@ -60,7 +60,7 @@ test("transfer link previews before replacement, survives reload and can be canc
   await expect(page.locator("#transfer-dialog")).toBeVisible();
   await expect(page.locator("#transfer-qr svg")).toBeVisible();
   const link = await page.locator("#transfer-link").inputValue();
-  expect(link).toContain("/hellisus-cheatsheet/#progress=1.");
+  expect(link).toContain("/hellisus-cheatsheet/#progress=2.");
 
   const receiverContext = await browser.newContext();
   const receiver = await receiverContext.newPage();
@@ -129,6 +129,30 @@ test("a full mobile save produces a QR that an independent decoder reads back", 
     });
   expect(decoded).toBe(link);
   expect(link.length).toBeLessThan(250);
+});
+
+test("native sharing receives the same formatting-safe link shown for copying", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, "share", {
+      value: async (data) => {
+        window.sharedProgress = data;
+      },
+    });
+  });
+  await page.goto("./");
+  await page
+    .locator(".route-section[open] input[data-item-id]")
+    .first()
+    .check();
+  await page.locator("#transfer-progress").click();
+  const link = await page.locator("#transfer-link").inputValue();
+  expect(new URL(link).hash).toMatch(/^#progress=2\.[a-f0-9]+\.[a-f0-9]{8}$/);
+  await page.locator("#transfer-share").click();
+  await expect
+    .poll(() => page.evaluate(() => window.sharedProgress?.url))
+    .toBe(link);
 });
 
 test("a transfer arriving during confirmation is handled after the first one", async ({

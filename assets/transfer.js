@@ -15,11 +15,10 @@ function checksum(bytes) {
   return ((crc ^ 0xffffffff) >>> 0).toString(16).padStart(8, "0");
 }
 
-function encodeBytes(bytes) {
-  return btoa(String.fromCharCode(...bytes))
-    .replaceAll("+", "-")
-    .replaceAll("/", "_")
-    .replace(/=+$/, "");
+function encodeHex(bytes) {
+  return Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join(
+    "",
+  );
 }
 
 function positionOf(id) {
@@ -35,7 +34,7 @@ export function createTransferUrl(address, state) {
   ) {
     throw new Error("Invalid transfer preferences");
   }
-  // Version 1: preference flags, a two-byte current position (0 = none),
+  // Preference flags, a two-byte current position (0 = none),
   // then one completion bit per permanent catalogue position, least significant first.
   const bytes = new Uint8Array(3 + Math.ceil(transferIds.length / 8));
   bytes[0] =
@@ -50,25 +49,26 @@ export function createTransferUrl(address, state) {
 
   const url = new URL(address);
   url.search = "";
-  url.hash = `progress=1.${encodeBytes(bytes)}.${checksum(bytes)}`;
+  // Telegram can strip base64url underscores as text formatting. Version 2
+  // uses hex so shared progress contains no formatting markers.
+  url.hash = `progress=2.${encodeHex(bytes)}.${checksum(bytes)}`;
   return url.href;
 }
 
 export function parseTransferHash(hash, knownIds) {
   if (!hash.startsWith("#progress=")) return null;
   if (hash.length > 2048) throw new Error("Transfer too large");
-  const match = /^#progress=1\.([A-Za-z0-9_-]+)\.([a-f0-9]{8})$/.exec(hash);
+  const match = /^#progress=2\.((?:[a-f0-9]{2})+)\.([a-f0-9]{8})$/.exec(hash);
   if (!match) throw new Error("Invalid transfer version or encoding");
 
-  const bytes = Uint8Array.from(
-    atob(match[1].replaceAll("-", "+").replaceAll("_", "/")),
-    (character) => character.charCodeAt(0),
+  const [, payload, expectedChecksum] = match;
+  const bytes = Uint8Array.from(payload.match(/.{2}/g), (pair) =>
+    Number.parseInt(pair, 16),
   );
   if (
     bytes.length < 3 ||
     bytes[0] > 3 ||
-    encodeBytes(bytes) !== match[1] ||
-    checksum(bytes) !== match[2]
+    checksum(bytes) !== expectedChecksum
   ) {
     throw new Error("Damaged transfer");
   }

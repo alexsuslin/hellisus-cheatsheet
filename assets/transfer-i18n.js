@@ -20,7 +20,7 @@ export const transferTranslations = {
     transferCreateError:
       "Не удалось создать ссылку. Обновите страницу или используйте экспорт файла.",
     transferInvalid:
-      "Ссылка повреждена или создана в более новой версии сайта. Обновите страницу или попросите новую ссылку. Ваш прогресс не изменён.",
+      "Ссылка повреждена или её формат не поддерживается. Обновите сайт на обоих устройствах и создайте новую ссылку. Ваш прогресс не изменён.",
     transferImportTitle: "Применить прогресс из ссылки?",
     transferImportDescription:
       "Отметок в сохранении: {count}. Текущий шаг: {step}. Все ваши нынешние отметки будут заменены, включая достижения, билд и советы.",
@@ -48,7 +48,7 @@ export const transferTranslations = {
     transferCreateError:
       "Could not create a link. Reload the page or export a backup file.",
     transferInvalid:
-      "This link is damaged or requires a newer site version. Reload the page or request a new link. Your progress is unchanged.",
+      "This link is damaged or its format is unsupported. Reload the site on both devices and create a new link. Your progress is unchanged.",
     transferImportTitle: "Apply progress from this link?",
     transferImportDescription:
       "Saved checks: {count}. Current step: {step}. All your existing checks will be replaced, including achievements, build and tips.",
