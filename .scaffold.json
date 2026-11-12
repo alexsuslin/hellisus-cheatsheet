@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scaffold_version": "0.3.6",
+  "handoff": "docs/HANDOFF.md",
+  "created_files": {
+    "AGENTS.md": "a71ad04839c30363440b030a531d3f3251ff4dd1ca489d6f94f2279747d2d3c0",
+    "docs/HANDOFF.md": "c9bca1bd219ec4f532c7c774b11376f9bbf8765347d9b3f691980d1307e4a8e6"
+  }
+}
